@@ -1,0 +1,62 @@
+division_template = {
+	name = "Bai Zu Lv"	
+	division_names_group = YUN_BZ_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		
+		artillery_brigade = { x = 1 y = 2 }
+		artillery_brigade = { x = 1 y = 3 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		artillery = { x = 0 y = 2 }
+	}
+	priority = 0
+}
+
+units = {
+	division = {
+		name = "Bai Zu Di 1 Lü"
+		location = 1319
+		division_template = "Bai Zu Lü"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+	division = {
+		name = "Bai Zu Di 2 Lü"
+		location = 1319
+		division_template = "Bai Zu Lü"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "Bai Zu Di 3 Lü"
+		location = 1319
+		division_template = "Bai Zu Lü"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.2
+	}
+
+	division = {
+		name = "Bai Zu Di 4 Lü"
+		location = 1319
+		division_template = "Bai Zu Lü"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.2
+	}
+
+	division = {
+		name = "Bai Zu Di 5 Lü"
+		location = 1319
+		division_template = "Bai Zu Lü"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.2
+	}
+}
