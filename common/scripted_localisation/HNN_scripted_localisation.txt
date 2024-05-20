@@ -1,0 +1,31 @@
+defined_text = {
+	name = GetHNN_ThreeWinner
+	text = {#林彪
+		trigger = {
+			check_variable = { HNN_triumvirs_LIN > HNN_triumvirs_HE }
+			check_variable = { HNN_triumvirs_LIN > HNN_triumvirs_YE }
+		}
+		localization_key = HNN_three_LIN
+	}
+	text = {#贺龙
+		trigger = {
+			check_variable = { HNN_triumvirs_HE > HNN_triumvirs_YE }
+			check_variable = { HNN_triumvirs_HE > HNN_triumvirs_LIN }
+		}
+		localization_key = HNN_three_HE
+	}
+	text = {#叶剑英
+		trigger = {
+			check_variable = { HNN_triumvirs_YE > HNN_triumvirs_HE }
+			check_variable = { HNN_triumvirs_YE > HNN_triumvirs_LIN }
+		}
+		localization_key = HNN_three_YE
+	}
+	text = {
+		localization_key = HNN_three_NO
+	}
+}
+
+
+
+	

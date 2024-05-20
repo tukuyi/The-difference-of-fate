@@ -1,0 +1,35 @@
+on_actions = {
+	on_daily_HNN = {
+		effect = {
+			if = {
+				limit = {
+					has_dynamic_modifier = { modifier = HNN_educational_modifier }
+				}
+				HNN_educational_effects = yes
+				HNN_daily_update_educational = yes
+			}
+		}
+	}	
+	on_daily_SQI = {
+		effect = {
+			if = {
+				limit = {
+					has_dynamic_modifier = { modifier = RUS_orth_eur_enlightenment_modifier }
+				}
+				recalculate_orth_eur_enlightenment_effects = yes
+				RUS_daily_update_orth_eur_enlightenment = yes
+			}
+		}
+	}
+	on_daily_GXC = {
+		effect = {
+			if = {
+				limit = {
+					has_dynamic_modifier = { modifier = GXC_people_modifier }
+				}
+				GXC_people_effects_modifer = yes
+				GXC_daily_update = yes
+			}
+		}
+	}
+}

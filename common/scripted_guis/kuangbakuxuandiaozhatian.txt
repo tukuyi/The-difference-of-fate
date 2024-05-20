@@ -1,0 +1,14 @@
+scripted_gui = {
+	three_guis_decision_cat_gui = {
+		context_type = decision_category
+		window_name = "three_guis_decision_cat_gui"
+		dirty = dyrektoria_dirty
+
+		properties = {
+			HTR_Picture = {
+				image = "[GFX_HNN_UVO]"
+			}
+		}
+	}
+}
+

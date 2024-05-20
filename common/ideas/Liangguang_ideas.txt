@@ -1,0 +1,4104 @@
+##########################
+# Liangguang (GXC) Ideas #
+##########################
+ideas = {
+
+	head_of_government = {
+		GXC_peng_pai_hog = {#彭湃
+			allowed = { original_tag = GXC }
+			picture = GXC_peng_pai_hog
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea GXC_peng_pai_hog"
+				
+			}
+			traits = {
+				head_of_government
+				radical_socialist
+				hog_anarhist
+			}
+		}
+		GXC_ju_zheng_hog = {#居正
+			allowed = { original_tag = GXC }
+			picture = GXC_ju_zheng_hog
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea GXC_ju_zheng_hog"
+				
+			}
+			traits = {
+				head_of_government
+				social_conservative
+				hog_scholar
+			}
+		}
+		GXC_zahng_qun_hog = {#张群
+			allowed = { original_tag = GXC }
+			picture = GXC_zahng_qun_hog
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea GXC_zahng_qun_hog"
+				
+			}
+			traits = {
+				head_of_government
+				market_liberal
+				hog_gentleman_politician
+			}
+		}
+		GXC_bai_chong_xi_hog = {#白崇禧
+			allowed = { original_tag = GXC }
+			picture = GXC_bai_chong_xi_hog
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea GXC_bai_chong_xi_hog"
+				
+			}
+			traits = {
+				head_of_government
+				authoritarian_democrat
+				hog_old_general
+			}
+		}		
+		GXC_jiang_jing_guo_hog = {#蒋经国
+			allowed = { original_tag = GXC }
+			picture = GXC_jiang_jing_guo_hog
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea GXC_jiang_jing_guo_hog"
+				
+			}
+			traits = {
+				head_of_government
+				authoritarian_democrat
+				hog_respected_war_hero
+			}
+		}	
+		GXC_jiang_wei_guo_hog = {#蒋纬国
+			allowed = { original_tag = GXC }
+			picture = GXC_jiang_wei_guo_hog
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea GXC_jiang_wei_guo_hog"
+				
+			}
+			traits = {
+				head_of_government
+				authoritarian_democrat
+				hog_flamboyant_tough_guy
+			}
+		}			
+		GXC_chen_guo_fu_hog = {#陈果夫
+			allowed = { original_tag = GXC }
+			picture = GXC_chen_guo_fu_hog
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea GXC_chen_guo_fu_hog"
+				
+			}
+			traits = {
+				head_of_government
+				authoritarian_democrat
+				hog_pragmatic_intriguer
+			}
+		}
+		GXC_chen_li_fu_hog = {#陈立夫
+			allowed = { original_tag = GXC }
+			picture = GXC_chen_li_fu_hog
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea GXC_chen_li_fu_hog"
+				
+			}
+			traits = {
+				head_of_government
+				authoritarian_democrat
+				hog_gentleman_politician
+			}
+		}		
+		GXC_song_zi_wen_hog = {#宋子文
+			allowed = { original_tag = GXC }
+			picture = GXC_song_zi_wen_hog
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea GXC_song_zi_wen_hog"
+				
+			}
+			traits = {
+				head_of_government
+				market_liberal
+				eco_laissez_faire_capitalist
+			}
+		}				
+	}
+
+	person_of_influence = {
+		GXC_wu_ting_shu_for = {#伍廷枢
+			allowed = { original_tag = GXC }
+			picture = GXC_wu_ting_shu_for
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = A_Limao_dead }
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea GXC_wu_ting_shu_for"
+				
+			}
+			traits = {
+				foreign_minister
+				social_conservative
+				for_apologetic_clerk
+			}
+		}
+		GXC_xiong_shi_hui_for = {#熊式辉
+			allowed = { original_tag = GXC }
+			picture = GXC_xiong_shi_hui_for
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = A_Limao_dead }
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea GXC_xiong_shi_hui_for"
+				
+			}
+			traits = {
+				foreign_minister
+				market_liberal
+				for_iron_fisted_brute
+			}
+		}
+		GXC_gu_ying_fen_for = {#古应芬
+			allowed = { original_tag = GXC }
+			picture = GXC_gu_ying_fen_for
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = A_Limao_dead }
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea GXC_gu_ying_fen_for"
+				
+			}
+			traits = {
+				foreign_minister
+				social_conservative
+				hog_naive_optimist
+			}
+		}
+		GXC_zhou_lu_for = {#邹鲁
+			allowed = { original_tag = GXC }
+			picture = GXC_zhou_lu_for
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea GXC_zhou_lu_for"
+				
+			}
+			traits = {
+				foreign_minister
+				social_conservative
+				hog_influential_intellectual
+			}
+		}
+		GXC_guo_ting_for = {#郭泰祺
+			allowed = { original_tag = GXC }
+			picture = GXC_guo_ting_for
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea GXC_guo_ting_for"
+				
+			}
+			traits = {
+				foreign_minister
+				market_liberal
+				for_leading_diplomat
+			}
+		}
+		GXC_gu_zheng_gang_for = {#谷正纲
+			allowed = { original_tag = GXC }
+			picture = GXC_gu_zheng_gang_for
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea GXC_gu_zheng_gang_for"
+				
+			}
+			traits = {
+				foreign_minister
+				authoritarian_democrat
+				for_apologetic_clerk
+			}
+		}
+		GXC_cheng_tian_feng_for = {#程天放 
+			allowed = { original_tag = GXC }
+			picture = GXC_cheng_tian_feng_for
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea GXC_cheng_tian_feng_for"
+				
+			}
+			traits = {
+				foreign_minister
+				authoritarian_democrat
+				for_tireless_organiser
+			}
+		}		
+		GXC_li_xiao_sheng_sec = {#李晓生
+			allowed = { original_tag = GXC }
+			picture = GXC_li_xiao_sheng_sec
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea GXC_li_xiao_sheng_sec"
+			}
+			traits = {
+				security_minister
+				social_conservative
+				eco_mixed_economy
+			}
+		}
+		GXC_lin_sen_sec = {#林森
+			allowed = { original_tag = GXC }
+			picture = GXC_lin_sen_sec
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea GXC_lin_sen_sec"
+			}
+			traits = {
+				security_minister
+				social_conservative
+				sec_preserver_of_culture
+			}
+		}
+		GXC_wang_kun_lun_sec = {#王昆仑
+			allowed = { original_tag = GXC }
+			picture = GXC_wang_kun_lun_sec
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea GXC_wang_kun_lun_sec"
+			}
+			traits = {
+				security_minister
+				social_liberal
+				sec_compassionate_gentleman
+			}
+		}
+		GXC_wu_tie_cheng_sec = {#吴铁城
+			allowed = { original_tag = GXC }
+			picture = GXC_wu_tie_cheng_sec
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea GXC_wu_tie_cheng_sec"
+			}
+			traits = {
+				security_minister
+				market_liberal
+				sec_secret_police_chief
+			}
+		}
+		GXC_qian_xing_zhi_sec = {#钱新之
+			allowed = { original_tag = GXC }
+			picture = GXC_qian_xing_zhi_sec
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea GXC_qian_xing_zhi_sec"
+			}
+			traits = {
+				security_minister
+				market_liberal
+				sec_back_stabber
+			}
+		}
+		GXC_xu_en_zheng_sec = {#徐恩曾
+			allowed = { original_tag = GXC }
+			picture = GXC_xu_en_zheng_sec
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea GXC_xu_en_zheng_sec"
+			}
+			traits = {
+				security_minister
+				authoritarian_democrat
+				sec_prince_of_terror
+			}
+		}		
+		GXC_chen_ni_lei_sec = {#陈布雷
+			allowed = { original_tag = GXC }
+			picture = GXC_chen_ni_lei_sec
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea GXC_chen_ni_lei_sec"
+			}
+			traits = {
+				security_minister
+				authoritarian_democrat
+				sec_preserver_of_culture
+			}
+		}			
+		GXC_chen_li_fu_eco = {#陈立夫
+			allowed = { original_tag = GXC }
+			picture = GXC_chen_li_fu_hog
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea GXC_chen_li_fu_eco"
+			}
+			traits = {
+				economy_minister
+				authoritarian_democrat
+				eco_reformer
+			}
+		}
+		GXC_kong_xiang_xi_eco = {#孔祥熙
+			allowed = { original_tag = GXC }
+			picture = GXC_kong_xiang_xi_eco
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea GXC_kong_xiang_xi_eco"
+			}
+			traits = {
+				economy_minister
+				market_liberal
+				eco_industrialiser
+			}
+		}
+		GXC_yu_han_mou_eco = {#余汉谋
+			allowed = { original_tag = GXC }
+			picture = GXC_yu_han_mou_eco
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea GXC_yu_han_mou_eco"
+			}
+			traits = {
+				economy_minister
+				authoritarian_democrat
+				eco_military_entrepreneur
+			}
+		}		
+	}
+
+#################
+# Country ideas #
+#################
+
+	country = {
+
+		GXC_backwards_guangxi = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_backwards_guangxi"}
+			picture = POL_disjointed_industry
+			allowed = { original_tag = GXC }
+			allowed_civil_war = { always = yes }
+            modifier = {
+				consumer_goods_factor = 0.20
+				political_power_factor = -0.05
+			}
+		}
+		GXC_AOG_leftovers = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_AOG_leftovers"}
+			picture = LEC_Germany_Falling
+			allowed = { original_tag = GXC }
+			allowed_civil_war = { always = yes }
+            modifier = {
+				stability_factor = -0.10
+				industrial_capacity_factory = -0.1
+				market_liberal_drift = 0.01
+			}
+		}
+		GXC_bailing_out_peasants = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_bailing_out_peasants"}
+			picture = raj_risk_of_famine
+			allowed = { original_tag = GXC }
+			allowed_civil_war = { always = yes }
+            modifier = {
+				consumer_goods_factor = 0.20
+			}
+		}
+		GXC_bailing_out_merchants = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_bailing_out_merchants"}
+			picture = generic_coins
+			allowed = { original_tag = GXC }
+			allowed_civil_war = { always = yes }
+            modifier = {
+				consumer_goods_factor = 0.20
+			}
+		}
+		GXC_guangxi_militarism = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_guangxi_militarism"}
+			available = {
+				NOT = {
+					has_country_flag = GXC_guangdong_victory
+				}
+			}
+			picture = generic_manpower_bonus
+			allowed = { always = no }
+            modifier = {
+				conscription_factor = 0.025
+			}
+		}
+		GXC_militia_corps = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_militia_corps"}
+			available = {
+				NOT = {
+					has_country_flag = GXC_guangdong_victory
+				}
+			}
+			picture = generic_manpower_bonus
+			allowed = { always = no }
+            modifier = {
+				conscription_factor = 0.025
+				land_reinforce_rate = 0.1
+			}
+		}
+		GXC_militarised_guangxi = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_militarised_guangxi"}
+			available = {
+				NOT = {
+					has_country_flag = GXC_guangdong_victory
+				}
+			}
+			picture = generic_manpower_bonus
+			allowed = { always = no }
+            modifier = {
+				conscription_factor = 0.025
+				land_reinforce_rate = 0.1
+				training_time_army_factor = -0.05
+			}
+		}
+		GXC_mountaineers = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_mountaineers"}
+			available = {
+				NOT = {
+					has_country_flag = GXC_guangdong_victory
+				}
+			}
+			picture = generic_war_preparation
+			allowed = { always = no }
+            modifier = {
+				special_forces_cap = 0.02
+			}
+		}
+		GXC_roar_of_wolftroops = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_roar_of_wolftroops"}
+			available = {
+				NOT = {
+					has_country_flag = GXC_guangdong_victory
+				}
+			}
+			picture = FRA_army_of_aggression_focus
+			allowed = { always = no }
+            modifier = {
+				army_org_factor = 0.05
+				recon_factor = 0.05
+				resistance_growth_on_our_occupied_states = 0.15
+			}
+		}
+		GXC_factionalism = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_factionalism"}
+			picture = GXC_liangguang_broken
+			allowed = { original_tag = GXC }
+			allowed_civil_war = { always = yes }
+            modifier = {
+				political_power_factor = -0.10
+				stability_factor = -0.25
+			}
+		}
+		GXC_divided_military = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_divided_military"}
+			picture = generic_army_problems
+			allowed = { original_tag = GXC }
+			allowed_civil_war = { always = yes }
+            modifier = {
+				army_org_Factor = -0.10
+				planning_speed = -0.10
+			}
+		}
+		GXC_reforming_guangxi = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_reforming_guangxi"}
+			picture = generic_agrarian_society
+			allowed = { original_tag = GXC }
+			allowed_civil_war = { GXC_has_guangxi_government = yes }
+            modifier = {
+				consumer_goods_factor = 0.155
+				political_power_factor = -0.05
+			}
+		}
+		GXC_warlord_economy_one = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_warlord_economy_one"}
+			name = GXC_warlord_economy
+			picture = generic_agrarian_society
+			allowed = { original_tag = GXC }
+			allowed_civil_war = { GXC_has_guangxi_government = yes }
+            modifier = {
+				consumer_goods_factor = -0.3
+				political_power_factor = -0.05
+				conversion_cost_civ_to_mil_factor = -0.1
+				production_speed_arms_factory_factor = 0.1
+			}
+		}
+		GXC_warlord_economy_two = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_warlord_economy_two"}
+			name = GXC_warlord_economy
+			picture = prc_permit_opium_trade
+			allowed = { original_tag = GXC }
+			allowed_civil_war = { GXC_has_guangxi_government = yes }
+            modifier = {
+				consumer_goods_factor = -0.30
+				political_power_factor = -0.10
+				conversion_cost_civ_to_mil_factor = -0.1
+				production_speed_arms_factory_factor = 0.1
+			}
+		}
+		GXC_modernising_guangxi = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_modernising_guangxi"}
+			picture = state_economy
+			allowed = { original_tag = GXC }
+			allowed_civil_war = {
+				OR = {
+					GXC_has_guangxi_government = yes
+					GXC_has_federalist_government = yes
+				}
+			}
+            modifier = {
+				consumer_goods_factor = -0.15
+				industrial_capacity_factory = 0.05
+				political_power_gain = -0.2
+			}
+		}
+		GXC_reorganised_economy = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_reorganised_economy" }
+			picture = state_economy
+			allowed = { original_tag = GXC }
+			modifier = {
+				consumer_goods_factor = -0.15
+				industrial_capacity_factory = 0.05
+				production_factory_max_efficiency_factor = 0.05
+			}
+		}
+		GXC_three_year_plan_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_three_year_plan_idea" }
+			picture = economic_control_icon
+			allowed = { original_tag = GXC }
+			modifier = {
+				political_power_gain = -0.1
+				production_factory_start_efficiency_factor = 0.05
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		GXC_three_year_plan_idea_2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_three_year_plan_idea_2" }
+			picture = economic_control_icon
+			name = GXC_three_year_plan_idea
+			allowed = { original_tag = GXC }
+			modifier = {
+				political_power_gain = -0.05
+				production_factory_start_efficiency_factor = 0.05
+				production_speed_buildings_factor = 0.05
+				production_speed_rail_way_factor = 0.1
+			}
+		}
+		GXC_three_year_plan_idea_3 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_three_year_plan_idea_3" }
+			picture = economic_control_icon
+			name = GXC_three_year_plan_idea
+			allowed = { original_tag = GXC }
+			modifier = {
+				political_power_gain = -0.05
+				production_factory_start_efficiency_factor = 0.05
+				production_speed_buildings_factor = 0.05
+				production_speed_rail_way_factor = 0.1
+				production_speed_industrial_complex_factor = 0.05
+				production_speed_arms_factory_factor = 0.05
+			}
+		}
+		GXC_three_year_plan_idea_4 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_three_year_plan_idea_4" }
+			picture = economic_control_icon
+			name = GXC_three_year_plan_idea
+			allowed = { original_tag = GXC }
+			modifier = {
+				production_factory_start_efficiency_factor = 0.05
+				production_speed_buildings_factor = 0.05
+				production_speed_rail_way_factor = 0.1
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_arms_factory_factor = 0.1
+			}
+		}
+		GXC_unfinished_reforms = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_three_year_plan" }
+			picture = economic_control_icon
+			allowed = { original_tag = GXC }
+			modifier = {
+				political_power_gain = -0.1
+				production_factory_start_efficiency_factor = 0.05
+				production_speed_buildings_factor = 0.1
+				production_speed_arms_factory_factor = 0.1
+			}
+		}
+		GXC_mining = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_mining" }
+			picture = generic_exploit_mines
+			name = GXC_mining_idea
+			allowed = { original_tag = GXC }
+			modifier = {
+				production_lack_of_resource_penalty_factor = -0.05
+				local_resources_factor = 0.05
+			}
+		}
+		GXC_mining2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_mining2" }
+			picture = generic_exploit_mines
+			name = GXC_mining_idea
+			allowed = { original_tag = GXC }
+			modifier = {
+				production_lack_of_resource_penalty_factor = -0.15
+				local_resources_factor = 0.1
+			}
+		}
+		GXC_modernised_economy_authdem_dummy1 = {
+			name = GXC_merge_eco_spirit_dummy
+			modifier = {
+				production_lack_of_resource_penalty_factor = -0.15
+				local_resources_factor = 0.1
+				production_factory_start_efficiency_factor = 0.05
+				production_speed_buildings_factor = 0.05
+				production_speed_rail_way_factor = 0.1
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_arms_factory_factor = 0.1
+				consumer_goods_factor = -0.15
+				industrial_capacity_factory = 0.05
+				production_factory_max_efficiency_factor = 0.05
+			}
+		}
+		GXC_modernised_economy_authdem_dummy2 = {
+			name = GXC_merge_eco_spirit_dummy
+			modifier = {
+				production_factory_start_efficiency_factor = 0.1
+				production_factory_max_efficiency_factor = 0.05
+				production_speed_buildings_factor = 0.15
+				industrial_capacity_factory = 0.1
+				consumer_goods_factor = -0.15
+				production_lack_of_resource_penalty_factor = -0.15
+				local_resources_factor = 0.1
+			}
+		}
+		GXC_modernised_economy = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_modernised_economy" }
+			picture = economic_control_icon
+			name = GXC_modernised_economy
+			allowed = { original_tag = GXC }
+			modifier = {
+				production_factory_start_efficiency_factor = 0.1
+				production_factory_max_efficiency_factor = 0.05
+				production_speed_buildings_factor = 0.15
+				industrial_capacity_factory = 0.1
+				consumer_goods_factor = -0.15
+				production_lack_of_resource_penalty_factor = -0.15
+				local_resources_factor = 0.1
+			}
+		}
+		GXC_warlord_economy_idea_dummy1 = {
+			name = GXC_merge_eco_spirit_dummy
+			modifier = {
+				production_lack_of_resource_penalty_factor = -0.15
+				local_resources_factor = 0.1
+				political_power_gain = -0.1
+				production_factory_start_efficiency_factor = 0.05
+				production_speed_buildings_factor = 0.1
+				production_speed_arms_factory_factor = 0.2
+				consumer_goods_factor = -0.30
+				political_power_factor = -0.10
+				conversion_cost_civ_to_mil_factor = -0.1
+			}
+		}
+		GXC_warlord_economy_idea_dummy2 = {
+			name = GXC_merge_eco_spirit_dummy
+			modifier = {
+				consumer_goods_factor = -0.3
+				political_power_factor = -0.10
+				production_speed_arms_factory_factor = 0.2
+				production_lack_of_resource_penalty_factor = -0.15
+				local_resources_factor = 0.1
+				industrial_capacity_factory = 0.1
+				conversion_cost_civ_to_mil_factor = -0.1
+			}
+		}
+		GXC_warlord_economy_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_warlord_economy_idea " }
+			name = GXC_warlord_economy_idea
+			picture = prc_permit_opium_trade
+			allowed = { original_tag = GXC }
+			modifier = {
+				consumer_goods_factor = -0.3
+				political_power_factor = -0.10
+				production_speed_arms_factory_factor = 0.2
+				production_lack_of_resource_penalty_factor = -0.15
+				local_resources_factor = 0.1
+				industrial_capacity_factory = 0.1
+				conversion_cost_civ_to_mil_factor = -0.1
+			}
+		}
+		GXC_loot_economy = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_loot_economy " }
+			name = GXC_loot_economy
+			picture = raj_risk_of_famine
+			allowed = { original_tag = GXC }
+			modifier = {
+				consumer_goods_factor = -0.35
+			}
+		}
+		GXC_suppressing_bandits = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_suppressing_bandits" }
+			picture = generic_intel_bonus
+			allowed = { original_tag = GXC }
+			allowed_civil_war = { always = yes }
+			modifier = {
+				political_power_gain = -0.20
+				stability_factor = -0.15
+				consumer_goods_factor = 0.1
+			}
+		}
+		GXC_guangxi_four_guangxi_peeps_one = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_guangxi_four_guangxi_peeps_one"}
+			name = GXC_guangxi_four_guangxi_peeps
+			picture = generic_political_support
+			allowed = { always = no }
+            modifier = {
+				political_power_gain = 0.20
+				stability_factor = 0.10
+			}
+		}
+		GXC_guangxi_four_guangxi_peeps_two = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_guangxi_four_guangxi_peeps_two"}
+			name = GXC_guangxi_four_guangxi_peeps
+			picture = generic_political_support
+			allowed = { always = no }
+            modifier = {
+				political_power_gain = 0.40
+				stability_factor = 0.20
+			}
+		}
+		GXC_guangxi_four_guangxi_peeps_one_two = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_guangxi_four_guangxi_peeps_one_two"}
+			name = GXC_guangxi_four_guangxi_peeps_two
+			picture = generic_political_support
+			allowed = { always = no }
+            modifier = {
+				political_power_gain = 0.20
+				stability_factor = 0.10
+				war_support_factor = 0.20
+			}
+		}
+		GXC_guangxi_four_guangxi_peeps_two_two = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_guangxi_four_guangxi_peeps_two_two"}
+			name = GXC_guangxi_four_guangxi_peeps_two
+			picture = generic_political_support
+			allowed = { always = no }
+            modifier = {
+				political_power_gain = 0.40
+				stability_factor = 0.20
+				war_support_factor = 0.20
+			}
+		}
+		GXC_chinese_sparta_one = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_chinese_sparta_one"}
+			name = GXC_chinese_sparta
+			available = {
+				NOT = {
+					has_country_flag = GXC_guangdong_victory
+				}
+			}
+			picture = FRA_national_mobilization_focus
+			allowed = { always = no }
+            modifier = {
+				consumer_goods_factor = -0.30
+				political_power_factor = -0.10
+				conversion_cost_civ_to_mil_factor = -0.1
+				production_speed_arms_factory_factor = 0.1
+				political_power_gain = 0.20
+				stability_factor = 0.15
+				war_support_factor = 0.30
+				conscription_factor = 0.025
+				army_morale_factor = 0.1
+				land_reinforce_rate = 0.1
+			}
+		}
+		GXC_chinese_sparta_two = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_chinese_sparta_two"}
+			name = GXC_chinese_sparta
+			available = {
+				NOT = {
+					has_country_flag = GXC_guangdong_victory
+				}
+			}
+			picture = FRA_national_mobilization_focus
+			allowed = { always = no }
+            modifier = {
+				political_power_gain = 0.40
+				stability_factor = 0.20
+				war_support_factor = 0.30
+				conscription_factor = 0.025
+				army_morale_factor = 0.1
+				land_reinforce_rate = 0.1
+			}
+		}
+		GXC_chinese_sparta_three = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_chinese_sparta_three"}
+			name = GXC_chinese_sparta
+			available = {
+				NOT = {
+					has_country_flag = GXC_guangdong_victory
+				}
+			}
+			picture = FRA_national_mobilization_focus
+			allowed = { always = no }
+            modifier = {
+				consumer_goods_factor = -0.30
+				political_power_factor = -0.10
+				conversion_cost_civ_to_mil_factor = -0.1
+				production_speed_arms_factory_factor = 0.1
+				political_power_gain = 0.40
+				stability_factor = 0.20
+				war_support_factor = 0.30
+				conscription_factor = 0.025
+				army_morale_factor = 0.1
+				land_reinforce_rate = 0.1
+			}
+		}
+		GXC_aviation_bureau_one = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_aviation_bureau_one"}
+			name = GXC_aviation_bureau
+			picture = man_five_year_plan_air
+			allowed = { original_tag = GXC }
+			allowed_civil_war = { always = yes }
+            modifier = {
+				experience_gain_air_factor = 0.1
+			}
+		}
+		GXC_aviation_bureau_two = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_aviation_bureau_two"}
+			name = GXC_aviation_bureau
+			picture = man_five_year_plan_air
+			allowed = { original_tag = GXC }
+			allowed_civil_war = { always = yes }
+            modifier = {
+				experience_gain_air_factor = 0.1
+			}
+			equipment_bonus = {
+				small_plane_airframe = {
+					build_cost_ic = -0.05
+					instant = yes
+				}
+			}
+		}
+		GXC_reforming_guangdong_one = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_reforming_guangdong_one"}
+			picture = generic_production_bonus
+			allowed = { original_tag = GXC }
+			allowed_civil_war = { GXC_has_guangdong_government = yes }
+            modifier = {
+				political_power_factor = 0.10
+				production_factory_efficiency_gain_factor = 0.05
+			}
+		}
+		GXC_reforming_guangdong_two = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_reforming_guangdong_two"}
+			picture = generic_production_bonus
+			allowed = { original_tag = GXC }
+			allowed_civil_war = { GXC_has_guangdong_government = yes }
+            modifier = {
+				political_power_factor = 0.10
+				production_factory_efficiency_gain_factor = 0.05
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		GXC_reforming_guangdong_three = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_reforming_guangdong_three"}
+			picture = generic_production_bonus
+			allowed = { original_tag = GXC }
+			allowed_civil_war = { GXC_has_guangdong_government = yes }
+            modifier = {
+				political_power_factor = 0.10
+				production_factory_efficiency_gain_factor = 0.05
+				production_speed_buildings_factor = 0.05
+				production_factory_max_efficiency_factor = 0.05
+				industrial_capacity_factory = 0.05
+			}
+		}
+		GXC_education_reform = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_education_reform"}
+			picture = jap_duplicate_research
+			allowed = { original_tag = GXC }
+			allowed_civil_war = { GXC_has_guangdong_government = yes }
+            modifier = {
+				research_speed_factor = 0.05
+			}
+		}
+		GXC_professional_training_focus = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_professional_training_focus"}
+			picture = jap_supremacy_of_technology
+			allowed = { original_tag = GXC }
+			allowed_civil_war = { GXC_has_guangdong_government = yes }
+            modifier = {
+				research_speed_factor = 0.1
+				production_factory_max_efficiency_factor = 0.1
+			}
+		}
+		GXC_literacy_campaign = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_literacy_campaign"}
+			picture = jap_supremacy_of_will
+			allowed = { original_tag = GXC }
+			allowed_civil_war = { GXC_has_guangdong_government = yes }
+            modifier = {
+				research_speed_factor = 0.1
+				political_power_factor = 0.05
+				stability_factor = 0.1
+			}
+		}
+		GXC_decentralisation = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_decentralisation"}
+			picture = generic_local_self_management
+			allowed = { original_tag = GXC }
+			allowed_civil_war = { GXC_has_federalist_government = yes }
+            modifier = {
+				stability_factor = 0.10
+				political_power_gain = 0.10
+			}
+		}
+		GXC_land_reform = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_land_reform"}
+			picture = generic_local_self_management
+			allowed = { original_tag = GXC }
+			allowed_civil_war = { GXC_has_federalist_government = yes }
+            modifier = {
+				consumer_goods_factor = -0.15
+			}
+		}
+		GXC_self_management = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_self_management"}
+			picture = generic_local_self_management
+			allowed = { original_tag = GXC }
+			allowed_civil_war = { GXC_has_federalist_government = yes }
+            modifier = {
+				consumer_goods_factor = -0.15
+				stability_factor = 0.05
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		GXC_gentry_dominance = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_gentry_dominance"}
+			picture = generic_local_self_management
+			allowed = { original_tag = GXC }
+			allowed_civil_war = { GXC_has_federalist_government = yes }
+            modifier = {
+				stability_factor = 0.15
+				political_power_gain = 0.15
+			}
+		}
+		GXC_agrarianism = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_agrarianism"}
+			picture = generic_local_self_management
+			allowed = { original_tag = GXC }
+			allowed_civil_war = { GXC_has_federalist_government = yes }
+            modifier = {
+				stability_factor = 0.15
+				political_power_gain = 0.15
+				consumer_goods_factor = -0.1
+				local_resources_factor = 0.10
+			}
+		}
+		GXC_model_province_one = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_model_province_one"}
+			name = GXC_model_province
+			picture = GXC_model_province
+			allowed = { original_tag = GXC }
+			allowed_civil_war = { GXC_has_federalist_government = yes }
+            modifier = {
+				consumer_goods_factor = -0.15
+				stability_factor = 0.15
+				production_speed_buildings_factor = 0.10
+				political_power_factor = 0.10
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_max_efficiency_factor = 0.10
+				industrial_capacity_factory = 0.05
+				research_speed_factor = 0.1
+			}
+		}
+		GXC_model_province_two = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_model_province_two"}
+			name = GXC_model_province
+			picture = GXC_model_province
+			allowed = { original_tag = GXC }
+			allowed_civil_war = { GXC_has_federalist_government = yes }
+            modifier = {
+				consumer_goods_factor = -0.15
+				stability_factor = 0.05
+				production_speed_buildings_factor = 0.10
+				research_speed_factor = 0.1
+				political_power_gain = 0.15
+				production_factory_start_efficiency_factor = 0.05
+				political_power_factor = 0.10
+				production_factory_max_efficiency_factor = 0.05
+				industrial_capacity_factory = 0.05
+			}
+		}
+		GXC_model_province_three = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_model_province_three"}
+			name = GXC_model_province
+			picture = GXC_model_province
+			allowed = { original_tag = GXC }
+			allowed_civil_war = { GXC_has_federalist_government = yes }
+            modifier = {
+				stability_factor = 0.25
+				political_power_gain = 0.15
+				consumer_goods_factor = -0.1
+				local_resources_factor = 0.10
+				research_speed_factor = 0.1
+				production_factory_max_efficiency_factor = 0.15
+				political_power_factor = 0.10
+				production_factory_efficiency_gain_factor = 0.05
+				production_speed_buildings_factor = 0.05
+				industrial_capacity_factory = 0.05
+			}
+		}
+		GXC_model_province_four = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_model_province_four"}
+			name = GXC_model_province
+			picture = GXC_model_province
+			allowed = { original_tag = GXC }
+			allowed_civil_war = { GXC_has_federalist_government = yes }
+            modifier = {
+				stability_factor = 0.15
+				political_power_gain = 0.2
+				consumer_goods_factor = -0.1
+				local_resources_factor = 0.10
+				research_speed_factor = 0.1
+				production_factory_start_efficiency_factor = 0.05
+				political_power_factor = 0.10
+				production_factory_efficiency_gain_factor = 0.05
+				production_speed_buildings_factor = 0.05
+				production_factory_max_efficiency_factor = 0.05
+				industrial_capacity_factory = 0.05
+			}
+		}
+		###Guangxi Clique
+		GXC_exploitation = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_exploitation"}
+			picture = HOL_labor_camps
+			allowed = { always = no }
+            modifier = {
+				industrial_capacity_factory = 0.05
+				local_resources_factor = 0.05
+			}
+		}
+		GXC_deal_with_guangdong = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_deal_with_guangdong"}
+			picture = generic_central_management
+			allowed = { always = no }
+            modifier = {
+				political_power_factor = 0.05
+				industrial_capacity_factory = 0.05
+			}
+		}
+		GXC_militarised_guangdong = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_militarised_guangdong"}
+			picture = generic_central_management
+			allowed = { always = no }
+            modifier = {
+				mobilization_speed = 0.1
+				resistance_growth_on_our_occupied_states = 0.15
+			}
+		}
+		GXC_lus_legacy = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_lus_legacy"}
+			picture = generic_central_management
+			allowed = { always = no }
+            modifier = {
+				mobilization_speed = 0.1
+				resistance_growth_on_our_occupied_states = 0.15
+				stability_factor = 0.10
+				army_morale_factor = 0.1
+			}
+		}
+		GXC_nanning_academy = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_nanning_academy"}
+			picture = generic_army_war_college
+			allowed = { always = no }
+            modifier = {
+				research_speed_factor = 0.01
+				max_command_power = 20
+			}
+		}
+		###:ancap:
+		GXC_merchant_corps = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_merchant_corps"}
+			picture = YUG_federal_defense_council
+			allowed = { always = no }
+            modifier = {
+				political_power_factor = 0.05
+				army_defence_factor = 0.05
+			}
+		}
+		GXC_suppressing_labour = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_suppressing_labour"}
+			picture = generic_oppression
+			allowed = { always = no }
+            modifier = {
+				political_power_factor = 0.05
+				army_defence_factor = 0.05
+				local_resources_factor = 0.05
+				production_factory_start_efficiency_factor = 0.05
+			}
+		}
+		GXC_trade_regulations = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_trade_regulations"}
+			picture = can_wartime_prices_and_trade_board
+			allowed = { always = no }
+            modifier = {
+				trade_opinion_factor = 0.10
+				min_export = -0.05
+				license_purchase_cost = -0.25
+			}
+		}
+		GXC_philantropic_investments = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_philantropic_investments"}
+			picture = HOL_welfare_state
+			allowed = { always = no }
+            modifier = {
+				trade_opinion_factor = 0.10
+				min_export = -0.05
+				license_purchase_cost = -0.25
+				global_building_slots_factor = 0.2
+				stability_factor = 0.05
+			}
+		}
+		GXC_chinese_washington_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_chinese_washington_idea" }
+			picture = generic_morale_bonus
+			allowed = { always = no }
+			modifier = {
+				political_power_factor = 0.10
+				army_defence_factor = 0.05
+				local_resources_factor = 0.05
+				production_factory_start_efficiency_factor = 0.05
+				trade_opinion_factor = 0.10
+				min_export = -0.05
+				license_purchase_cost = -0.25
+				global_building_slots_factor = 0.2
+				stability_factor = 0.10
+				army_morale_factor = 0.10
+			}
+		}
+		###Chen's NPA
+		GXC_chens_NPA = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_chens_NPA"}
+			picture = generic_deal_with_the_devil
+			allowed = { always = no }
+            modifier = {
+				stability_factor = 0.10
+				war_support_factor = 0.10
+			}
+		}
+		GXC_rearming_guangdong = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_rearming_guangdong"}
+			picture = generic_license_production
+			allowed = { always = no }
+            modifier = {
+				stability_factor = 0.10
+				war_support_factor = 0.10
+				industrial_capacity_factory = 0.05
+				conversion_cost_civ_to_mil_factor = -0.10
+			}
+		}
+		GXC_spreading_federalism = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_spreading_federalism"}
+			picture = YUN_Federalist_idea
+			allowed = { always = no }
+            modifier = {
+				stability_factor = 0.15
+				war_support_factor = 0.15
+				industrial_capacity_factory = 0.05
+				conversion_cost_civ_to_mil_factor = -0.10
+				political_power_factor = 0.05
+			}
+		}
+		###KMT
+		GXC_sanmin = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_sanmin"}
+			picture = YUN_KMT_idea
+			allowed = { always = no }
+            modifier = {
+				political_power_factor = 0.10
+				stability_factor = 0.10
+			}
+		}
+		GXC_sanmin_minzu = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_sanmin_minzu"}
+			picture = YUN_KMT_idea
+			allowed = { always = no }
+            modifier = {
+				political_power_factor = 0.10
+				stability_factor = 0.10
+				war_support_factor = 0.10
+				conscription_factor = 0.03
+			}
+		}
+		GXC_sanmin_minquan = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_sanmin_minquan"}
+			picture = YUN_KMT_idea
+			allowed = { always = no }
+            modifier = {
+				political_power_factor = 0.15
+				stability_factor = 0.15
+				production_factory_efficiency_gain_factor = 0.05
+			}
+		}
+		GXC_whampoa_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_whampoa_idea"}
+			picture = chi_whampoa_military_academy
+			allowed = { always = no }
+            modifier = {
+				max_command_power = 20
+				army_leader_start_planning_level = 1
+				military_leader_cost_factor = -0.25
+			}
+		}
+		GXC_political_tutelage_one = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_political_tutelage_one"}
+			name = GXC_political_tutelage
+			picture = state_economy
+			allowed = { always = no }
+            modifier = {
+				political_power_gain = 0.10
+				political_power_factor = 0.05
+				authoritarian_democrat_drift = 0.005
+			}
+		}
+		GXC_political_tutelage_two = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_political_tutelage_two"}
+			name = GXC_political_tutelage
+			picture = state_economy
+			allowed = { always = no }
+            modifier = {
+				army_org = 0.05
+				army_org_factor = 0.05
+				political_power_gain = 0.25
+				political_power_factor = 0.05
+				authoritarian_democrat_drift = 0.005
+			}
+		}
+		GXC_political_tutelage_three = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_political_tutelage_three"}
+			name = GXC_political_tutelage
+			picture = state_economy
+			allowed = { always = no }
+            modifier = {
+				political_power_gain = 0.25
+				political_power_cost = -0.10
+			}
+		}
+		GXC_new_guangxi_army = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_new_guangxi_army"}
+			picture = generic_manpower_bonus
+			allowed = { always = no }
+            modifier = {
+				army_morale_factor = 0.1
+				army_org_factor = 0.05
+			}
+		}
+		GXC_kmt_militarisation = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_kmt_militarisation"}
+			picture = generic_manpower_bonus
+			allowed = { always = no }
+            modifier = {
+				army_morale_factor = 0.1
+				army_org_factor = 0.05
+				training_time_factor = -0.1
+				mobilization_speed = 0.1
+			}
+		}
+		GXC_kmt_militarisation2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_kmt_militarisation2"}
+			name = GXC_kmt_militarisation
+			picture = generic_manpower_bonus
+			allowed = { always = no }
+            modifier = {
+				army_morale_factor = 0.1
+				army_org_factor = 0.05
+				training_time_factor = -0.1
+				mobilization_speed = 0.1
+				command_power_gain = 0.10
+			}
+		}
+		GXC_ppp_plan = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_ppp_plan"}
+			picture = generic_victors_of_ww1
+			allowed = { always = no }
+            modifier = {
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		GXC_ppp_local_democracy = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_ppp_local_democracy"}
+			picture = generic_victors_of_ww1
+			allowed = { always = no }
+            modifier = {
+				production_speed_buildings_factor = 0.05
+				political_power_gain = 0.10
+			}
+		}
+		GXC_ppp_land_reform = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_ppp_land_reform"}
+			picture = generic_victors_of_ww1
+			allowed = { always = no }
+            modifier = {
+				production_speed_buildings_factor = 0.05
+				political_power_gain = 0.05
+				monthly_population = 0.15
+			}
+		}
+		GXC_ppp_plan_all = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_ppp_plan_all"}
+			picture = generic_victors_of_ww1
+			allowed = { always = no }
+            modifier = {
+				production_speed_buildings_factor = 0.05
+				political_power_gain = 0.15
+				monthly_population = 0.15
+			}
+		}
+		GXC_ppp_route_armies = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_ppp_route_armies"}
+			picture = generic_reserve_divisions
+			allowed = { always = no }
+            modifier = {
+				dig_in_speed_factor = 0.15
+				supply_consumption_factor = -0.10
+				land_reinforce_rate = 0.2
+			}
+		}
+		GXC_RKMT_angry_merchants = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_RKMT_angry_merchants"}
+			picture = FRA_factory_strikes
+			allowed = { always = no }
+            modifier = {
+				industrial_capacity_factory = -0.1
+			}
+		}
+		GXC_RKMT_appeased_merchants = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_RKMT_appeased_merchants"}
+			picture = can_wartime_prices_and_trade_board
+			allowed = { always = no }
+            modifier = {
+				consumer_goods_factor = 0.1
+				industrial_capacity_factory = 0.1
+			}
+		}
+		GXC_RKMT_purged_merchants = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_RKMT_purged_merchants"}
+			picture = generic_central_management
+			allowed = { always = no }
+            modifier = {
+				consumer_goods_factor = 0.20
+				industrial_capacity_factory = -0.15
+			}
+		}
+		GXC_RKMT_weary_gentry = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_RKMT_weary_gentry"}
+			picture = generic_disjointed_gov
+			allowed = { always = no }
+            modifier = {
+				consumer_goods_factor = -0.065
+			}
+		}
+		GXC_RKMT_rent_caps = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_RKMT_rent_caps"}
+			picture = state_economy
+			allowed = { always = no }
+            modifier = {
+				stability_factor = 0.05
+				war_support_factor = 0.1
+			}
+		}
+		GXC_kmt_comissar_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_kmt_comissar_idea" }
+			picture = generic_secret_police
+			allowed = { always = no }
+			modifier = {
+				army_morale_factor = 0.05
+				command_abilities_cost_factor = -0.15
+			}
+		}
+		GXC_provisional_yuan_idea = {#被整合的政府
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_provisional_yuan_idea" }
+			picture = MEX_constitution_idea
+			allowed = { always = no }
+			modifier = {
+				war_support_factor = 0.05
+				political_power_gain = -0.1
+				authoritarian_democrat_drift = 0.05
+			}
+		}
+		GXC_legislative_yuan_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_legislative_yuan_idea" }
+			picture = YUN_KMT_idea
+			allowed = { always = no }
+			modifier = {
+				political_power_gain = 0.05
+				command_power_gain = 0.02
+			}
+		}
+		###United Provinces
+		UPC_general_staff_one = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea UPC_general_staff_one"}
+			name = UPC_general_staff
+			picture = generic_manpower_bonus
+			allowed = { always = no }
+            modifier = {
+				command_power_gain_mult = 0.05
+				experience_gain_army_factor = 0.05
+			}
+		}
+		UPC_general_staff_two = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea UPC_general_staff_two"}
+			name = UPC_general_staff
+			picture = generic_manpower_bonus
+			allowed = { always = no }
+            modifier = {
+				command_power_gain_mult = 0.05
+				experience_gain_army_factor = 0.05
+				supply_consumption_factor = -0.10
+				attrition = -0.1
+			}
+		}
+		UPC_economic_integration_one = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea UPC_economic_integration_one"}
+			name = UPC_economic_integration
+			picture = can_wartime_prices_and_trade_board
+			allowed = { always = no }
+            modifier = {
+				production_speed_buildings_factor = 0.05
+				industry_free_repair_factor = 0.15
+			}
+		}
+		UPC_economic_integration_two = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea UPC_economic_integration_two"}
+			name = UPC_economic_integration
+			picture = can_wartime_prices_and_trade_board
+			allowed = { always = no }
+            modifier = {
+				production_speed_buildings_factor = 0.05
+				industry_free_repair_factor = 0.15
+				global_building_slots_factor = 0.05
+				research_speed_factor = 0.01
+			}
+		}
+		###Unified China
+		CHS_legitimacy1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CHS_legitimacy1"}
+			name = CHS_legitimacy
+			picture = jap_intervene_in_china
+			allowed = { always = no }
+            modifier = {
+				political_power_factor = -0.50
+				stability_factor = -0.25
+			}
+		}
+		CHS_legitimacy2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CHS_legitimacy2"}
+			name = CHS_legitimacy
+			picture = jap_intervene_in_china
+			allowed = { always = no }
+            modifier = {
+				political_power_factor = -0.25
+				stability_factor = -0.25
+			}
+		}
+		CHS_bureaucracy1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CHS_bureaucracy1"}
+			name = CHS_bureaucracy
+			picture = ROM_king_carol_emptied_accounts
+			allowed = { always = no }
+            modifier = {
+				consumer_goods_factor = 0.1
+				production_speed_buildings_factor = -0.10
+			}
+		}
+		CHS_bureaucracy2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CHS_bureaucracy2"}
+			name = CHS_bureaucracy
+			picture = ROM_king_carol_emptied_accounts
+			allowed = { always = no }
+            modifier = {
+				consumer_goods_factor = 0.1
+				production_speed_buildings_factor = -0.05
+			}
+		}
+		CHS_bureaucracy3 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CHS_bureaucracy3"}
+			name = CHS_bureaucracy
+			picture = ROM_king_carol_emptied_accounts
+			allowed = { always = no }
+            modifier = {
+				production_speed_buildings_factor = -0.05
+			}
+		}
+		CHS_military1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CHS_military1"}
+			name = CHS_military
+			picture = tfv_can_conscription_crisis
+			allowed = { always = no }
+            modifier = {
+				production_factory_max_efficiency_factor = -0.20
+				industrial_capacity_factory = -0.15
+				army_org_factor = -0.15
+				command_power_gain_mult = -0.25
+			}
+		}
+		CHS_military2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CHS_military2"}
+			name = CHS_military
+			picture = chi_incompetent_officers
+			allowed = { always = no }
+            modifier = {
+				army_org_factor = -0.15
+				command_power_gain_mult = -0.25
+			}
+		}
+		CHS_military3 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CHS_military3"}
+			name = CHS_military
+			picture = FRA_factory_strikes
+			allowed = { always = no }
+            modifier = {
+				production_factory_max_efficiency_factor = -0.20
+				industrial_capacity_factory = -0.15
+			}
+		}
+		CHS_NPA_legacy = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CHS_NPA_legacy"}
+			picture = FRA_scw_intervention_republicans_focus
+			allowed = { always = no }
+            modifier = {
+				war_support_factor = 0.10
+				stability_factor = 0.10
+			}
+		}
+		CHS_empowered_executive = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CHS_empowered_executive"}
+			picture = FRA_scw_intervention_nationalists_focus
+			allowed = { always = no }
+            modifier = {
+				political_power_gain = 0.5
+				war_support_factor = 0.10
+			}
+		}
+		CHS_empowered_executive_centralist = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CHS_empowered_executive_centralist"}
+			picture = FRA_scw_intervention_nationalists_focus
+			allowed = { always = no }
+            modifier = {
+				political_power_gain = 0.5
+				war_support_factor = 0.10
+				production_speed_buildings_factor = 0.1
+			}
+		}
+		CHS_empowered_executive_centralist_NPA = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CHS_empowered_executive_centralist_NPA"}
+			picture = FRA_scw_intervention_nationalists_focus
+			allowed = { always = no }
+            modifier = {
+				political_power_gain = 0.75
+				war_support_factor = 0.20
+				stability_factor = 0.20
+				production_speed_buildings_factor = 0.1
+			}
+		}
+		CHS_empowered_executive_federalist = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CHS_empowered_executive_federalist"}
+			picture = FRA_scw_intervention_nationalists_focus
+			allowed = { always = no }
+            modifier = {
+				political_power_gain = 0.5
+				war_support_factor = 0.10
+				global_building_slots_factor = 0.10
+			}
+		}
+		CHS_empowered_executive_federalist_NPA = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CHS_empowered_executive_federalist_NPA"}
+			picture = FRA_scw_intervention_nationalists_focus
+			allowed = { always = no }
+            modifier = {
+				political_power_gain = 0.75
+				war_support_factor = 0.20
+				stability_factor = 0.20
+				global_building_slots_factor = 0.10
+			}
+		}
+		CHS_xinhai_legacy_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CHS_xinhai_legacy_idea"}
+			picture = FRA_scw_intervention_republicans_focus
+			allowed = { always = no }
+            modifier = {
+				political_power_factor = 0.10
+				war_support_factor = 0.10
+			}
+		}
+		CHS_empowered_legislative = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CHS_empowered_legislative"}
+			picture = FNG_xinhai_order
+			allowed = { always = no }
+            modifier = {
+				political_power_gain = 0.5
+				stability_factor = 0.10
+			}
+		}
+		CHS_empowered_legislative_federalist = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CHS_empowered_legislative_federalist"}
+			picture = FNG_xinhai_order
+			allowed = { always = no }
+            modifier = {
+				political_power_gain = 0.5
+				stability_factor = 0.10
+				global_building_slots_factor = 0.10
+			}
+		}
+		CHS_empowered_legislative_centralist = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CHS_empowered_legislative_centralist"}
+			picture = FNG_xinhai_order
+			allowed = { always = no }
+            modifier = {
+				political_power_gain = 0.5
+				stability_factor = 0.10
+				production_speed_buildings_factor = 0.1
+			}
+		}
+		CHS_empowered_legislative_federalist_xinhai = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CHS_empowered_legislative_federalist_xinhai"}
+			picture = FNG_xinhai_order
+			allowed = { always = no }
+            modifier = {
+				political_power_gain = 0.75
+				stability_factor = 0.20
+				global_building_slots_factor = 0.10
+				political_power_factor = 0.10
+				war_support_factor = 0.10
+			}
+		}
+		CHS_empowered_legislative_centralist_xinhai = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CHS_empowered_legislative_centralist_xinhai"}
+			picture = FNG_xinhai_order
+			allowed = { always = no }
+            modifier = {
+				political_power_gain = 0.75
+				stability_factor = 0.20
+				production_speed_buildings_factor = 0.1
+				political_power_factor = 0.10
+				war_support_factor = 0.10
+			}
+		}
+		UPC_reconstruction1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea UPC_reconstruction1"}
+			name = UPC_reconstruction
+			picture = NOR_syndicalist_industry_idea
+			allowed = { always = no }
+            modifier = {
+				production_speed_infrastructure_factor = 0.10
+			}
+		}
+		UPC_reconstruction2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea UPC_reconstruction2"}
+			name = UPC_reconstruction
+			picture = NOR_syndicalist_industry_idea
+			allowed = { always = no }
+            modifier = {
+				production_speed_infrastructure_factor = 0.10
+				monthly_population = 0.15
+			}
+		}
+		UPC_reconstruction3 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea UPC_reconstruction3"}
+			name = UPC_reconstruction
+			picture = NOR_syndicalist_industry_idea
+			allowed = { always = no }
+            modifier = {
+				production_speed_infrastructure_factor = 0.10
+				monthly_population = 0.15
+				industrial_capacity_factory = 0.05
+			}
+		}
+		###Guangdong-Guangxi War
+		GXC_victory_imminent = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_victory_imminent"}
+			available = { has_war_with = PRC }
+			targeted_modifier = {
+				tag = PRC
+				attack_bonus_against = 0.25
+				defense_bonus_against = 0.25
+			}
+			allowed = { always = no }
+            modifier = {
+				war_support_factor = 0.20
+				army_morale_factor = 0.10
+				army_speed_factor = 0.10
+			}
+			picture = FRA_national_mobilization_focus
+		}
+		GXC_lost_momentum = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_lost_momentum"}
+			available = { has_war_with = PRC }
+			targeted_modifier = {
+				tag = PRC
+				attack_bonus_against = -0.25
+				defense_bonus_against = -0.25
+			}
+			allowed = { always = no }
+            modifier = {
+				war_support_factor = -0.20
+				army_morale_factor = -0.10
+				army_org_factor = -0.10
+			}
+			picture = generic_volunteer_expedition_bonus
+		}
+		PRC_victory_imminent = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRC_victory_imminent"}
+			available = { has_war_with = GXC }
+			targeted_modifier = {
+				tag = GXC
+				attack_bonus_against = 0.25
+				defense_bonus_against = 0.25
+			}
+			allowed = { always = no }
+            modifier = {
+				war_support_factor = 0.20
+				army_morale_factor = 0.10
+				army_speed_factor = 0.10
+			}
+			picture = FRA_national_mobilization_focus
+		}
+		PRC_lost_momentum = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PRC_lost_momentum"}
+			available = { has_war_with = GXC }
+			targeted_modifier = {
+				tag = GXC
+				attack_bonus_against = -0.25
+				defense_bonus_against = -0.25
+			}
+			allowed = { always = no }
+            modifier = {
+				war_support_factor = -0.20
+				army_morale_factor = -0.10
+				army_org_factor = -0.10
+			}
+			picture = generic_volunteer_expedition_bonus
+		}
+		###new army stuff
+		GXC_better_logistics = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_better_logistics"}
+			picture = FRA_motorized_focus
+			allowed = { original_tag = GXC }
+			allowed_civil_war = { always = yes }
+            modifier = {
+				supply_consumption_factor = -0.10
+				attrition = -0.1
+			}
+		}
+		GXC_improved_officers = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_improved_officers"}
+			picture = CZE_planning_bonus
+			allowed = { original_tag = GXC }
+			allowed_civil_war = { GXC_has_KMT_government = no }
+            modifier = {
+				experience_gain_army_factor = 0.1
+				planning_speed = 0.10
+				max_planning = 0.10
+			}
+		}
+		GXC_integrated_militia = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_integrated_militia"}
+			picture = chi_army_corruption2
+			allowed = { original_tag = GXC }
+			allowed_civil_war = { GXC_has_KMT_government = no }
+            modifier = {
+				training_time_factor = -0.1
+				land_reinforce_rate = 0.02
+			}
+		}
+		GXC_imp_officers_int_militia = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_imp_officers_int_militia"}
+			name = GXC_improved_provincial_armies
+			picture = generic_manpower_bonus
+			allowed = { original_tag = GXC }
+			allowed_civil_war = { GXC_has_KMT_government = no }
+            modifier = {
+				experience_gain_army_factor = 0.1
+				planning_speed = 0.10
+				max_planning = 0.10
+				training_time_factor = -0.1
+				land_reinforce_rate = 0.02
+			}
+		}
+		GXC_reformed_minjun = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_reformed_minjun"}
+			picture = chi_army_corruption3
+			allowed = { original_tag = GXC }
+			allowed_civil_war = { GXC_has_KMT_government = no }
+            modifier = {
+				experience_gain_army_factor = 0.1
+				planning_speed = 0.10
+				max_planning = 0.10
+				training_time_factor = -0.1
+				land_reinforce_rate = 0.02
+				army_core_attack_factor = 0.05
+				army_core_defence_factor = 0.05
+			}
+		}
+		GXC_guofangjun = { #feds only
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_guofangjun"}
+			picture = generic_reserve_divisions
+			allowed = { original_tag = GXC }
+			allowed_civil_war = { GXC_has_federalist_government = yes }
+            modifier = {
+				experience_gain_army_factor = 0.1
+				planning_speed = 0.10
+				max_planning = 0.10
+				training_time_factor = -0.1
+				land_reinforce_rate = 0.02
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+				supply_consumption_factor = -0.10
+				attrition = -0.1
+				army_org_factor = 0.10
+			}
+		}
+		GXC_southern_defense_force = { #merchants or old guangxi only
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_southern_defense_force"}
+			picture = chi_army_corruption3
+			allowed = { always = no }
+			available = {
+				GXC_has_NPA_government = yes
+			}
+            modifier = {
+				experience_gain_army_factor = 0.1
+				planning_speed = 0.10
+				max_planning = 0.10
+				training_time_factor = -0.1
+				land_reinforce_rate = 0.02
+				army_core_attack_factor = 0.10
+				army_core_defence_factor = 0.10
+				supply_consumption_factor = -0.10
+				attrition = -0.1
+			}
+		}
+		GXC_new_defense_techniques = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_new_defense_techniques"}
+			picture = generic_wall_line
+			allowed = { original_tag = GXC }
+			allowed_civil_war = { always = yes }
+            modifier = {
+				production_speed_bunker_factor = 0.1
+				production_speed_coastal_bunker_factor = 0.1
+				production_speed_anti_air_building_factor = 0.1
+			}
+		}
+		GXC_HK_tooling_help = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_HK_tooling_help"}
+			picture = generic_production_bonus
+			allowed = { original_tag = GXC }
+			allowed_civil_war = { always = yes }
+            modifier = {
+				production_factory_efficiency_gain_factor = 0.30
+			}
+		}
+		###NRA
+		GXC_steel_army_glory = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_steel_army_glory"}
+			name = GXC_legacy_of_the_army_of_steel_idea
+			picture = generic_infantry_bonus
+			allowed = { original_tag = GXC }
+			allowed_civil_war = { GXC_has_KMT_government = yes }
+			modifier = {
+				army_speed_factor = 0.10
+			}
+		}
+		GXC_iron_army_legacy = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_iron_army_legacy"}
+			picture = generic_reserve_divisions
+			allowed = { original_tag = GXC }
+			allowed_civil_war = { GXC_has_KMT_government = yes }
+			modifier = {
+				army_defence_factor = 0.10
+			}
+		}
+		GXC_professional_officers = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_professional_officers"}
+			picture = generic_reserve_divisions
+			allowed = { original_tag = GXC }
+			allowed_civil_war = { GXC_has_KMT_government = yes }
+			modifier = {
+				army_defence_factor = 0.10
+				experience_gain_army_factor = 0.10
+				planning_speed = 0.10
+				max_planning = 0.10
+			}
+		}
+		GXC_officer_vanguards_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_officer_vanguards_idea"}
+			picture = generic_infantry_bonus
+			allowed = { original_tag = GXC }
+			allowed_civil_war = { GXC_has_KMT_government = yes }
+			modifier = {
+				army_speed_factor = 0.10
+				army_infantry_attack_factor = 0.1
+				special_forces_attack_factor = 0.1
+			}
+		}
+		GXC_NRA_idea1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_NRA_idea1"}
+			name = GXC_NRA_idea
+			picture = generic_reserve_divisions
+			allowed = { original_tag = GXC }
+			allowed_civil_war = { GXC_has_KMT_government = yes }
+			modifier = {
+				army_defence_factor = 0.10
+				experience_gain_army_factor = 0.10
+				planning_speed = 0.10
+				max_planning = 0.15
+				experience_loss_factor = -0.1
+			}
+		}
+		GXC_NRA_idea2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_NRA_idea2"}
+			name = GXC_NRA_idea
+			picture = generic_infantry_bonus
+			allowed = { original_tag = GXC }
+			allowed_civil_war = { GXC_has_KMT_government = yes }
+			modifier = {
+				army_speed_factor = 0.10
+				army_infantry_attack_factor = 0.15
+				special_forces_attack_factor = 0.15
+				experience_loss_factor = -0.1
+			}
+		}
+		GXC_russian_advisors_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_russian_advisors_idea " }
+			picture = advisors_russia
+			allowed = { original_tag = GXC }
+			allowed_civil_war = { GXC_has_KMT_government = yes }
+			available = {
+				country_exists = RUS
+				NOT = { has_war_with = RUS } #another sanity check
+			}
+			modifier = {
+				army_org_factor = 0.05
+				max_planning = 0.05
+			}
+		}
+		
+		KR_RKMT_popular_support_1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea KR_RKMT_popular_support_1" }
+			picture = chi_warlord_integration
+			allowed = { always = no }
+			modifier = {
+				stability_factor = -0.25
+				war_support_factor = -0.3
+				political_power_factor = -0.05
+				compliance_gain = -0.02
+			}
+		}
+
+		KR_RKMT_popular_support_2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea KR_RKMT_popular_support_2" }
+			picture = chi_warlord_integration2
+			allowed = { always = no }
+			modifier = {
+				stability_factor = -0.2
+				war_support_factor = -0.20
+				compliance_gain = -0.01
+				political_power_factor = -0.03
+			}
+		}
+
+		KR_RKMT_popular_support_3 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea KR_RKMT_popular_support_3" }
+			picture = chi_warlord_integration3
+			allowed = { always = no }
+			modifier = {
+				stability_factor = -0.15
+				war_support_factor = -0.15
+				compliance_gain = -0.01
+				political_power_factor = -0.01
+			}
+		}
+
+		KR_RKMT_popular_support_4 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea KR_RKMT_popular_support_4" }
+			picture = chi_warlord_integration4
+			allowed = { always = no }
+			modifier = {
+				stability_factor = -0.10
+				war_support_factor = -0.1
+				compliance_gain = -0.01
+				political_power_factor = 0.01
+			}
+		}
+
+		KR_RKMT_popular_support_5 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea KR_RKMT_popular_support_5" }
+			picture = CHI_high_popular_support
+			allowed = { always = no }
+			modifier = {
+				stability_factor = 0.10
+				war_support_factor = 0.05
+				political_power_factor = 0.03
+			}
+		}
+
+		KR_RKMT_popular_support_6 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea KR_RKMT_popular_support_6" }
+			picture = CHI_high_popular_support
+			allowed = { always = no }
+			modifier = {
+				stability_factor = 0.20
+				war_support_factor = 0.10
+				political_power_factor = 0.05
+			}
+		}
+		GXC_rkmt_spy_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add GXC_rkmt_spy_idea " }
+			picture = generic_spy_coup
+			research_bonus = {
+				decryption_tech = 0.10
+				encryption_tech = 0.10
+			}
+			modifier = {
+				decryption_factor = 0.20
+				encryption_factor = 0.20
+			}
+		}
+
+		#### Post Unification RKMT
+
+		GXC_economic_instability = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_economic_instability" }
+			picture = POL_disjointed_industry
+			allowed = { always = no }
+
+			modifier = {
+				consumer_goods_factor = 0.6
+				industrial_capacity_factory = -0.2
+				production_factory_max_efficiency_factor = -0.10
+				production_speed_buildings_factor = -0.2
+			}
+		}
+		GXC_economic_instability2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_economic_instability2" }
+			picture = POL_disjointed_industry
+			allowed = { always = no }
+
+			modifier = {
+				consumer_goods_factor = 0.4
+				industrial_capacity_factory = -0.1
+				production_factory_max_efficiency_factor = -0.05
+				production_speed_buildings_factor = -0.15
+			}
+		}
+		GXC_economic_instability3 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_economic_instability3" }
+			picture = POL_disjointed_industry
+			allowed = { always = no }
+
+			modifier = {
+				consumer_goods_factor = 0.3
+				industrial_capacity_factory = -0.05
+				production_factory_max_efficiency_factor = -0.10
+				production_speed_buildings_factor = -0.2
+			}
+		}
+		GXC_economic_instability4 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_economic_instability4" }
+			picture = POL_disjointed_industry
+			allowed = { always = no }
+
+			modifier = {
+				consumer_goods_factor = 0.2
+				production_factory_max_efficiency_factor = -0.05
+				production_speed_buildings_factor = -0.15
+			}
+		}
+		GXC_economic_instability5 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_economic_instability5" }
+			picture = POL_succesful_four_year_plan
+			allowed = { always = no }
+
+			modifier = {
+				consumer_goods_factor = 0.1
+				production_speed_buildings_factor = -0.1
+			}
+		}
+		GXC_low_literacy = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_low_literacy " }
+			picture = generic_research_reduction
+			allowed = { always = no }
+
+			modifier = {
+				research_speed_factor = -0.2
+			}
+		}
+		GXC_low_literacy2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_low_literacy2 " }
+			picture = generic_research_reduction
+			allowed = { always = no }
+
+			modifier = {
+				research_speed_factor = -0.1
+			}
+		}
+		GXC_low_literacy3 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_low_literacy3 " }
+			picture = generic_research_increase
+			allowed = { always = no }
+
+			modifier = {
+				research_speed_factor = 0.1
+			}
+		}
+		GXC_low_literacy4 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_low_literacy4" }
+			picture = generic_research_increase
+			allowed = { always = no }
+
+			modifier = {
+				research_speed_factor = 0.15
+			}
+		}
+		GXC_golden_decade = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_golden_decade " }
+			picture = KTG_Gold_Trade
+			allowed = { always = no }
+
+			modifier = {
+				production_speed_buildings_factor = 0.1
+				industrial_capacity_factory = 0.1
+				consumer_goods_factor = -0.15
+			}
+		}
+		GXC_rkmt_revolution = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_rkmt_revolution" }
+			picture = chi_whampoa_military_academy
+			allowed = { always = no }
+
+			modifier = {
+				local_resources_factor = 0.05
+				stability_factor = -0.05
+			}
+		}
+		GXC_rkmt_revolution2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_rkmt_revolution2" }
+			picture = chi_whampoa_military_academy
+			allowed = { always = no }
+
+			modifier = {
+				local_resources_factor = 0.05
+				stability_factor = -0.05
+				war_support_factor = 0.05
+			}
+		}
+		GXC_rkmt_revolution3 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_rkmt_revolution3" }
+			picture = chi_whampoa_military_academy
+			allowed = { always = no }
+
+			modifier = {
+				research_speed_factor = 0.05
+				operative_slot = 1
+				local_resources_factor = 0.1
+				stability_factor = 0.05
+			}
+		}
+		GXC_kmt_cic_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_rkmt_revolution3" }
+			picture = CHI_economic_affairs_commission
+			allowed = { always = no }
+			equipment_bonus = {
+				motorized_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
+				mechanized_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
+				artillery_equipment = {
+					soft_attack = 0.1
+					build_cost_ic = -0.1
+					instant = yes
+				}
+				armor = {
+					breakthrough = 0.1
+					reliability_factor = -0.05
+					maximum_speed = 0.05
+					build_cost_ic = -0.1
+					instant = yes
+				}
+				small_plane_airframe = {
+					instant = yes
+					build_cost_ic = -0.10
+				}
+				small_plane_cas_airframe = {
+					instant = yes
+					build_cost_ic = -0.10
+				}
+				small_plane_naval_bomber_airframe = {
+					instant = yes
+					build_cost_ic = -0.10
+				}
+			}
+		}
+		GXC_nra_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_nra_idea" }
+			picture = CHI_defence_idea
+			allowed = { always = no }
+			modifier = {
+				army_armor_attack_factor = 0.1
+				army_armor_defence_factor = 0.1
+				mechanized_attack_factor = 0.1
+				mechanized_defence_factor = 0.1
+				army_artillery_attack_factor = 0.05
+				army_artillery_defence_factor = 0.05
+			}
+		}
+
+		GXC_kmt_demobilisation = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_kmt_demobilisation " }
+			picture = tfv_can_conscription_crisis
+			allowed = { always = no }
+
+			modifier = {
+				army_attack_factor = -0.2
+				army_defence_factor = -0.2
+				army_org_factor = -0.2
+				experience_gain_army_factor = -0.1
+			}
+		}
+		GXC_kmt_demobilisation2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_kmt_demobilisation2 " }
+			name = GXC_kmt_demobilisation
+			picture = tfv_can_conscription_crisis
+			allowed = { always = no }
+
+			modifier = {
+				army_attack_factor = -0.1
+				army_defence_factor = -0.1
+				army_org_factor = -0.15
+				experience_gain_army_factor = -0.1
+			}
+		}
+		GXC_kmt_demobilisation3 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_kmt_demobilisation3 " }
+			name = GXC_kmt_demobilisation
+			picture = tfv_can_conscription_crisis
+			allowed = { always = no }
+
+			modifier = {
+				army_attack_factor = -0.05
+				army_defence_factor = -0.05
+				army_org_factor = -0.1
+				experience_gain_army_factor = -0.1
+			}
+		}
+		GXC_kmt_demobilisation4 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_kmt_demobilisation4 " }
+			name = GXC_kmt_demobilisation
+			picture = tfv_can_conscription_crisis
+			allowed = { always = no }
+
+			modifier = {
+				army_org_factor = -0.05
+				experience_gain_army_factor = -0.05
+			}
+		}
+
+		GXC_kmt_naval_reforms1 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_kmt_naval_reforms1" }
+			picture = generic_navy_bonus
+			allowed = { always = no }
+			modifier = {
+				industrial_capacity_dockyard = 0.1
+			}
+		}
+		GXC_kmt_naval_reforms2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_kmt_naval_reforms2 " }
+			name = GXC_kmt_naval_reforms1
+			picture = generic_navy_bonus
+			allowed = { always = no }
+			modifier = {
+				industrial_capacity_dockyard = 0.1
+			}
+			equipment_bonus = {
+				destroyer = {
+					build_cost_ic = -0.15 instant = yes
+				}
+			}
+		}
+		GXC_kmt_naval_reforms3 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_kmt_naval_reforms3 " }
+			name = GXC_kmt_naval_reforms1
+			picture = generic_navy_bonus
+			allowed = { always = no }
+			modifier = {
+				industrial_capacity_dockyard = 0.1
+			}
+			equipment_bonus = {
+				submarine = {
+					build_cost_ic = -0.15 instant = yes
+				}
+			}
+		}
+		GXC_kmt_naval_reforms4 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_kmt_naval_reforms4 " }
+			name = GXC_kmt_naval_reforms1
+			picture = generic_navy_bonus
+			allowed = { always = no }
+			modifier = {
+				industrial_capacity_dockyard = 0.1
+			}
+			equipment_bonus = {
+				destroyer = {
+					build_cost_ic = -0.15 instant = yes
+				}
+				submarine = {
+					build_cost_ic = -0.15 instant = yes
+				}
+			}
+		}
+		GXC_kmt_naval_reforms5 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_kmt_naval_reforms5 " }
+			name = GXC_kmt_naval_reforms1
+			picture = generic_navy_bonus
+			allowed = { always = no }
+			modifier = {
+				industrial_capacity_dockyard = 0.1
+			}
+			equipment_bonus = {
+				destroyer = {
+					build_cost_ic = -0.15 instant = yes
+				}
+				submarine = {
+					build_cost_ic = -0.15 instant = yes
+				}
+				ship_hull_cruiser = {
+					build_cost_ic = -0.05 instant = yes
+				}
+			}
+		}
+		GXC_kmt_naval_reforms6 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea 	GXC_kmt_naval_reforms6" }
+			name = GXC_kmt_naval_reforms1
+			picture = generic_navy_bonus
+			allowed = { always = no }
+			modifier = {
+				industrial_capacity_dockyard = 0.1
+			}
+			equipment_bonus = {
+				destroyer = {
+					build_cost_ic = -0.20 instant = yes
+				}
+				submarine = {
+					build_cost_ic = -0.20 instant = yes
+				}
+				ship_hull_cruiser = {
+					build_cost_ic = -0.10 instant = yes
+				}
+			}
+		}
+	#李宗仁
+		GXC_lkmt_economic_dominance = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_lkmt_economic_dominance" }
+			picture = CHI_demobilised_nra
+			allowed = { always = no }
+			modifier = {
+				
+			}
+			targeted_modifier = {
+				tag = CHI
+				cic_to_overlord_factor = -0.20
+			}
+		}
+		GXC_lkmt_economic_dominance_2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_lkmt_economic_dominance_2" }
+			picture = CHI_demobilised_nra
+			allowed = { always = no }
+			modifier = {
+				add_political_power = 0.20
+			}
+			targeted_modifier = {
+				tag = CHI
+				cic_to_overlord_factor = -0.30
+			}
+		}
+	#国民党
+		GXC_RKMT_ming_tuan = {#民团制度
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_RKMT_ming_tuan"}
+			picture = GEN_army_doctrine_off
+			allowed = { always = no }
+            modifier = {
+				stability_factor = 0.05
+				army_core_defence_factor = 0.05
+			}
+		}
+		GXC_te_shu_jiao_yu = {#特殊教育
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_te_shu_jiao_yu"}
+			picture = CZE_education
+			allowed = { always = no }
+            modifier = {
+				stability_factor = -0.05
+				research_speed_factor = 0.05
+				authoritarian_democrat_drift = 0.05
+			}
+		}
+		GXC_ji_shu_jiao_yu = {#技术教育
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_ji_shu_jiao_yu" }
+			picture = WCC_acquistions_industries
+			allowed = { always = no }
+			modifier = {
+				add_political_power = -0.20
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_start_efficiency_factor = 0.05
+				line_change_production_efficiency_factor = 0.05
+			}
+		}
+		GXC_dai_kuan = {#银行贷款
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_dai_kuan"}
+			picture = FNG_china_money
+			allowed = { always = no }
+            modifier = {
+				political_power_gain = 0.50
+				political_power_factor = 0.10
+			}
+		}
+		GXC_he_zuo = {#中德合作
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_he_zuo"}
+			picture = GER_hansa_money
+			available = {
+				GXC = {
+					is_in_faction_with = GER
+				}
+				GER = {
+					exists = yes
+				}
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.06
+				production_factory_start_efficiency_factor = 0.02
+				production_speed_buildings_factor = 0.03
+			}
+		}
+		GXC_he_zuo2 = {#中德合作
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_he_zuo"}
+			picture = GER_hansa_money
+			available = {
+				GXC = {
+					is_in_faction_with = GER
+				}
+				GER = {
+					exists = yes
+				}
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.10
+				production_factory_start_efficiency_factor = 0.10
+				production_speed_buildings_factor = 0.10
+				research_speed_factor = 0.05
+			}
+		}
+		GXC_fortress_america_idea_1 = {#高墙林立
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_fortress_america_idea_1"}
+			allowed = { always = no }
+			removal_cost = -1
+			picture = YUG_federal_defense_council
+			modifier = {
+				ai_focus_aggressive_factor = -0.25
+				army_core_defence_factor = 0.10
+				stability_factor = 0.10
+			}
+		}
+		GXC_fortress_america_idea_2 = {#高墙林立
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_fortress_america_idea_2"}
+			allowed = { always = no }
+			removal_cost = -1
+			picture = YUG_federal_defense_council
+			modifier = {
+				ai_focus_aggressive_factor = -0.50
+				army_core_defence_factor = 0.10
+				stability_factor = 0.10
+				production_speed_bunker_factor = 0.20
+				production_speed_coastal_bunker_factor = 0.20
+				industrial_capacity_dockyard = 0.10
+			}
+		}
+		GXC_fortress_america_idea_3 = {#高墙林立
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_fortress_america_idea_3"}
+			allowed = { always = no }
+			removal_cost = -1
+			picture = YUG_federal_defense_council
+			modifier = {				
+				stability_factor = 0.10
+				research_speed_factor = 0.10
+				army_core_defence_factor = 0.10
+				industrial_capacity_dockyard = 0.10
+				ai_focus_aggressive_factor = -0.50
+				production_speed_bunker_factor = 0.30
+				production_speed_buildings_factor = 0.20
+				production_speed_coastal_bunker_factor = 0.30
+			}
+		}
+		GXC_fortress_america_idea_4 = {#高墙林立
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_fortress_america_idea_4"}
+			allowed = { always = no }
+			removal_cost = -1
+			picture = YUG_federal_defense_council
+			modifier = {				
+				stability_factor = 0.10
+				research_speed_factor = 0.10
+				army_core_defence_factor = 0.20
+				ai_focus_aggressive_factor = -0.70
+				industrial_capacity_dockyard = 0.20
+				production_speed_bunker_factor = 0.50
+				production_speed_air_base_factor = 0.20
+				production_speed_buildings_factor = 0.20
+				production_speed_coastal_bunker_factor = 0.50
+			}
+		}
+	#武官
+		GXC_ji_shu_jiao_yu10 = {#宪法
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_ji_shu_jiao_yu10"}
+			picture = hamiltonian_constitution
+			allowed = { always = no }
+            modifier = {
+				stability_factor = 0.05
+				stability_weekly = 0.005
+				authoritarian_democrat_drift = 0.05
+			}
+		}
+		GXC_ji_shu_jiao_yu11 = {#宪法
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_ji_shu_jiao_yu11"}
+			picture = hamiltonian_constitution
+			allowed = { always = no }
+            modifier = {
+				stability_factor = 0.10
+				stability_weekly = 0.010
+				authoritarian_democrat_drift = 0.10
+			}
+		}
+		GXC_revolving_door = {#旋转门
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_revolving_door"}
+			picture = NFA_revolving_door
+			allowed = { always = no }
+            modifier = {
+				party_popularity_stability_factor = 0.10
+				consumer_goods_factor = -0.05
+				production_factory_max_efficiency_factor = 0.09
+				war_support_factor = 0.09
+				command_power_gain_mult = 0.06
+			}
+		}
+		GXC_revolving_door2 = {#旋转门
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_revolving_door2"}
+			picture = NFA_revolving_door
+			allowed = { always = no }
+            modifier = {
+				war_support_factor = 0.10
+				consumer_goods_factor = -0.10
+				command_power_gain_mult = 0.10
+				consumer_goods_expected_value = -0.03
+				party_popularity_stability_factor = 0.10
+				production_factory_max_efficiency_factor = 0.10
+			}
+		}
+		GXC_military_state = {#军事化社会
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_military_state"}
+			picture = NFA_mil_state
+			allowed = { always = no }
+            modifier = {
+				local_manpower = 0.20
+				army_org_factor = 0.10
+				war_support_factor = 0.15
+				command_power_gain_mult = 0.15
+				line_change_production_efficiency_factor = 0.05
+			}			
+		}
+		GXC_jun_fei_1 = {#激进的削减方案
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_jun_fei_1"}
+			picture = RUS_divided_army
+			allowed = { always = no }
+            modifier = {
+				training_time_army_factor = 0.25
+				political_power_factor = 0.50
+			}
+		}
+		GXC_jun_fei_2 = {#温和的削减方案
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_jun_fei_2"}
+			picture = RUS_divided_army
+			allowed = { always = no }
+            modifier = {
+				training_time_army_factor = 0.15
+				political_power_factor = 0.25
+			}
+		}
+		GXC_jun_fei_3 = {#温和的削减方案
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_jun_fei_3"}
+			picture = RUS_divided_army
+			allowed = { always = no }
+            modifier = {
+				training_time_army_factor = 0.10
+				political_power_factor = 0.15
+			}
+		}
+	#宋子文
+		GXC_ties_with_business = {#中国银行
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_ties_with_business"}
+			name = GXC_ties_with_business
+			picture = generic_bank_reform
+			allowed = { always = no }
+            modifier = {
+				political_power_factor = 0.03
+				consumer_goods_factor = -0.05
+				industrial_capacity_factory = -0.05
+				production_speed_buildings_factor = 0.06
+				production_factory_max_efficiency_factor = 0.04
+				production_factory_efficiency_gain_factor = -0.02
+			}
+
+		}
+		GXC_theory_milieu = {#新币制
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_theory_milieu"}
+			picture = KTG_Gold_Trade
+			allowed = { always = no }
+            modifier = {
+				weekly_manpower = 30
+				global_building_slots_factor = 0.10
+				production_speed_buildings_factor = 0.06
+				production_factory_max_efficiency_factor = 0.09
+				production_lack_of_resource_penalty_factor = -0.05				
+			}
+		}	
+		GXC_social_catholic_politics = {#国家经济委员会
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_social_catholic_politics"}
+			name = GXC_social_catholic_politics
+			picture = agricultural_committee
+			allowed = { always = no }
+            modifier = {
+				opinion_gain_monthly = 0.60
+				consumer_goods_factor = 0.07
+				political_power_factor = 0.09
+				command_power_gain_mult = 0.08
+				industrial_capacity_factory = 0.05
+				production_factory_max_efficiency_factor = 0.05
+			}
+		}
+		GXC_san_ming_zhu_yi14 = {#三民主义
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_san_ming_zhu_yi14"}
+			picture = YUN_KMT_idea
+			allowed = { always = no }
+            modifier = {
+				weekly_manpower = 750
+				resistance_decay = 0.2
+				stability_weekly = 0.010
+				stability_factor = 0.100
+				war_support_factor = 0.10
+				conscription_factor = 0.07
+				market_liberal_drift = 0.05
+				political_power_factor = 0.10
+				army_core_attack_factor = 0.05
+				army_core_defence_factor = 0.05
+				authoritarian_democrat_drift = -0.05
+				resistance_damage_to_garrison = -0.09
+			}
+		}		
+	#陈果夫
+		GXC_cagoulard_intelligence = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_cagoulard_intelligence"}
+			name = NFA_cagoulard_intelligence
+			picture = NFA_cagoulard_int
+			allowed = { always = no }
+            modifier = {
+				decryption_factor = 0.06
+				encryption_factor = 0.06
+				operative_slot = 1
+				intel_network_gain_factor = 0.08
+				foreign_subversive_activites = -0.05
+				party_popularity_stability_factor = 0.07
+			}
+		}
+		GXC_san_ming_zhu_yi12 = {#三民主义
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_san_ming_zhu_yi12"}
+			picture = YUN_KMT_idea
+			allowed = { always = no }
+            modifier = {
+				stability_weekly = 0.010
+				stability_factor = 0.100
+				war_support_factor = 0.10
+				army_morale_factor = 0.03
+				conscription_factor = 0.05
+				political_power_factor = 0.05
+				authoritarian_democrat_drift = 0.05
+				industrial_capacity_factory = 0.03
+				production_factory_start_efficiency_factor = 0.03
+			}
+		}			
+		GXC_san_ming_zhu_yi13 = {#三民主义
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_san_ming_zhu_yi13"}
+			picture = YUN_KMT_idea
+			allowed = { always = no }
+            modifier = {
+				stability_weekly = 0.010
+				stability_factor = 0.100
+				war_support_factor = 0.10
+				army_morale_factor = 0.03
+				conscription_factor = 0.05
+				consumer_goods_factor = -0.08
+				political_power_factor = 0.05
+				intel_network_gain_factor = 0.16
+				industrial_capacity_factory = 0.03
+				authoritarian_democrat_drift = 0.05
+				foreign_subversive_activites = -0.10
+				production_factory_start_efficiency_factor = 0.05
+			}
+		}				
+	#蒋纬国
+		GXC_zui_jia_tan_ke_bing = {#坦克就是未来
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_zui_jia_tan_ke_bing"}
+			picture = GEN_army_armor_corps
+			allowed = { always = no }
+            modifier = {
+				political_power_factor = -0.05
+				army_armor_speed_factor = 0.05
+				army_armor_attack_factor = 0.05
+				army_armor_defence_factor = 0.05
+			}
+			equipment_bonus = {
+				armor = {
+					build_cost_ic = -0.10 instant = yes
+				}
+			}
+		}
+		GXC_san_ming_zhu_yi11 = {#三民主义
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_san_ming_zhu_yi11"}
+			picture = YUN_KMT_idea
+			allowed = { always = no }
+            modifier = {
+				surrender_limit = 0.10
+				stability_weekly = 0.010
+				stability_factor = 0.100
+				war_support_factor = 0.10
+				conscription_factor = 0.05
+				political_power_factor = 0.10
+				authoritarian_democrat_drift = 0.10
+			}
+		}						
+	#蒋经国
+		GXC_revolving_door6 = {#旋转门
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_revolving_door6"}
+			picture = NFA_revolving_door
+			allowed = { always = no }
+            modifier = {
+				stability_factor = 0.05
+				war_support_factor = 0.05
+				research_speed_factor = 0.10
+				consumer_goods_factor = -0.05
+				command_power_gain_mult = 0.10
+				consumer_goods_expected_value = -0.03
+				party_popularity_stability_factor = 0.10
+				production_factory_max_efficiency_factor = 0.10
+				production_factory_efficiency_gain_factor = 0.10
+			}
+		}
+		GXC_revolving_door7 = {#旋转门
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_revolving_door7"}
+			picture = NFA_revolving_door
+			allowed = { always = no }
+            modifier = {
+				stability_factor = 0.05
+				war_support_factor = 0.05
+				research_speed_factor = 0.10
+				consumer_goods_factor = -0.05
+				command_power_gain_mult = 0.10
+				industrial_capacity_factory  = 0.10
+				consumer_goods_expected_value = -0.03
+				party_popularity_stability_factor = 0.10
+				production_factory_max_efficiency_factor = 0.10
+				production_factory_efficiency_gain_factor = 0.10
+				production_factory_start_efficiency_factor = 0.10
+				production_lack_of_resource_penalty_factor = -0.10
+			}
+		}		
+		GXC_shou_mai_jun_dui = {#收买军队
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_shou_mai_jun_dui"}
+			picture = CAN_prosperity_certificates_idea
+			allowed = { always = no }
+            modifier = {
+				army_org_factor = 0.03
+				army_attack_factor = 0.03
+				army_defence_factor = 0.03
+				political_power_cost = 0.20
+			}			
+		}
+		GXC_san_ming_zhu_yi10 = {#三民主义
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_san_ming_zhu_yi10"}
+			picture = YUN_KMT_idea
+			allowed = { always = no }
+            modifier = {
+				stability_weekly = 0.010
+				stability_factor = 0.100
+				war_support_factor = 0.10
+				conscription_factor = 0.05
+				political_power_factor = 0.05
+				authoritarian_democrat_drift = 0.05
+			}
+		}
+		GXC_ji_shu_jiao_yu13 = {#宪法
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_ji_shu_jiao_yu13"}
+			picture = hamiltonian_constitution
+			allowed = { always = no }
+            modifier = {
+				stability_factor = 0.20
+				stability_weekly = 0.010
+				army_leader_cost_factor = -0.10
+				authoritarian_democrat_drift = 0.10
+			}
+		}		
+	#白崇禧
+		GXC_shang_wu = {#尚武教育
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_shang_wu"}
+			picture = BAN_training_exercise_done
+			allowed = { always = no }
+            modifier = {
+				command_power_gain = 0.05
+				consumer_goods_factor = 0.05
+				experience_gain_air_factor = 0.05
+				experience_gain_army_factor = 0.05
+				experience_gain_navy_factor = 0.05
+			}			
+		}
+		GXC_shang_wu2 = {#尚武教育
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_shang_wu2"}
+			picture = BAN_training_exercise_done
+			allowed = { always = no }
+            modifier = {
+				command_power_gain = 0.05
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+				consumer_goods_factor = 0.05
+				experience_loss_factor = -0.05
+				experience_gain_air_factor = 0.05
+				experience_gain_army_factor = 0.10
+				experience_gain_navy_factor = 0.05
+			}			
+		}
+		GXC_shang_wu3 = {#尚武教育
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_shang_wu3"}
+			picture = BAN_training_exercise_done
+			allowed = { always = no }
+            modifier = {
+				command_power_gain = 0.10
+				army_speed_factor = 0.05
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+				consumer_goods_factor = 0.05
+				experience_loss_factor = -0.05
+				army_armor_speed_factor = 0.05
+				army_armor_attack_factor = 0.05
+				army_armor_defence_factor = 0.05
+				experience_gain_air_factor = 0.10
+				experience_gain_army_factor = 0.10
+				experience_gain_navy_factor = 0.10
+			}			
+		}
+		GXC_revolving_door5 = {#拉紧镣铐
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_revolving_door5"}
+			picture = jim_crow
+			allowed = { always = no }
+            modifier = {
+				stability_factor = -0.05
+				stability_weekly = -0.005
+				consumer_goods_factor = -0.10
+				command_power_gain_mult = 0.10
+				consumer_goods_expected_value = -0.05
+				party_popularity_stability_factor = 0.10
+				production_speed_buildings_factor = 0.15
+				production_factory_efficiency_gain_factor = 0.10
+				production_factory_max_efficiency_factor = 0.10
+			}
+		}
+		GXC_jie_jian = {#提倡节俭
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_jie_jian"}
+			picture = debts
+			allowed = { always = no }
+            modifier = {
+				stability_factor = 0.05
+				political_power_gain = 0.10
+				political_power_factor = 0.05
+			}			
+		}
+		GXC_ji_shu_jiao_yu12 = {#宪法
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_ji_shu_jiao_yu12"}
+			picture = hamiltonian_constitution
+			allowed = { always = no }
+            modifier = {
+				stability_factor = 0.10
+				stability_weekly = 0.010
+				political_power_cost = -0.05
+				trade_laws_cost_factor = -0.10
+				authoritarian_democrat_drift = 0.10
+				industrial_concern_cost_factor = -0.05
+			}
+		}
+		GXC_san_ming_zhu_yi9 = {#三民主义
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_san_ming_zhu_yi9"}
+			picture = YUN_KMT_idea
+			allowed = { always = no }
+            modifier = {
+				stability_factor = 0.05
+				war_support_factor = 0.05
+				conscription_factor = 0.05
+				org_loss_when_moving = -0.10
+				political_power_factor = 0.10
+				organizer_xp_gain_factor = 0.10
+				org_loss_at_low_org_factor = -0.10
+			}
+		}
+	#李宗仁
+		GXC_revolving_door3 = {#旋转门
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_revolving_door3"}
+			picture = NFA_revolving_door
+			allowed = { always = no }
+            modifier = {
+				stability_factor = -0.05
+				war_support_factor = 0.05
+				consumer_goods_factor = -0.10
+				command_power_gain_mult = 0.10
+				consumer_goods_expected_value = -0.05
+				party_popularity_stability_factor = 0.10
+				production_speed_buildings_factor = 0.10
+				production_factory_efficiency_gain_factor = 0.10
+				production_factory_max_efficiency_factor = 0.10
+			}
+		}
+		GXC_zhong_te_ju = {#财政充盈的中特局
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_zhong_te_ju"}
+			picture = NFA_mil_state
+			allowed = { always = no }
+            modifier = {
+				compliance_gain = 0.05
+				decryption_factor = 0.05
+				crypto_strength = 1
+				resistance_growth = -0.10
+				decryption_power_factor = 0.05
+			}			
+		}
+		GXC_san_ming_zhu_yi8 = {#三民主义
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_san_ming_zhu_yi8"}
+			picture = YUN_KMT_idea
+			allowed = { always = no }
+            modifier = {
+				stability_weekly = 0.005
+				stability_factor = 0.15
+				war_support_factor = 0.10
+				conscription_factor = 0.03
+				political_power_factor = 0.10
+				offensive_war_stability_factor = 0.20
+				global_building_slots_factor = 0.20
+			}
+		}
+		GXC_ming_sheng_ge_ming = {#民生革命
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_ming_sheng_ge_ming"}
+			picture = MON_foreign_modern
+			allowed = { always = no }
+            modifier = {
+				consumer_goods_factor = -0.10
+				industrial_capacity_dockyard = 0.10
+				industrial_capacity_factory = 0.10
+				production_lack_of_resource_penalty_factor = 0.10
+			}			
+		}
+		GXC_revolving_door4 = {#旋转门
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_revolving_door4"}
+			picture = NFA_revolving_door
+			allowed = { always = no }
+            modifier = {
+				stability_factor = -0.05
+				war_support_factor = 0.05
+				consumer_goods_factor = -0.10
+				command_power_gain_mult = 0.10
+				consumer_goods_expected_value = -0.05
+				party_popularity_stability_factor = 0.10
+				production_speed_buildings_factor = 0.20
+				production_factory_efficiency_gain_factor = 0.15
+				production_factory_max_efficiency_factor = 0.20
+			}
+		}
+	#文官
+		GXC_ling_shi_yue_fa = {#宪法
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_ling_shi_yue_fa"}
+			picture = hamiltonian_constitution
+			allowed = { always = no }
+            modifier = {
+				stability_factor = 0.05
+				stability_weekly = 0.005
+				authoritarian_democrat_drift = -0.05
+			}
+		}
+		GXC_xin_jun_zhi = {#新军制
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_xin_jun_zhi"}
+			picture = great_army
+			allowed = { always = no }
+            modifier = {
+				army_core_attack_factor = 0.05
+				army_core_defence_factor = 0.05
+				experience_gain_army_factor = 0.02
+				military_leader_cost_factor = 0.20
+			}
+		}
+		GXC_gong_tuan_sao_dong = {#左派骚乱
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_gong_tuan_sao_dong"}
+			picture = generic_syndicalist_militia
+			allowed = { always = no }
+            modifier = {
+				stability_weekly = -0.005
+				stability_factor = -0.100
+				political_power_factor = -0.05
+				compliance_gain = -0.010
+			}
+		}
+		GXC_people_idea = {#阶级问题
+			allowed = { always = no }
+			picture = GXC_Jie_ji
+		}
+	#居正
+		GXC_bei_kong_de_gong_ren = {#取缔工会
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_bei_kong_de_gong_ren"}
+			picture = HAI_commision_idea
+			allowed = { always = no }
+            modifier = {
+				stability_weekly = -0.005
+				political_power_factor = 0.02
+			}
+		}
+		GXC_xuan_chuan_dao_wei = {#宣传到位
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_xuan_chuan_dao_wei"}
+			picture = bloated_bureaucracy
+			allowed = { always = no }
+            modifier = {
+				stability_factor = 0.05
+				war_support_factor = 0.05
+				social_conservative_drift = 0.05
+				party_popularity_stability_factor = 0.10
+			}
+		}
+		GXC_san_ming_zhu_yi6 = {#三民主义
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_san_ming_zhu_yi6"}
+			picture = YUN_KMT_idea
+			allowed = { always = no }
+            modifier = {
+				stability_factor = 0.10
+				war_support_factor = 0.10
+				stability_weekly = 0.005
+				conscription_factor = 0.05
+				political_power_factor = 0.10
+				social_conservative_drift = 0.005
+				syndicalist_drift = -0.005
+				totalist_drift = -0.005
+			}
+		}
+		GXC_san_ming_zhu_yi7 = {#三民主义
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_san_ming_zhu_yi7"}
+			picture = YUN_KMT_idea
+			allowed = { always = no }
+            modifier = {
+				stability_factor = 0.20
+				war_support_factor = 0.10
+				stability_weekly = 0.010
+				conscription_factor = 0.10
+				political_power_factor = 0.10
+				industrial_capacity_dockyard = 0.10
+				social_conservative_drift = 0.010
+				syndicalist_drift = -0.005
+				totalist_drift = -0.005
+			}
+		}
+		GXC_ji_shu_jiao_yu8 = {#宪法
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_ji_shu_jiao_yu8"}
+			picture = hamiltonian_constitution
+			allowed = { always = no }
+            modifier = {
+				stability_factor = 0.05
+				compliance_gain = 0.010
+				stability_weekly = 0.010
+				social_conservative_drift = 0.005
+				authoritarian_democrat_drift = -0.05
+				production_speed_buildings_factor = 0.10
+			}
+		}
+		GXC_ji_shu_jiao_yu9 = {#宪法
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_ji_shu_jiao_yu9"}
+			picture = hamiltonian_constitution
+			allowed = { always = no }
+            modifier = {
+				stability_factor = 0.10
+				compliance_gain = 0.010
+				stability_weekly = 0.040
+				social_conservative_drift = 0.010
+				authoritarian_democrat_drift = -0.05
+				production_speed_buildings_factor = 0.20
+				production_factory_start_efficiency_factor = 0.10
+			}
+		}
+		GXC_chuan_tong_dao_de = {#传统道德
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_chuan_tong_dao_de"}
+			picture = moral_radicalism_2
+			allowed = { always = no }
+            modifier = {
+				stability_factor = 0.05
+				research_speed_factor = -0.05
+				industry_free_repair_factor = 0.05
+				line_change_production_efficiency_factor = 0.10
+			}
+		}
+		GXC_ru_jia_si_xiang = {#儒家思想
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_ru_jia_si_xiang"}
+			picture = YUN_tangcodeidea
+			allowed = { always = no }
+            modifier = {
+				stability_factor = 0.05
+				research_speed_factor = -0.05
+				production_factory_max_efficiency_factor = 0.10
+				production_lack_of_resource_penalty_factor = 0.10
+				military_industrial_organization_design_team_change_cost = -0.10
+			}
+		}
+		GXC_zhong_hua_chuan_tong = {#中华传统
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_zhong_hua_chuan_tong"}
+			picture = new_thought
+			allowed = { always = no }
+            modifier = {
+				army_org = 0.10
+				local_manpower = 0.10
+				stability_factor = 0.05
+				org_loss_at_low_org_factor = 0.10
+			}
+		}
+	#张群
+		GXC_kang_kai_de_qi_ye_jia = {#慷慨的企业家
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_kang_kai_de_qi_ye_jia"}
+			picture = economic_affairs_commission
+			allowed = { always = no }
+            modifier = {
+				stability_factor = -0.05
+				production_speed_buildings_factor = 0.10
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+			}
+		}
+		GXC_kang_kai_de_qi_ye_jia2 = {#慷慨的企业家
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_kang_kai_de_qi_ye_jia2"}
+			picture = economic_affairs_commission
+			allowed = { always = no }
+            modifier = {
+				stability_factor = -0.05
+				production_speed_buildings_factor = 0.20
+				production_factory_max_efficiency_factor = 0.10
+				production_factory_efficiency_gain_factor = 0.10
+				production_factory_start_efficiency_factor = 0.10
+			}
+		}
+		GXC_san_ming_zhu_yi5 = {#三民主义
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_san_ming_zhu_yi5"}
+			picture = YUN_KMT_idea
+			allowed = { always = no }
+            modifier = {
+				stability_factor = 0.05
+				war_support_factor = 0.10
+				conscription_factor = 0.03
+				political_power_gain = 0.20
+				trade_opinion_factor = 0.20
+				political_power_factor = 0.15
+			}
+		}
+		GXC_ji_shu_jiao_yu7 = {#正式宪法
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_ji_shu_jiao_yu7"}
+			picture = hamiltonian_constitution
+			allowed = { always = no }
+            modifier = {
+				stability_factor = 0.05
+				local_factories = 0.05
+				market_liberal_drift = 0.05
+				global_building_slots_factor = 0.25
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
+				authoritarian_democrat_drift = -0.05				
+			}
+		}
+		GXC_chuan_tong_jia_ting = {#传统家庭
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_chuan_tong_jia_ting"}
+			picture = generic_traditional_values
+			allowed = { always = no }
+            modifier = {
+				stability_factor = 0.05
+				stability_weekly = 0.005
+				research_speed_factor = -0.02
+				social_conservative_drift = 0.05
+			}
+		}
+		GXC_chuan_tong_jia_ting2 = {#传统家庭
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_chuan_tong_jia_ting2"}
+			picture = generic_traditional_values
+			allowed = { always = no }
+            modifier = {
+				stability_factor = 0.10
+				stability_weekly = 0.005
+				conscription_factor = 0.05
+				war_support_factor = 0.05
+				research_speed_factor = -0.05
+				social_conservative_drift = 0.10
+			}
+		}
+	#孙科
+		GXC_gong_tuan_sao_dong2 = {#社会合作
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_gong_tuan_sao_dong2"}
+			picture = BAN_liberty
+			allowed = { always = no }
+            modifier = {
+				stability_weekly = 0.002
+				stability_factor = 0.05
+				political_power_factor = 0.02
+				compliance_gain = 0.004
+				political_power_gain = -0.04
+			}
+		}
+		GXC_dang_nei_he_zuo = {#党内合作
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_dang_nei_he_zuo"}
+			picture = Society_of_Plent
+			allowed = { always = no }
+            modifier = {
+				stability_factor = 0.05
+				social_liberal_drift = 0.050
+				party_popularity_stability_factor = 0.05
+			}
+		}
+		GXC_dang_nei_he_zuo2 = {#党内合作
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_dang_nei_he_zuo2"}
+			picture = Society_of_Plent
+			allowed = { always = no }
+            modifier = {
+				stability_factor = 0.05
+				army_org_factor = 0.05
+				social_liberal_drift = 0.10
+				party_popularity_stability_factor = 0.10
+			}
+		}
+		GXC_ji_shu_jiao_y2 = {#技术教育
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_ji_shu_jiao_y2" }
+			picture = WCC_acquistions_industries
+			allowed = { always = no }
+			modifier = {
+				add_political_power = -0.10
+				consumer_goods_factor = -0.05
+				production_factory_efficiency_gain_factor = 0.10
+				production_factory_start_efficiency_factor = 0.10
+				line_change_production_efficiency_factor = 0.10
+			}
+		}
+		GXC_ji_shu_jiao_yu5 = {#正式宪法
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_ji_shu_jiao_yu5"}
+			picture = hamiltonian_constitution
+			allowed = { always = no }
+            modifier = {
+				stability_factor = 0.07
+				stability_weekly = 0.010
+				industry_repair_factor = 0.05
+				paternal_autocrat_drift = -0.05
+				authoritarian_democrat_drift = -0.05
+			}
+		}
+		GXC_ji_shu_jiao_yu6 = {#正式宪法
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_ji_shu_jiao_yu6"}
+			picture = hamiltonian_constitution
+			allowed = { always = no }
+            modifier = {
+				stability_factor = 0.07
+				stability_weekly = 0.010
+				industry_repair_factor = 0.10
+				social_liberal_drift = 0.05
+				paternal_autocrat_drift = -0.05
+				authoritarian_democrat_drift = -0.05
+				production_factory_max_efficiency_factor = 0.10
+				production_lack_of_resource_penalty_factor = -0.10
+			}
+		}
+		GXC_san_ming_zhu_yi3 = {#三民主义
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_san_ming_zhu_yi3"}
+			picture = YUN_KMT_idea
+			allowed = { always = no }
+            modifier = {
+				stability_factor = 0.10
+				war_support_factor = 0.10
+				conscription_factor = 0.05
+				research_speed_factor = 0.05
+				political_power_factor = 0.10
+				experience_gain_infantry_training_factor = 0.05
+				experience_gain_artillery_training_factor = 0.05
+			}
+		}
+		GXC_san_ming_zhu_yi4 = {#三民主义
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_san_ming_zhu_yi4"}
+			picture = YUN_KMT_idea
+			allowed = { always = no }
+            modifier = {
+				stability_factor = 0.10
+				war_support_factor = 0.10
+				conscription_factor = 0.05
+				research_speed_factor = 0.10
+				political_power_factor = 0.10
+				production_speed_buildings_factor = 0.10
+				experience_gain_infantry_training_factor = 0.10
+				experience_gain_artillery_training_factor = 0.10
+			}
+		}
+	#胡汉民
+		GXC_san_ming_zhu_yi = {#三民主义
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_san_ming_zhu_yi"}
+			allowed = { always = no }
+            modifier = {
+				stability_weekly = 0.004
+				stability_factor = 0.10
+				war_support_factor = 0.15
+				conscription_factor = 0.03
+				political_power_factor = 0.10
+				party_popularity_stability_factor = 0.05
+				production_factory_max_efficiency_factor = 0.05
+			}
+			picture = YUN_KMT_idea
+		}
+		GXC_san_ming_zhu_yi2 = {#三民主义
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_san_ming_zhu_yi2"}
+			allowed = { always = no }
+            modifier = {
+				stability_weekly = 0.004
+				stability_factor = 0.10
+				war_support_factor = 0.15
+				conscription_factor = 0.05
+				production_oil_factor = 0.10
+				political_power_factor = 0.10
+				party_popularity_stability_factor = 0.10
+				production_factory_max_efficiency_factor = 0.10
+			}
+			picture = YUN_KMT_idea
+		}
+		GXC_ji_shu_jiao_yu2 = {#正式宪法
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_ji_shu_jiao_yu2"}
+			picture = hamiltonian_constitution
+			allowed = { always = no }
+            modifier = {
+				stability_factor = 0.05
+				stability_weekly = 0.010
+				army_core_defence_factor = 0.05
+				industrial_capacity_factory = 0.05
+				authoritarian_democrat_drift = -0.10
+				offensive_war_stability_factor = 0.15
+			}
+		}
+		GXC_ji_shu_jiao_yu3 = {#正式宪法
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_ji_shu_jiao_yu3"}
+			picture = hamiltonian_constitution
+			allowed = { always = no }
+            modifier = {
+				stability_factor = 0.10
+				stability_weekly = 0.010
+				encryption_factor = 0.05
+				monthly_population = 0.10 
+				army_core_defence_factor = 0.05
+				industrial_capacity_factory = 0.10
+				authoritarian_democrat_drift = -0.10
+				offensive_war_stability_factor = 0.15
+			}
+		}
+		GXC_ji_shu_jiao_yu4 = {#正式宪法
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_ji_shu_jiao_yu4"}
+			picture = hamiltonian_constitution
+			allowed = { always = no }
+            modifier = {
+				stability_factor = 0.15
+				stability_weekly = 0.015
+				command_power_gain = 0.05
+				encryption_factor = 0.10
+				monthly_population = 0.10 
+				army_core_attack_factor = 0.05
+				army_core_defence_factor = 0.05
+				industrial_capacity_factory = 0.10
+				authoritarian_democrat_drift = -0.10
+				offensive_war_stability_factor = 0.20
+			}
+		}
+		GXC_chun_jie_dang_yuan = {#纯洁的党员
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_chun_jie_dang_yuan"}
+			picture = BAN_gray_army_mobilize
+			allowed = { always = no }
+            modifier = {
+				conscription_factor = 0.03
+				research_speed_factor = 0.05  
+				production_factory_start_efficiency_factor = 0.10
+			}
+		}
+		GXC_ge_ming_de_ming_zu = {#革命的民族主义
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_ge_ming_de_ming_zu"}
+			picture = red_chief
+			allowed = { always = no }
+            modifier = {
+				local_factories = 0.05
+				global_building_slots_factor = 0.25
+				production_speed_arms_factory_factor = 0.10
+				production_speed_industrial_complex_factor = 0.10
+			}
+		}
+		GXC_she_hui_lv_fa = {#社会律法
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_she_hui_lv_fa"}
+			picture = LIB_law
+			allowed = { always = no }
+            modifier = {
+				initiative_factor = 0.05
+				stability_factor = 0.05
+				production_speed_rail_way_factor = 0.10
+				production_factory_efficiency_gain_factor = 0.10
+			}
+		}
+	#彭湃
+		GXC_hong_se_kong_bu = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_hong_se_kong_bu"}
+			picture = CSA_reinforced_weapons
+			allowed = { original_tag = GXC }
+            modifier = {
+				weekly_manpower = -200
+				stability_weekly = -0.005
+				political_power_gain = 0.25
+			}
+		}
+		GXC_geng_zhe_you_qi_tian = {#耕者有其田
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_geng_zhe_you_qi_tian"}
+			picture = WHR_red_denmark
+			allowed = { original_tag = GXC }
+            modifier = {
+				stability_factor = -0.10
+				stability_weekly = 0.005
+				political_power_gain = 0.10
+				production_speed_buildings_factor = 0.10
+				production_factory_efficiency_gain_factor = 0.10
+				production_factory_start_efficiency_factor = 0.10
+				production_lack_of_resource_penalty_factor = 0.10
+			}
+		}
+		GXC_theology_of_liberation = {#烧毁伪像
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_theology_of_liberation"}
+			picture = WHR_theology_of_liberation
+			allowed = { always = no }
+			modifier = {
+				research_speed_factor = 0.05
+				political_power_gain = 0.03
+				radical_socialist_drift = 0.03
+				totalist_drift = 0.02
+			}
+		}
+		GXC_farmer_army = {#农民武装
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_farmer_army"}
+			picture = FOP_red_bracelet_army
+			allowed = { always = no }
+			modifier = {
+				land_reinforce_rate = 0.05
+				training_time_factor = -0.10
+				army_core_attack_factor = 0.02
+				army_armor_defence_factor = 0.02
+			}
+		}
+		GXC_fire_all = {#废除高利贷
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_fire_all"}
+			picture = SOV_communes
+			allowed = { always = no }
+			modifier = {
+				stability_weekly = 0.0050
+				industrial_capacity_factory = 0.03
+				production_speed_buildings_factor = 0.10
+				production_factory_max_efficiency_factor = 0.10
+			}
+		}
+		GXC_fire_all_1 = {#新金融
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_fire_all_1"}
+			picture = SOV_communes
+			allowed = { always = no }
+			modifier = {
+				stability_weekly = 0.0050
+				political_power_cost = 0.10
+				industrial_capacity_factory = 0.05
+				production_speed_buildings_factor = 0.20
+				production_factory_max_efficiency_factor = 0.05
+			}
+		}
+		GXC_xing_dong_zhi_shang = {#行动宣传
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_xing_dong_zhi_shang"}
+			picture = WHR_theology_of_liberation
+			allowed = { always = no }
+			modifier = {
+				planning_speed = 0.05
+				stability_weekly = -0.0050
+				ranger_xp_gain_factor = 0.05
+				radical_socialist_drift = 0.05
+			}
+		}
+		GXC_xing_dong_zhi_shang_1 = {#自由领导人民
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_xing_dong_zhi_shang_1"}
+			picture = WHR_theology_of_liberation
+			allowed = { always = no }
+			modifier = {
+				planning_speed = 0.05
+				army_org_factor = 0.05
+				stability_weekly = -0.0050
+				ranger_xp_gain_factor = 0.05
+				radical_socialist_drift = 0.10
+				org_loss_at_low_org_factor = -0.04
+			}
+		}
+		GXC_xing_dong_zhi_shang_2 = {#自由领导人民
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_xing_dong_zhi_shang_2"}
+			picture = WHR_theology_of_liberation
+			allowed = { always = no }
+			modifier = {
+				planning_speed = 0.05
+				army_org_factor = 0.05
+				army_attack_factor = 0.03
+				stability_weekly = -0.0050
+				ranger_xp_gain_factor = 0.10
+				radical_socialist_drift = 0.20
+				army_armor_defence_factor = 0.03
+				org_loss_at_low_org_factor = -0.04
+			}
+		}
+		GXC_gong_nong = {#农工革命军
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_gong_nong"}
+			picture = chi_army_corruption3
+			allowed = { always = no }
+            modifier = {
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+				experience_gain_army_factor = 0.1
+				planning_speed = 0.10
+				max_planning = 0.10
+				training_time_factor = -0.1
+				land_reinforce_rate = 0.02
+				army_core_attack_factor = 0.05
+				army_core_defence_factor = 0.05
+				supply_consumption_factor = -0.10
+				attrition = -0.1
+			}
+		}
+	#土匪
+		GXC_drug = {#毒品泛滥
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_drug"}
+			picture = BUL_drugs
+			allowed = { always = no }
+			modifier = {
+				stability_factor = -0.05
+				stability_weekly = -0.005
+				army_attack_factor = -0.02
+				army_defence_factor = -0.02
+			}
+		}
+		GXC_zou_si = {#走私货物
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_zou_si"}
+			picture = recruitment_campaign
+			allowed = { always = no }
+			modifier = {
+				stability_factor = -0.05
+				stability_weekly = -0.005
+				political_power_gain = 0.30
+				consumer_goods_factor = -0.05
+			}
+		}
+		GXC_du_chang = {#开设赌场
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_du_chang"}
+			picture = NYC_Gambling_New_York
+			allowed = { always = no }
+			modifier = {
+				local_manpower = 0.05
+				stability_factor = 0.05
+				political_power_gain = 0.30
+				political_power_factor = 0.10
+				consumer_goods_factor = -0.05
+			}
+		}
+		GXC_hai_dao = {#扬帆起航
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_hai_dao"}
+			picture = GEN_navy_decisive_bat
+			allowed = { always = no }
+			modifier = {
+				navy_advisor_cost_factor = -0.20
+				industrial_capacity_dockyard = 0.20
+			}
+			equipment_bonus = {
+				destroyer = {
+					build_cost_ic = -0.20 instant = yes
+				}
+				submarine = {
+					build_cost_ic = -0.20 instant = yes
+				}
+				ship_hull_cruiser = {
+					build_cost_ic = -0.10 instant = yes
+				}
+			}
+		}
+		GXC_nv_li = {#奴隶经济
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_nv_li"}
+			picture = slave_economy
+			allowed = { always = no }
+			modifier = {
+				stability_factor = -0.10
+				stability_weekly = -0.005
+				production_speed_buildings_factor = 0.20
+				line_change_production_efficiency_factor = 0.20
+				production_factory_max_efficiency_factor = 0.20
+				production_factory_start_efficiency_factor = 0.20
+				production_factory_efficiency_gain_factor = 0.20
+			}
+		}
+		
+		###Federalist legitimacy
+		GXC_federalist_support_-3 = { #non-existent
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_federalist_support_-3"}
+			available = {
+				GXC_has_federalist_government = yes
+			}
+			picture = FNG_dominant_mantetsu
+			allowed = { always = no }
+            modifier = {
+				political_power_factor = -0.15
+				stability_factor = -0.30
+				war_support_factor = -0.30
+			}
+		}
+		GXC_federalist_support_-2 = { #very low
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_federalist_support_-2"}
+			available = {
+				GXC_has_federalist_government = yes
+			}
+			picture = FNG_dominant_mantetsu
+			allowed = { always = no }
+            modifier = {
+				political_power_factor = -0.10
+				stability_factor = -0.20
+				war_support_factor = -0.20
+			}
+		}
+		GXC_federalist_support_-1 = { #low
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_federalist_support_-1"}
+			available = {
+				GXC_has_federalist_government = yes
+			}
+			picture = FNG_dominant_mantetsu
+			allowed = { always = no }
+            modifier = {
+				political_power_factor = -0.05
+				stability_factor = -0.10
+				war_support_factor = -0.10
+			}
+		}
+		GXC_federalist_support_0 = { #insignificant
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_federalist_support_0"}
+			available = {
+				GXC_has_federalist_government = yes
+			}
+			picture = FNG_dominant_mantetsu
+			allowed = { always = no }
+            modifier = {
+			}
+		}
+		GXC_federalist_support_1 = { #limited
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_federalist_support_1"}
+			available = {
+				GXC_has_federalist_government = yes
+			}
+			picture = FNG_mantetsu_influence
+			allowed = { always = no }
+            modifier = {
+				political_power_factor = 0.05
+				stability_factor = 0.10
+				war_support_factor = 0.10
+			}
+		}
+		GXC_federalist_support_2 = { #significant
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_federalist_support_2"}
+			available = {
+				GXC_has_federalist_government = yes
+			}
+			picture = FNG_pervasive_mantetsu
+			allowed = { always = no }
+            modifier = {
+				political_power_factor = 0.10
+				stability_factor = 0.20
+				war_support_factor = 0.20
+			}
+		}
+		GXC_federalist_support_3 = { #widespread
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_federalist_support_3"}
+			available = {
+				GXC_has_federalist_government = yes
+			}
+			picture = FNG_xinhai_order
+			allowed = { always = no }
+            modifier = {
+				political_power_factor = 0.15
+				stability_factor = 0.30
+				war_support_factor = 0.30
+			}
+		}
+		GXC_federalist_secured_china = { #permanent
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_federalist_secured_china"}
+			available = {
+				GXC_has_federalist_government = yes
+			}
+			picture = FNG_xinhai_order
+			allowed = { always = no }
+            modifier = {
+				political_power_factor = 0.20
+			}
+		}
+		###Strikes
+		GXC_workers_strike = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GXC_workers_strike"}
+			picture = FRA_factory_strikes
+			allowed = { original_tag = GXC }
+			allowed_civil_war = { GXC_has_NPA_government = yes }
+            modifier = {
+				consumer_goods_factor = 0.1
+				production_factory_max_efficiency_factor = -0.10
+				industrial_capacity_factory = -0.10
+				production_speed_buildings_factor = -0.10
+			}
+		}
+	}
+
+##############
+# Companies
+##############
+
+	#### General ####
+	industrial_concern = {
+
+		guangzhou_cement_factory = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea guangzhou_cement_factory"}
+			allowed = { original_tag = GXC }
+			traits = { industrial_manufacturer }
+            modifier = {
+				production_speed_arms_factory_factor = 0.1
+				production_speed_industrial_complex_factor = 0.1
+			}
+			research_bonus = {
+				industry = 0.1
+			}
+		}
+
+		yueshen_electric_light_company = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea yueshen_electric_light_company"}
+			allowed = { original_tag = GXC }
+			traits = { electronics_manufacturer }
+			modifier = {
+				production_speed_radar_station_factor = 0.05
+			}
+			research_bonus = {
+				electronics = 0.1
+				industry = 0.1
+			}
+		}
+	}
+
+	#### Weapons Manufacturer ####
+	materiel_manufacturer = {
+		designer = yes
+
+		guangdong_arsenal = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea guangdong_arsenal"}
+			allowed = { is_chinese_tag = yes }
+			visible = {
+				owns_state = 592 # Guangzhou
+				592 = { is_core_of = ROOT }
+			}
+			traits = { infantry_equipment_producer_mass_0 }
+			research_bonus = {
+				infantry_weapons = 0.1
+			}
+		}
+
+		liuzhou_machinery_factory = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea liuzhou_machinery_factory"}
+			allowed = { original_tag = GXC }
+			traits = { motorised_equipment_producer_mass_0 }
+			research_bonus = {
+				motorized_equipment = 0.1
+			}
+		}
+
+		pajiang_artillery_factory = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea pajiang_artillery_factory"}
+			allowed = { is_chinese_tag = yes }
+			visible = {
+				owns_state = 592 # Guangzhou
+				592 = { is_core_of = ROOT }
+			}
+			traits = { artillery_producer_mass_0 }
+			research_bonus = {
+				artillery = 0.1
+			}
+		}
+	}
+
+	#### Heavy Equipment Manufacturers ####
+	tank_manufacturer = {
+		designer = yes
+
+		hip_tung_wo_machinery_factory = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea hip_tung_wo_machinery_factory" }
+			allowed = { original_tag = GXC }
+			traits = { small_tank_producer_offense_1 }
+			research_bonus = {
+				armor = 0.1
+			}
+		}
+		chongqing_tank_plant_GXC = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea chongqing_tank_plant_GXC"}
+			name = chongqing_tank_plant
+			picture = chongqing_tank_plant
+			allowed = { original_tag = GXC }
+			available = { has_completed_focus = UPC_Chongqing_Tank_Plant }
+			visible = { has_focus_tree = Federalist_China_Tree }
+			traits = { small_tank_producer_mass_1 }
+			research_bonus = {
+				armor = 0.1
+			}
+		}
+	}
+
+	#### Air Manufacturers ####
+	aircraft_manufacturer = {
+		designer = yes
+
+		liuzhou_aviation_machinery_factory = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea liuzhou_aviation_machinery_factory"}
+			picture = liuzhou_machinery_factory
+			allowed = { original_tag = GXC }
+			traits = { fighter_producer_defense_0 }
+			research_bonus = {
+				air_equipment = 0.1
+			}
+		}
+
+		central_aircraft_manufacturing_company_GXC = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea central_aircraft_manufacturing_company_GXC"}
+			name = central_aircraft_manufacturing_company
+			picture = central_aircraft_manufacturing_company
+			allowed = {
+				OR = {
+					original_tag = GXC
+					original_tag = SZC
+				}
+			}
+			available = { has_completed_focus = UPC_Central_Aircraft_Manufacturing_Company }
+			visible = { has_focus_tree = Federalist_China_Tree }
+			traits = { fighter_producer_offense_1 }
+			research_bonus = {
+				air_equipment = 0.1
+			}
+		}
+
+		national_aviation_corporation = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea national_aviation_corporation"}
+			picture = china_aviation_corporation
+			allowed = {
+				OR = {
+					original_tag = GXC
+					original_tag = SZC
+				}
+			}
+			available = { has_completed_focus = UPC_Civil_Aviation_Administration }
+			visible = { has_focus_tree = Federalist_China_Tree }
+			traits = { nav_cas_producer_mass_1 }
+			research_bonus = {
+				air_equipment = 0.1
+			}
+		}
+	}
+
+	#### Naval Manufacturers ####
+	naval_manufacturer = {
+		designer = yes
+		whampoa_dock_company = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea whampoa_dock_company"}
+			allowed = { is_chinese_tag = yes }
+			visible = {
+				owns_state = 592 # Guangzhou
+				592 = { is_core_of = ROOT }
+			}
+			traits = { small_ship_producer_defense_0 }
+			research_bonus = {
+				naval_equipment = 0.1
+			}
+		}
+	}
+}
+

@@ -1,0 +1,30 @@
+leader_traits = {
+
+	YUN_su_dan = {
+		random = no
+		political_power_factor = 0.05
+		stability_factor = 0.01
+		non_core_manpower = 0.03
+		compliance_gain = 0.05
+	}
+
+	YUN_a_dan = {
+		random = no
+	}
+
+	YUN_wu_mian_zhi_wang = {#无冕之王
+		random = no
+		political_power_gain = 0.01
+		surrender_limit = 0.10
+		consumer_goods_factor = -0.20
+	}
+	YUN_wu_mian_zhi_wang_1 = {#无冕之王
+		random = no
+		political_power_gain = 0.01
+		surrender_limit = 0.10
+		consumer_goods_factor = -0.20
+		social_conservative_drift = 0.05
+		paternal_autocrat_drift = -0.05
+	}
+}
+	

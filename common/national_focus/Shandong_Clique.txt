@@ -1,0 +1,4610 @@
+#####################################
+# Shandong Focus Tree
+#####################################
+# By DSFDaker with assitance from OMD
+#####################################
+# Lore by OMD
+#####################################
+
+focus_tree = {
+	id = Shandong
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = SQI
+		}
+	}
+	default = no
+
+	continuous_focus_position = { x = 2000 y = 1500 }
+	
+	shared_focus = QIE_tianran_takes_over
+
+	focus = {
+		id = SQI_Two_Zhangs_Enter
+		icon = GFX_SQI_Two_Zhangs_Enter
+
+		available = {
+			hidden_trigger = {
+				NOT = { 
+					has_country_flag = SQI_puppet 
+				}
+			}
+		}
+		cancelable = no
+
+		select_effect = {
+			country_event = {
+				id = shandong.2
+				days = 2
+			}
+		}
+
+		x = -2
+		y = 0
+		cost = 8
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SQI_Two_Zhangs_Enter"
+			add_political_power = 50
+			custom_effect_tooltip = SQI_two_zhangs_tooltip
+
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	}
+
+	#Zhang Tianran
+
+	focus = {
+		id = SQI_Zhang_Tianran
+		icon = GFX_goal_china_zhang_tianran
+		relative_position_id = SQI_Two_Zhangs_Enter
+		
+		x = -4
+		y = 1
+		cost = 1
+
+		prerequisite = { focus = SQI_Two_Zhangs_Enter }
+		available = {
+			has_country_flag = SQI_Tianran_beat_Zongchang
+			hidden_trigger = {
+				NOT = { has_country_flag = SQI_puppet }
+			}
+		}
+		mutually_exclusive = {
+			focus = SQI_Song_Zheyuan
+			focus = SQI_Zhang_Zongchang
+		}
+
+		available_if_capitulated = yes
+		ai_will_do = { factor = 100 }
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SQI_Zhang_Tianran"
+			remove_ideas = SQI_flight_north
+		}
+	}
+
+	focus = {
+		id = SQI_Mobbing_Drug_Dealing_Bureaucrats
+		icon = GFX_seedthemeverywhere
+		relative_position_id = SQI_Two_Zhangs_Enter		
+		x = -2
+		y = 3
+		cost = 8
+
+		prerequisite = { focus = SQI_Moving_The_Provincial_capital }
+
+		available = {
+			hidden_trigger = {
+				NOT = { has_country_flag = SQI_puppet }
+			}
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SQI_Mobbing_Drug_Dealing_Bureaucrats"
+			add_popularity = {
+				ideology = national_populist
+				popularity = 0.05
+			}
+			add_stability = 0.05
+			remove_ideas = SQI_Rampant_drug_trade
+			add_ideas = SQI_violently_supressed_drug_trade
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_STABILITY }
+	}
+
+	focus = {
+		id = SQI_Moving_The_Provincial_capital
+		icon = GFX_goal_NYC_Shining_City			
+		relative_position_id = SQI_Two_Zhangs_Enter		
+		x = -4
+		y = 2
+		cost = 5
+
+		prerequisite = { focus = SQI_Zhang_Tianran }
+		available = {
+			hidden_trigger = {
+				NOT = { has_country_flag = SQI_puppet }
+			}
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SQI_Moving_The_Provincial_capital"
+			add_popularity = {
+				ideology = national_populist
+				popularity = 0.10
+			}
+			597 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 12069
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 10072
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 1069
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 10102
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 4089
+				}
+			}
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+	}
+
+	focus = { #Absorbing the Guiyidao
+		id = SQI_Recruiting_Red_Spears_And_Big_Swords
+		icon = GFX_goal_SQI_yiguandao
+		relative_position_id = SQI_Two_Zhangs_Enter	
+		x = -6
+		y = 3
+		cost = 5
+
+		prerequisite = { focus = SQI_Moving_The_Provincial_capital }
+		available = {
+			hidden_trigger = {
+				NOT = { has_country_flag = SQI_puppet }
+			}
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SQI_Recruiting_Red_Spears_And_Big_Swords"
+			add_ideas = SQI_Guiyidao_support
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+	}
+
+	focus = { #Absorbing the Guiyidao
+		id = SQI_shu_li_tian_shi_xiang
+		icon = GFX_goal_SQI_shu_li_tian_shi_xiang
+		relative_position_id = SQI_Two_Zhangs_Enter	
+		x = -4
+		y = 3
+		cost = 5
+
+		prerequisite = { focus = SQI_Moving_The_Provincial_capital }
+		available = {
+			hidden_trigger = {
+				NOT = { has_country_flag = SQI_puppet }
+			}
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SQI_shu_li_tian_shi_xiang"
+			swap_ideas = {
+				remove_idea = SQI_honored_master
+				add_idea = SQI_honored_master_2
+			}
+		}
+	}
+
+	focus = {
+		id = SQI_di_san_wei_sheng_ren
+		icon = GFX_goal_KTG_Bookstack
+		relative_position_id = SQI_Two_Zhangs_Enter	
+		x = -5
+		y = 4
+		cost = 5
+
+		prerequisite = { focus = SQI_Recruiting_Red_Spears_And_Big_Swords }
+		prerequisite = { focus = SQI_shu_li_tian_shi_xiang }
+		available = {
+			hidden_trigger = {
+				NOT = { has_country_flag = SQI_puppet }
+			}
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SQI_di_san_wei_sheng_ren"
+			add_ideas = SQI_ke_pu_du_wu
+		}
+	}
+
+	focus = {
+		id = SQI_dao_hui_xiu_dao_yuan
+		icon = GFX_focus_trm_church
+		relative_position_id = SQI_Two_Zhangs_Enter	
+		x = -3
+		y = 4
+		cost = 5
+
+		prerequisite = { focus = SQI_Mobbing_Drug_Dealing_Bureaucrats }
+		prerequisite = { focus = SQI_shu_li_tian_shi_xiang }
+		available = {
+			hidden_trigger = {
+				NOT = { has_country_flag = SQI_puppet }
+			}
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SQI_dao_hui_xiu_dao_yuan"
+			add_political_power = 100
+			597 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			1065 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = SQI_pu_ji_jiao_yu
+		icon = GFX_goal_continuous_political
+		relative_position_id = SQI_Two_Zhangs_Enter	
+		x = -4
+		y = 5
+		cost = 5
+
+		prerequisite = { focus = SQI_dao_hui_xiu_dao_yuan }
+		prerequisite = { focus = SQI_di_san_wei_sheng_ren }
+		available = {
+			hidden_trigger = {
+				NOT = { has_country_flag = SQI_puppet }
+			}
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SQI_pu_ji_jiao_yu"
+			swap_ideas = {
+				remove_idea = SQI_honored_master_2
+				add_idea = SQI_honored_master_3
+			}
+		}
+	}
+
+	#Song Zheyuan
+
+	focus = {
+		id = SQI_Song_Zheyuan
+		icon = GFX_goal_china_song_zheyuan
+		relative_position_id = SQI_Two_Zhangs_Enter
+		x = 0
+		y = 1
+		cost = 1
+
+		prerequisite = { focus = SQI_Two_Zhangs_Enter }
+		available = {
+			has_country_flag = SQI_Zheyuan_beat_Zongchang
+			hidden_trigger = {
+				NOT = { has_country_flag = SQI_puppet }
+			}
+		}
+		mutually_exclusive = {
+			focus = SQI_Zhang_Tianran
+			focus = SQI_Zhang_Zongchang
+		}
+
+		available_if_capitulated = yes
+
+		ai_will_do = { factor = 100 }
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SQI_Song_Zheyuan"
+			remove_ideas = SQI_flight_north
+			remove_ideas = SQI_Rampant_drug_trade
+			add_ideas = SQI_flight_to_safety
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+	}
+
+	focus = {
+		id = SQI_Preparing_Integration_With_The_Qing
+		icon = GFX_goal_SQI_confucianism
+		relative_position_id = SQI_Two_Zhangs_Enter	
+		x = 0
+		y = 3
+		cost = 13
+
+		prerequisite = { focus = SQI_Song_Zheyuan }
+		available = {
+			QIE = {
+				OR = {
+					has_completed_focus = QIE_form_emergency_govt
+					has_completed_focus = QIE_futureofzhili
+				}
+			}
+			NOT = { has_war_with = QIE }
+			hidden_trigger = {
+				NOT = { has_country_flag = SQI_puppet }
+			}
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SQI_Preparing_Integration_With_The_Qing"
+			QIE = {
+				country_event = {
+					id = shandong.410
+					days = 1
+				}
+			}
+			hidden_effect = {
+				country_event = {
+					id = shandong.31
+					days = 5
+				}
+			}
+			add_popularity = {
+				ideology = social_conservative
+				popularity = 0.15
+			}
+		}
+	}
+
+	#Zhang Zongchang
+
+	focus = {
+		id = SQI_Zhang_Zongchang
+		icon = GFX_goal_china_zhang_zongchang
+		relative_position_id = SQI_Two_Zhangs_Enter
+		x = 4
+		y = 1
+		cost = 1
+
+		prerequisite = { focus = SQI_Two_Zhangs_Enter }
+		available = {
+			has_country_flag = SQI_Zongchang_beat_Tianran
+			hidden_trigger = {
+				NOT = { has_country_flag = SQI_puppet }
+			}
+		}
+		mutually_exclusive = {
+			focus = SQI_Zhang_Tianran
+			focus = SQI_Song_Zheyuan
+		}
+
+		available_if_capitulated = yes
+
+		ai_will_do = { factor = 100 }
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SQI_Zhang_Zongchang"
+			remove_ideas = SQI_flight_north
+			add_ideas = SQI_flee_to_zongchang
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY FOCUS_FILTER_STABILITY }
+	}
+
+	focus = {
+		id = SQI_Appointing_Lu_Zhongyi_Leader_Of_The_Yiguandao
+		icon = GFX_goal_generic_controlled_board	
+		relative_position_id = SQI_Two_Zhangs_Enter		
+		x = 4
+		y = 2
+		cost = 5
+
+		prerequisite = { focus = SQI_Zhang_Zongchang }
+		available = {
+			hidden_trigger = {
+				NOT = { has_country_flag = SQI_puppet }
+			}
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SQI_Appointing_Lu_Zhongyi_Leader_Of_The_Yiguandao"
+			add_stability = 0.05
+			add_political_power = 50
+			add_popularity = {
+				ideology = national_populist
+				popularity = -0.05
+			}
+			create_country_leader = {
+				name = "路中节"
+				desc = "POLITICS_ZHANG_ZONGCHANG_DESC"
+				picture = "gfx/leaders/SQI/Portrait_Shandong_Zhang_Zongchang.png"
+				expire = "1.1.1"
+				ideology = national_populist_subtype
+			}
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+	}
+
+	focus = {
+		id = SQI_Clearing_Out_Mount_Tai_Of_The_Yiguandao
+		icon = GFX_goal_MON_purge_the_clergy
+		relative_position_id = SQI_Two_Zhangs_Enter	
+		x = 2
+		y = 3
+		cost = 5
+
+		available = {
+			597 = {
+				is_owned_and_controlled_by = SQI
+			}
+			hidden_trigger = {
+				NOT = { has_country_flag = SQI_puppet }
+			}
+		}
+
+		prerequisite = { focus = SQI_Appointing_Lu_Zhongyi_Leader_Of_The_Yiguandao }
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SQI_Clearing_Out_Mount_Tai_Of_The_Yiguandao"
+			add_political_power = 100
+			add_popularity = {
+				ideology = national_populist
+				popularity = -0.10
+			}
+			597 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY }
+	}
+
+	focus = {
+		id = SQI_Assassinating_Bureaucrats_Threatening_The_Opium_Trade
+		icon = GFX_seedthepoppies
+		relative_position_id = SQI_Two_Zhangs_Enter	
+		x = 6
+		y = 3
+		cost = 5
+
+		prerequisite = { focus = SQI_Appointing_Lu_Zhongyi_Leader_Of_The_Yiguandao }
+		available_if_capitulated = yes
+		available = {
+			hidden_trigger = {
+				NOT = { has_country_flag = SQI_puppet }
+			}
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SQI_Assassinating_Bureaucrats_Threatening_The_Opium_Trade"
+			add_popularity = {
+				ideology = national_populist
+				popularity = -0.20
+			}
+			increase_ruling_party_popularity_by_5 = yes
+			add_stability = 0.05
+			# kill ministers
+			remove_ideas = SQI_Rampant_drug_trade
+			add_ideas = SQI_controlled_drug_trade
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_STABILITY }
+	}
+
+	focus = {
+		id = SQI_qing_hui_kong_meng
+		icon = GFX_goal_QIE_confucianism
+		relative_position_id = SQI_Two_Zhangs_Enter	
+		x = 4
+		y = 3
+		cost = 5
+
+		prerequisite = { focus = SQI_Appointing_Lu_Zhongyi_Leader_Of_The_Yiguandao }
+		available_if_capitulated = yes
+		available = {
+			hidden_trigger = {
+				NOT = { has_country_flag = SQI_puppet }
+			}
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SQI_qing_hui_kong_meng"
+			create_country_leader = {
+				name = "孔令贻"
+				desc = "POLITICS_ZHANG_ZONGCHANG_DESC"
+				picture = "gfx/leaders/SQI/Portrait_Shandong_Zhang_Zongchang.png"
+				expire = "1.1.1"
+				ideology = neo_confucianism_subtype
+			}
+			add_ideas = SQI_xin_ru_xue
+		}
+	}
+
+	focus = {
+		id = SQI_chong_jian_bao_jia_zhi
+		icon = GFX_goal_COS_War
+		relative_position_id = SQI_Two_Zhangs_Enter	
+		x = 3
+		y = 4
+		cost = 5
+
+		prerequisite = { focus = SQI_Clearing_Out_Mount_Tai_Of_The_Yiguandao }
+		prerequisite = { focus = SQI_qing_hui_kong_meng }
+		available_if_capitulated = yes
+		available = {
+			hidden_trigger = {
+				NOT = { has_country_flag = SQI_puppet }
+			}
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SQI_chong_jian_bao_jia_zhi"
+			add_stability = 0.05
+			add_ideas = FNG_Baojia_System
+		}
+	}
+
+	focus = {
+		id = SQI_pei_bei_zhong_huo_li
+		icon = GFX_goal_national_artillery
+		relative_position_id = SQI_Two_Zhangs_Enter	
+		x = 5
+		y = 4
+		cost = 8
+
+		prerequisite = { focus = SQI_Assassinating_Bureaucrats_Threatening_The_Opium_Trade }
+		prerequisite = { focus = SQI_qing_hui_kong_meng }
+		available_if_capitulated = yes
+		available = {
+			hidden_trigger = {
+				NOT = { has_country_flag = SQI_puppet }
+			}
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SQI_pei_bei_zhong_huo_li"
+			if = {
+				limit = { NOT = { has_tech = armored_train } }
+				set_technology = { armored_train = 1 }
+			}
+			else = {
+				add_tech_bonus = {
+					name = GXC_improved_communications
+					bonus = 1
+					uses = 1
+					category = artillery
+				}
+			}
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = 100
+			}
+		}
+	}
+
+	focus = {
+		id = SQI_zhi_feng_zhi_jian
+		icon = GFX_goal_LEP_selective_enforcement
+		relative_position_id = SQI_Two_Zhangs_Enter	
+		x = 4
+		y = 5
+		cost = 5
+
+		prerequisite = { focus = SQI_chong_jian_bao_jia_zhi }
+		prerequisite = { focus = SQI_pei_bei_zhong_huo_li }
+		available_if_capitulated = yes
+		available = {
+			hidden_trigger = {
+				NOT = { has_country_flag = SQI_puppet }
+			}
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SQI_zhi_feng_zhi_jian"
+			swap_ideas = {
+				remove_idea = SQI_flee_to_zongchang
+				add_idea = SQI_flee_to_zongchang2
+			}
+		}
+	}
+
+	#Conclusion
+
+	focus = {
+		id = SQI_Advertising_Shandong_As_A_Model_Province_In_Beijing
+		icon = GFX_goal_generic_future_technology
+		relative_position_id = SQI_Two_Zhangs_Enter	
+		x = 0
+		y = 6
+		cost = 9
+
+		prerequisite = {
+			focus = SQI_pu_ji_jiao_yu
+			focus = SQI_Preparing_Integration_With_The_Qing
+			focus = SQI_zhi_feng_zhi_jian
+		}
+		available = {
+			hidden_trigger = {
+				NOT = { has_country_flag = SQI_puppet }
+			}
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SQI_Advertising_Shandong_As_A_Model_Province_In_Beijing"
+			#foreign relations
+			add_political_power = 100
+			597 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	}
+
+	#Army
+
+	focus = {
+		id = SQI_Bolstering_The_Army
+		icon = GFX_goal_AUS_great_soldier
+		available = {
+			OR = {
+				has_country_flag = SQI_Zheyuan_beat_Zongchang
+				has_country_flag = SQI_Tianran_beat_Zongchang
+				has_country_flag = SQI_Zongchang_beat_Tianran
+				has_country_flag = SQI_baie_jue_qi
+				has_country_flag = SQI_puppet
+			}
+		}
+		x = 10
+		y = 0
+		cost = 8
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SQI_Bolstering_The_Army"
+			custom_effect_tooltip = SQI_can_obtain_inf
+			army_experience = 100
+			add_war_support = 0.05
+		}
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_ARMY_BONUS }
+	}
+
+	focus = {
+		id = SQI_A_Modern_Army
+		icon = GFX_focus_HKG_19_Army
+		prerequisite = { focus = SQI_Bolstering_The_Army }
+		available = {
+			NOT = {
+				has_government = national_populist
+			}
+		}
+		mutually_exclusive = {
+			focus = SQI_A_Fanatical_But_ill-equipped_Army
+		}
+		x = 8
+		y = 1
+		cost = 8
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SQI_A_Modern_Army"
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 1
+				category = land_doctrine
+			}
+			add_tech_bonus = {
+				name = SQI_A_Modern_Army
+				bonus = 1
+				uses = 1
+				category = support_tech
+			}
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+
+	focus = {
+		id = SQI_Research_Replacements_For_Old_Weapons
+		icon = GFX_goal_CZE_imperial_arms
+		prerequisite = { focus = SQI_A_Modern_Army }
+		available = {
+		}
+		x = 8
+		y = 2
+		cost = 8
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SQI_Research_Replacements_For_Old_Weapons"
+			add_tech_bonus = {
+				name = SQI_Research_Replacements_For_Old_Weapons
+				bonus = 0.5
+				uses = 1
+				category = infantry_weapons
+				category = artillery
+			}
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+
+	focus = {
+		id = SQI_Train_Cavalry_With_Japanese_Fighting_Methods
+		icon = GFX_goal_TEX_cavalry_recon
+		prerequisite = { focus = SQI_Research_Replacements_For_Old_Weapons }
+		available = {
+		}
+		x = 8
+		y = 3
+		cost = 8
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SQI_Train_Cavalry_With_Japanese_Fighting_Methods"
+			add_tech_bonus = {
+				name = SQI_Train_Cavalry_With_Japanese_Fighting_Methods
+				bonus = 0.5
+				uses = 1
+				category = support_tech
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = SQI_Zheyuan_beat_Zongchang
+						has_country_flag = SQI_puppet
+					}
+				}
+				country_event = {
+					id = shandong.22
+					days = 5
+				}
+			}
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+
+	focus = {
+		id = SQI_Improving_The_Railroad-Army_Coordination
+		icon = GFX_goal_GAL_armored_trains
+		prerequisite = { focus = SQI_Train_Cavalry_With_Japanese_Fighting_Methods }
+		available = {
+			597 = {
+				is_owned_and_controlled_by = SQI
+			}
+		}
+		x = 8
+		y = 4
+		cost = 8
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SQI_Improving_The_Railroad-Army_Coordination"
+			add_ideas = SQI_railroad_assisted_army
+			597 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		search_filters = { FOCUS_FILTER_ARMY_BONUS FOCUS_FILTER_MANPOWER FOCUS_FILTER_INDUSTRY }
+	}
+
+	focus = {
+		id = SQI_A_Fanatical_But_ill-equipped_Army
+		icon = GFX_goal_integrate_the_militia
+		prerequisite = { focus = SQI_Bolstering_The_Army }
+		available = {
+			has_government = national_populist
+		}
+		mutually_exclusive = {
+			focus = SQI_A_Modern_Army
+		}
+		x = 12
+		y = 1
+		cost = 8
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SQI_A_Fanatical_But_ill-equipped_Army"
+			add_doctrine_cost_reduction = {
+	name = land_doc_bonus
+	cost_reduction = 0.5
+	uses = 1
+	category = land_doctrine
+			}
+			add_ideas = SQI_big_swords
+			add_war_support = 0.05
+		}
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_ARMY_BONUS FOCUS_FILTER_MANPOWER FOCUS_FILTER_RESEARCH }
+	}
+
+	focus = {
+		id = SQI_Purchase_Imperial_Weapons_From_The_Qing
+		icon = GFX_TRM_Japanese_Arms
+		prerequisite = { focus = SQI_A_Fanatical_But_ill-equipped_Army }
+		available = {
+		}
+		x = 12
+		y = 2
+		cost = 8
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SQI_Purchase_Imperial_Weapons_From_The_Qing"
+			QIE = {
+				country_event = {
+					id = shandong.20
+					days = 5
+				}
+			}
+			FNG = {
+				country_event = {
+					id = shandong.20
+					days = 5
+				}
+			}
+			JAP = {
+				country_event = {
+					id = shandong.20
+					days = 5
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = SQI_Recruit_Chahar_Cavalry
+		icon = GFX_BRY_Buryat_Mongol_Cavalry
+		prerequisite = { focus = SQI_Purchase_Imperial_Weapons_From_The_Qing }
+		available = {
+		}
+		x = 12
+		y = 3
+		cost = 8
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SQI_Recruit_Chahar_Cavalry"
+			# add units
+			add_tech_bonus = {
+				name = SQI_Recruit_Chahar_Cavalry
+				bonus = 0.5
+				uses = 1
+				category = motorized_equipment
+			}
+			hidden_effect = {
+				country_event = {
+					id = shandong.23
+					days = 5
+				}
+			}
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+
+	focus = {
+		id = SQI_Train_Soldiers_On_Last_Ditch_Resistance
+		icon = GFX_goal_generic_fanatic_inquisition
+		prerequisite = { focus = SQI_Recruit_Chahar_Cavalry }
+		available = {
+		}
+		x = 12
+		y = 4
+		cost = 8
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SQI_Train_Soldiers_On_Last_Ditch_Resistance"
+			army_experience = 100
+			add_ideas = SQI_red_spears
+			add_war_support = 0.05
+		}
+		search_filters = { FOCUS_FILTER_ANNEXATION FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_ARMY_BONUS FOCUS_FILTER_MANPOWER }
+	}
+
+	focus = {
+		id = SQI_Sending_Military_Staff_For_Training
+		icon = GFX_goal_POL_Modern_Military_Thought
+		prerequisite = {
+			focus = SQI_Research_Replacements_For_Old_Weapons
+			focus = SQI_Purchase_Imperial_Weapons_From_The_Qing
+		}
+		available = {
+		}
+		x = 10
+		y = 3
+		cost = 8
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SQI_Sending_Military_Staff_For_Training"
+			country_event = {
+				id = shandong.10
+				days = 1
+			}
+			army_experience = 50
+			navy_experience = 20
+			air_experience = 20
+		}
+		search_filters = { FOCUS_FILTER_NAVY_BONUS FOCUS_FILTER_ARMY_BONUS FOCUS_FILTER_AIRFORCE_BONUS }
+	}
+
+	focus = {
+		id = SQI_Recruitung_Military_Experts_Outside_Shandong
+		icon = GFX_goal_military_research_2
+		prerequisite = { focus = SQI_Sending_Military_Staff_For_Training }
+		available = {
+			NOT = {
+				has_country_flag = SQI_puppet
+			}
+		}
+		x = 10
+		y = 4
+		cost = 8
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SQI_Recruitung_Military_Experts_Outside_Shandong"
+			country_event = {
+				id = shandong.11
+				days = 5
+			}
+		}
+	}
+
+	focus = {
+		id = SQI_Improving_Our_Technological_Sharing
+		icon = GFX_UKR_Science
+		prerequisite = {
+			focus = SQI_Recruitung_Military_Experts_Outside_Shandong
+			focus = SQI_Improving_The_Railroad-Army_Coordination
+			focus = SQI_Train_Soldiers_On_Last_Ditch_Resistance
+		}
+		x = 10
+		y = 5
+		cost = 8
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SQI_Improving_Our_Technological_Sharing"
+			add_research_slot = 1
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+
+	#Industry
+
+	focus = {
+		id = SQI_Turning_Our_Attention_To_Industry
+		icon = GFX_RUS_Money_For_Industrialization
+		available = {
+			OR = {
+				has_country_flag = SQI_Zheyuan_beat_Zongchang
+				has_country_flag = SQI_Tianran_beat_Zongchang
+				has_country_flag = SQI_Zongchang_beat_Tianran
+				has_country_flag = SQI_baie_jue_qi
+				has_country_flag = SQI_puppet
+			}
+		}
+		x = 17
+		y = 0
+		cost = 5
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SQI_Turning_Our_Attention_To_Industry"
+
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+	}
+
+	focus = {
+		id = SQI_Reopening_The_Barred_Factories
+		icon = GFX_goal_generic_industry_reallocation
+		prerequisite = { focus = SQI_Turning_Our_Attention_To_Industry }
+		available = {
+			597 = {
+				is_owned_and_controlled_by = SQI
+			}
+		}
+		x = 17
+		y = 1
+		cost = 5
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SQI_Reopening_The_Barred_Factories"
+			597 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+	}
+
+	focus = {
+		id = SQI_Improving_The_Qingdao_Weihaiwei_Railway
+		icon = GFX_goal_TIB_Rails_Around_Tanggula_Pass
+		prerequisite = { focus = SQI_Reopening_The_Barred_Factories }
+		available = {
+		}
+		x = 15
+		y = 2
+		cost = 5
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SQI_Improving_The_Qingdao_Weihaiwei_Railway"
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			build_railway = {
+				path = { 1069 10102 12074 1184 }
+			}
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+	}
+
+	focus = {
+		id = SQI_Leasing_Shandong_Resources_To_Either_Qingdao_or_Weihaiwei
+		icon = GFX_goal_MNT_mineral_extraction
+		prerequisite = { focus = SQI_Improving_The_Qingdao_Weihaiwei_Railway }
+		available = {
+		}
+		x = 15
+		y = 3
+		cost = 5
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SQI_Leasing_Shandong_Resources_To_Either_Qingdao_or_Weihaiwei"
+			country_event = {
+				id = shandong.27
+				days = 1
+			}
+		}
+	}
+
+	focus = {
+		id = SQI_Getting_Japanese_Military_Advisors_To_Construct_New_Factories
+		icon = GFX_goal_UMN_mines_keep_running
+		prerequisite = { focus = SQI_Leasing_Shandong_Resources_To_Either_Qingdao_or_Weihaiwei }
+		available = {
+		}
+		x = 15
+		y = 4
+		cost = 5
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SQI_Getting_Japanese_Military_Advisors_To_Construct_New_Factories"
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+	}
+
+	focus = {
+		id = SQI_Restablish_Jinana_University
+		icon = GFX_goal_generic_red_university
+		prerequisite = { focus = SQI_Getting_Japanese_Military_Advisors_To_Construct_New_Factories }
+		available = {
+		}
+		x = 15
+		y = 5
+		cost = 5
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SQI_Restablish_Jinana_University"
+			add_research_slot = 1
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+
+	focus = {
+		id = SQI_Improving_Domestic_Roads_That_Connect_To_The_Qing
+		icon = GFX_COR_national_highway_system
+		prerequisite = { focus = SQI_Reopening_The_Barred_Factories }
+		available = {
+			NOT = { has_country_flag = SQI_puppet }
+		}
+		x = 19
+		y = 2
+		cost = 5
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SQI_Improving_Domestic_Roads_That_Connect_To_The_Qing"
+			custom_effect_tooltip = SQI_can_obtain_fact
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+	}
+
+	focus = {
+		id = SQI_Attracting_Qing_Nobility
+		icon = GFX_goal_AOG_Chinese_Face
+		prerequisite = { focus = SQI_Improving_Domestic_Roads_That_Connect_To_The_Qing }
+		available = {
+			NOT = { has_war_with = QIE }
+			hidden_trigger = {
+				NOT = { has_country_flag = SQI_puppet }
+			}
+		}
+		x = 18
+		y = 3
+		cost = 5
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SQI_Attracting_Qing_Nobility"
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+	}
+
+	focus = {
+		id = SQI_Leveraging_Tianjin_Allies_For_Free_Factories
+		icon = GFX_goal_LEP_lec_investments
+		prerequisite = { focus = SQI_Improving_Domestic_Roads_That_Connect_To_The_Qing }
+		available = {
+			hidden_trigger = {
+				NOT = { has_country_flag = SQI_puppet }
+			}
+		}
+		x = 20
+		y = 3
+		cost = 5
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SQI_Leveraging_Tianjin_Allies_For_Free_Factories"
+			custom_effect_tooltip = SQI_decisions_unlocked
+			add_tech_bonus = {
+				name = SQI_Leveraging_Tianjin_Allies_For_Free_Factories
+				bonus = 0.5
+				uses = 1
+				category = electronics
+			}
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+
+	focus = {
+		id = SQI_Investigate_Leakage_Of_Output_Into_Bandits_Middlemen_Selling
+		icon = GFX_investigatecorruption
+		prerequisite = { focus = SQI_Leveraging_Tianjin_Allies_For_Free_Factories }
+		prerequisite = { focus = SQI_Attracting_Qing_Nobility }
+		available = {
+		}
+		x = 19
+		y = 4
+		cost = 5
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SQI_Investigate_Leakage_Of_Output_Into_Bandits_Middlemen_Selling"
+			add_war_support = 0.1
+			hidden_effect = {
+				country_event = {
+					id = shandong.12
+					days = 5
+				}
+			}
+		}
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT }
+	}
+
+	#Victory Section
+
+	focus = {
+		id = SQI_Victory_In_The_South
+		icon = GFX_goal_LEP_generic_flag
+		available = {
+			LEP = { exists = no }
+			has_war = no
+			owns_state = 1047
+			NOT = { has_country_flag = SQI_puppet }
+		}
+		x = 6
+		y = 6
+		cost = 1
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SQI_Victory_In_The_South"
+			add_stability = 0.1
+		}
+		search_filters = { FOCUS_FILTER_STABILITY }
+	}
+
+	#Building Path
+
+	focus = {
+		id = SQI_Reclaim_The_Industry_Of_The_Annexed_Warlords
+		icon = GFX_goal_TEX_wealth_conscript2
+		prerequisite = { focus = SQI_Victory_In_The_South }
+		x = 6
+		y = 7
+		cost = 5
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SQI_Reclaim_The_Industry_Of_The_Annexed_Warlords"
+			if = {
+				limit = { has_country_flag = SQI_Tianran_beat_Zongchang }
+				custom_effect_tooltip = SQI_tianran_can_reclaim_tooltip
+			}
+			else = {
+				increase_ruling_party_popularity_by_5 = yes
+			}
+		}
+	}
+
+	focus = {
+		id = SQI_Develop_The_Coastline
+		icon = GFX_goal_VIN_expand_hai_phong_port
+		prerequisite = { focus = SQI_Reclaim_The_Industry_Of_The_Annexed_Warlords }
+		available = {
+			598 = {
+				is_owned_and_controlled_by_ROOT_or_subject = yes
+			}
+		}
+		x = 8
+		y = 8
+		cost = 5
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SQI_Develop_The_Coastline"
+			598 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			598 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+	}
+
+	focus = {
+		id = SQI_Develop_Anqing
+		icon = GFX_goal_AUS_field_factory
+		prerequisite = { focus = SQI_Reclaim_The_Industry_Of_The_Annexed_Warlords }
+		available = {
+			606 = {
+				is_owned_and_controlled_by_ROOT_or_subject = yes
+			}
+		}
+		x = 4
+		y = 8
+		cost = 5
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SQI_Develop_Anqing"
+			606 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			606 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+	}
+
+	focus = {
+		id = SQI_Improve_Nanjing
+		icon = GFX_RUS_The_Industry_Needs_Men
+		prerequisite = { focus = SQI_Reclaim_The_Industry_Of_The_Annexed_Warlords }
+		available = {
+			613 = {
+				is_owned_and_controlled_by_ROOT_or_subject = yes
+			}
+		}
+		x = 6
+		y = 8
+		cost = 5
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SQI_Improve_Nanjing"
+			613 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			613 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+	}
+
+	focus = {
+		id = SQI_Connnect_Beijing_To_Nanjing_by_Railway
+		icon = GFX_goal_NIC_Pacific_Rail_Expansion
+		prerequisite = { focus = SQI_Improve_Nanjing }
+		x = 6
+		y = 9
+		cost = 5
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SQI_Connnect_Beijing_To_Nanjing_by_Railway"
+			597 = {
+				if = {
+					limit = { is_owned_and_controlled_by = SQI	}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+
+			1068 = {
+				if = {
+					limit = { is_owned_and_controlled_by = SQI	}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+
+			1047 = {
+				if = {
+					limit = { is_owned_and_controlled_by = SQI	}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+
+			598 = {
+				if = {
+					limit = { is_owned_and_controlled_by = SQI	}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+
+			1075 = {
+				if = {
+					limit = { is_owned_and_controlled_by = SQI	}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+
+			613 = {
+				if = {
+					limit = { is_owned_and_controlled_by = SQI	}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			
+			build_railway = {
+				start_state = 597
+				target_state = 613
+			}
+
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+	}
+
+	focus = {
+		id = SQI_Improve_Jiangxi
+		icon = GFX_goal_ROM_Railway_Investments
+		prerequisite = { focus = SQI_Connnect_Beijing_To_Nanjing_by_Railway }
+		available = {
+			1044 = {
+				is_owned_and_controlled_by_ROOT_or_subject = yes
+			}
+			1045 = {
+				is_owned_and_controlled_by_ROOT_or_subject = yes
+			}
+		}
+		x = 6
+		y = 10
+		cost = 5
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SQI_Improve_Jiangxi"
+			add_resource = {
+				type = steel
+				amount = 4
+				state = 1044
+			}
+			1045 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+	}
+
+	focus = {
+		id = SQI_Improve_Fujian
+		icon = GFX_goal_SKM_Recruit_Village_Manpower
+		prerequisite = { focus = SQI_Connnect_Beijing_To_Nanjing_by_Railway }
+		available = {
+			1046 = {
+				is_owned_and_controlled_by_ROOT_or_subject = yes
+			}
+			595 = {
+				is_owned_and_controlled_by_ROOT_or_subject = yes
+			}
+		}
+		x = 4
+		y = 10
+		cost = 5
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SQI_Improve_Fujian"
+			add_resource = {
+				type = aluminium
+				amount = 2
+				state = 1046
+			}
+			595 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+	}
+
+	focus = {
+		id = SQI_Improve_Zhejiang
+		icon = GFX_goal_generic_dig_for_wealth
+		prerequisite = { focus = SQI_Connnect_Beijing_To_Nanjing_by_Railway }
+		available = {
+			1067 = {
+				is_owned_and_controlled_by_ROOT_or_subject = yes
+			}
+			596 = {
+				is_owned_and_controlled_by_ROOT_or_subject = yes
+			}
+		}
+		x = 8
+		y = 10
+		cost = 5
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SQI_Improve_Zhejiang"
+			add_resource = {
+				type = chromium
+				amount = 2
+				state = 1067
+			}
+			596 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+	}
+
+	#Beiyang Navy Path
+
+	focus = {
+		id = SQI_Declare_Official_Offshoot_Of_The_Beiyang_Navy
+		icon = GFX_goal_FNG_beiyang_navy
+		prerequisite = { focus = SQI_Investigate_Leakage_Of_Output_Into_Bandits_Middlemen_Selling }
+		available = {
+			597 = {
+				is_owned_and_controlled_by = SQI
+			}
+			hidden_trigger = {
+				NOT = { has_country_flag = SQI_puppet }
+			}
+		}
+		x = 19
+		y = 5
+		cost = 8
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SQI_Declare_Official_Offshoot_Of_The_Beiyang_Navy"
+			custom_effect_tooltip = SQI_can_obtain_dock
+			add_tech_bonus = {
+				name = SQI_Declare_Official_Offshoot_Of_The_Beiyang_Navy
+				bonus = 0.5
+				uses = 1
+				category = naval_doctrine
+			}
+			597 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+			navy_experience = 20
+
+		}
+		search_filters = { FOCUS_FILTER_NAVY_BONUS FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
+	}
+
+	focus = {
+		id = SQI_Purchasing_Ships_For_The_Navy
+		icon = GFX_goal_JAP_Navy
+		prerequisite = { focus = SQI_Declare_Official_Offshoot_Of_The_Beiyang_Navy }
+		available = {
+			SQI = { NOT = { has_war_with = JAP } }
+		}
+		x = 18
+		y = 6
+		cost = 8
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SQI_Purchasing_Ships_For_The_Navy"
+			random_owned_controlled_state = {
+				limit = {
+					is_coastal = yes
+					free_building_slots = {
+						building = dockyard
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+			if = {
+				limit = {
+					NOT = { has_country_flag = SQI_Zheyuan_beat_Zongchang }
+				}
+				JAP = {
+					country_event = { id = shandong.100 days = 7 }
+				}
+			}
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+	}
+
+	focus = {
+		id = SQI_Acquire_A_Naval_Base
+		icon = GFX_goal_MAG_open_port_for_all
+		prerequisite = { focus = SQI_Purchasing_Ships_For_The_Navy }
+		available = {
+			597 = {
+				is_owned_and_controlled_by = SQI
+			}
+		}
+		x = 18
+		y = 7
+		cost = 8
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SQI_Acquire_A_Naval_Base"
+			597 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+	}
+
+	focus = {
+		id = SQI_Purchasing_Convoys_For_The_Navy
+		icon = GFX_goal_NFA_buy_ships
+		prerequisite = { focus = SQI_Declare_Official_Offshoot_Of_The_Beiyang_Navy }
+		available = {
+		}
+		x = 20
+		y = 6
+		cost = 8
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SQI_Purchasing_Convoys_For_The_Navy"
+			add_equipment_to_stockpile = {
+				type = convoy_1
+				amount = 50
+				producer = SQI
+			}
+		}
+	}
+
+	focus = {
+		id = SQI_Purchasing_Submarines_For_The_Navy
+		icon = GFX_goal_CRO_submarine_enterprise
+		prerequisite = { focus = SQI_Purchasing_Convoys_For_The_Navy }
+		available = {
+		}
+		x = 20
+		y = 7
+		cost = 8
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SQI_Purchasing_Submarines_For_The_Navy"
+			add_tech_bonus = {
+				name = SQI_Purchasing_Submarines_For_The_Navy
+				bonus = 1
+				uses = 1
+				category = ss_tech
+			}
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+
+	focus = {
+		id = SQI_Incorporating_Qingdao_And_Weihaiwei_Ports
+		icon = GFX_goal_FIU_Rebuild_Adriatic_Shipping_Lanes
+		prerequisite = {
+			focus = SQI_Acquire_A_Naval_Base
+			focus = SQI_Purchasing_Submarines_For_The_Navy
+		}
+		available = {
+			744 = {
+				is_owned_and_controlled_by = SQI
+			}
+		}
+		x = 19
+		y = 8
+		cost = 8
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SQI_Incorporating_Qingdao_And_Weihaiwei_Ports"
+			744 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+	}
+
+	#Airforce
+
+	focus = {
+		id = SQI_Expanding_The_Airforce
+		icon = GFX_goal_CZE_air_industry
+		available = {
+			OR = {
+				has_country_flag = SQI_Zheyuan_beat_Zongchang
+				has_country_flag = SQI_Tianran_beat_Zongchang
+				has_country_flag = SQI_Zongchang_beat_Tianran
+			}
+			597 = {
+				is_owned_and_controlled_by = SQI
+			}
+			NOT = { has_country_flag = SQI_puppet }
+		}
+		x = 13
+		y = 6
+		cost = 8
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SQI_Expanding_The_Airforce"
+			custom_effect_tooltip = SQI_can_obtain_air
+			air_experience = 25
+			597 = {
+				add_building_construction = {
+					type = air_base
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_AIRFORCE_BONUS }
+	}
+
+	focus = {
+		id = SQI_Construct_Modern_Fighters
+		icon = GFX_goal_generic_air_jet_2
+		prerequisite = { focus = SQI_Expanding_The_Airforce }
+		available = {
+		}
+		x = 11
+		y = 7
+		cost = 8
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SQI_Construct_Modern_Fighters"
+			add_tech_bonus = {
+				name = SQI_Construct_Modern_Fighters
+				bonus = 0.5
+				uses = 2
+				category = light_fighter
+				category = naval_air
+			}
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+
+	focus = {
+		id = SQI_Begin_Training_Our_Fighter_Pilots
+		icon = GFX_goal_KSV_rule_from_the_air
+		prerequisite = { focus = SQI_Construct_Modern_Fighters }
+		available = {
+		}
+		x = 11
+		y = 8
+		cost = 8
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SQI_Begin_Training_Our_Fighter_Pilots"
+			add_doctrine_cost_reduction = {
+				name = SQI_Begin_Training_Our_Fighter_Pilots
+				cost_reduction = 0.5
+				uses = 2
+				category = air_doctrine
+			}
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+
+
+	focus = {
+		id = SQI_Constructing_Air_Bases
+		icon = GFX_goal_generic_airports
+		prerequisite = { focus = SQI_Expanding_The_Airforce }
+		available = {
+			597 = {
+				is_owned_and_controlled_by = SQI
+			}
+		}
+		x = 13
+		y = 7
+		cost = 8
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SQI_Constructing_Air_Bases"
+			597 = {
+				add_building_construction = {
+					type = air_base
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+	}
+
+	focus = {
+		id = SQI_Introducing_Naval_Aircraft
+		icon = GFX_goal_FIU_naval_bomber
+		prerequisite = { focus = SQI_Constructing_Air_Bases }
+		available = {
+		}
+		x = 13
+		y = 8
+		cost = 8
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SQI_Introducing_Naval_Aircraft"
+			add_tech_bonus = {
+				name = SQI_Introducing_Naval_Aircraft
+				bonus = 1
+				uses = 1
+				category = naval_air
+			}
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+
+
+	focus = {
+		id = SQI_CAS
+		icon = 	GFX_goal_USA_organic_air_support
+		prerequisite = { focus = SQI_Expanding_The_Airforce }
+		x = 15
+		y = 7
+		cost = 8
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SQI_CAS"
+			add_tech_bonus = {
+				name = SQI_CAS
+				bonus = 0.5
+				uses = 2
+				category = cat_strategic_bomber
+				category = cas_bomber
+			}
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+
+	focus = {
+		id = SQI_Purchasing_Bombers
+		icon = 	GFX_goal_generic_bombing_pacification
+		prerequisite = { focus = SQI_CAS }
+		x = 15
+		y = 8
+		cost = 8
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SQI_Purchasing_Bombers"
+			add_tech_bonus = {
+				name = SQI_Purchasing_Bombers
+				bonus = 1
+				uses = 1
+				category = tactical_bomber
+			}
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
+
+	focus = {
+		id = SQI_Stealing_Sailors_From_The_Legation_Cities
+		icon = 	GFX_focus_trm_sailors
+		prerequisite = {
+			focus = SQI_Introducing_Naval_Aircraft
+			focus = SQI_Begin_Training_Our_Fighter_Pilots
+			focus = SQI_Purchasing_Bombers
+		}
+		x = 13
+		y = 9
+		cost = 8
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SQI_Stealing_Sailors_From_The_Legation_Cities"
+			navy_experience = 25
+			#LEC = {	#These events don't exist
+			#	country_event = { 
+			#		id = shandong.54 
+			#		days = 5 
+			#	}
+			#}
+
+		}
+		search_filters = { FOCUS_FILTER_NAVY_BONUS }
+	}
+
+#白俄雇佣军
+	focus = {
+		id = SQI_yi_liao_zhi_wai_de_sheng_li_zhe
+		icon = GFX_goal_SQI_yi_liao_zhi_wai_de_sheng_li_zhe
+
+		available = {
+			has_country_flag = SQI_baie_jue_qi
+		}
+		bypass = {
+			has_country_flag = SQI_baie_jue_qi
+		}
+		allow_branch = {
+			NOT = {
+				OR = {
+					has_country_flag = SQI_Zheyuan_beat_Zongchang
+					has_country_flag = SQI_Zongchang_beat_Tianran
+				}
+			} 
+		}
+
+		x = -14
+		y = 0
+		cost = 5
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SQI_yi_liao_zhi_wai_de_sheng_li_zhe"
+
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	}
+
+	focus = {
+		id = SQI_qiang_duo_shi_miao
+		icon = GFX_goal_SQI_qiang_duo_shi_miao
+		relative_position_id = SQI_yi_liao_zhi_wai_de_sheng_li_zhe	
+		x = -1
+		y = 1
+		cost = 5
+
+		available = {
+			has_country_flag = SQI_baie_jue_qi
+		}
+		prerequisite = {
+			focus = SQI_yi_liao_zhi_wai_de_sheng_li_zhe
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SQI_qiang_duo_shi_miao"
+			add_political_power = 100
+			add_popularity = {
+				ideology = authoritarian_democrat
+				popularity = 0.02
+			}
+			country_event = {
+				id = sqiwr.21
+				days = 2
+			}
+			hidden_effect = {
+				country_event = {
+					id = sqiwr.44
+					days = 4
+				}
+			}
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	}
+
+	focus = {
+		id = SQI_shi_hao_ben_di_hao_qiang
+		icon = GFX_goal_SQI_shi_hao_ben_di_hao_qiang
+		relative_position_id = SQI_yi_liao_zhi_wai_de_sheng_li_zhe	
+		x = -1
+		y = 2
+		cost = 5
+
+		available = {
+			has_country_flag = SQI_baie_jue_qi
+		}
+		prerequisite = {
+			focus = SQI_qiang_duo_shi_miao
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SQI_shi_hao_ben_di_hao_qiang"
+			add_political_power = 200
+			add_popularity = {
+				ideology = social_conservative
+				popularity = 0.03
+			}
+			597 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			1065 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_0
+				amount = 1000
+				producer = SQI
+			}
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	}
+
+	focus = {
+		id = SQI_jie_guo_ya_pian_xiao_lu
+		icon = GFX_goal_SQI_jie_guo_ya_pian_xiao_lu
+		relative_position_id = SQI_yi_liao_zhi_wai_de_sheng_li_zhe	
+		x = -1
+		y = 3
+		cost = 5
+
+		available = {
+			has_country_flag = SQI_baie_jue_qi
+		}
+		prerequisite = {
+			focus = SQI_shi_hao_ben_di_hao_qiang
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SQI_jie_guo_ya_pian_xiao_lu"
+			remove_ideas = SQI_Rampant_drug_trade
+			add_ideas = SQI_controlled_drug_trade
+			add_popularity = {
+				ideology = authoritarian_democrat
+				popularity = 0.02
+			}
+		}
+
+	}
+
+	focus = {
+		id = SQI_e_sha_hong_se
+		icon = GFX_goal_SQI_e_sha_hong_se
+		relative_position_id = SQI_yi_liao_zhi_wai_de_sheng_li_zhe	
+		x = -3
+		y = 2
+		cost = 5
+
+		available = {
+			has_country_flag = SQI_baie_jue_qi
+		}
+		prerequisite = {
+			focus = SQI_qiang_duo_shi_miao
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SQI_e_sha_hong_se"
+			add_political_power = 100
+			add_popularity = {
+				ideology = totalist
+				popularity = -1
+			}
+			add_popularity = {
+				ideology = syndicalist
+				popularity = -1
+			}
+			add_popularity = {
+				ideology = radical_socialist
+				popularity = -1
+			}
+			country_event = {
+				id = sqiwr.22
+				days = 2
+			}
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	}
+
+	focus = {
+		id = SQI_jun_shi_xuan_chuan
+		icon = GFX_goal_SQI_jun_shi_xuan_chuan
+		relative_position_id = SQI_yi_liao_zhi_wai_de_sheng_li_zhe	
+		x = -3
+		y = 3
+		cost = 5
+
+		available = {
+			has_country_flag = SQI_baie_jue_qi
+		}
+		prerequisite = {
+			focus = SQI_e_sha_hong_se
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SQI_jun_shi_xuan_chuan"
+			add_war_support = 0.05
+			add_stability = 0.05
+			add_popularity = {
+				ideology = authoritarian_democrat
+				popularity = 0.05
+			}
+			add_popularity = {
+				ideology = social_conservative
+				popularity = -0.05
+			}
+			hidden_effect = {
+				country_event = {
+					id = sqiwr.23
+					days = 2
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = SQI_ge_sha_ke_jing_shen
+		icon = GFX_goal_SQI_ge_sha_ke_jing_shen
+		relative_position_id = SQI_yi_liao_zhi_wai_de_sheng_li_zhe	
+		x = 1
+		y = 1
+		cost = 5
+
+		available = {
+			has_country_flag = SQI_baie_jue_qi
+		}
+		prerequisite = {
+			focus = SQI_yi_liao_zhi_wai_de_sheng_li_zhe
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SQI_ge_sha_ke_jing_shen"
+			add_ideas = SQI_ge_sa_ke
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	}
+
+	focus = {
+		id = SQI_jun_ren_zhi_shang
+		icon = GFX_goal_SQI_jun_ren_zhi_shang
+		relative_position_id = SQI_yi_liao_zhi_wai_de_sheng_li_zhe	
+		x = 3
+		y = 2
+		cost = 5
+
+		available = {
+			has_country_flag = SQI_baie_jue_qi
+		}
+		prerequisite = {
+			focus = SQI_ge_sha_ke_jing_shen
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SQI_jun_ren_zhi_shang"
+			army_experience = 50
+			597 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			1065 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = SQI_qiang_sheng_de_bai_e_jun
+		icon = GFX_goal_SQI_qiang_sheng_de_bai_e_jun
+		relative_position_id = SQI_yi_liao_zhi_wai_de_sheng_li_zhe	
+		x = 3
+		y = 3
+		cost = 5
+
+		available = {
+			has_country_flag = SQI_baie_jue_qi
+		}
+		prerequisite = {
+			focus = SQI_jun_ren_zhi_shang
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SQI_qiang_sheng_de_bai_e_jun"
+			army_experience = 50
+			add_ideas = SQI_bai_e_jun
+		}
+	}
+
+	focus = {
+		id = SQI_zhao_lan_e_guo_ren
+		icon = GFX_goal_SQI_zhao_lan_e_guo_ren
+		relative_position_id = SQI_yi_liao_zhi_wai_de_sheng_li_zhe	
+		x = 1
+		y = 2
+		cost = 5
+
+		available = {
+			has_country_flag = SQI_baie_jue_qi
+		}
+		prerequisite = {
+			focus = SQI_ge_sha_ke_jing_shen
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SQI_zhao_lan_e_guo_ren"
+			add_ideas = SQI_wu_guan
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 1
+				category = land_doctrine
+			}
+		}
+	}
+
+	focus = {
+		id = SQI_huang_e_luo_si_ji_hua
+		icon = GFX_goal_SQI_huang_e_luo_si_ji_hua
+		relative_position_id = SQI_yi_liao_zhi_wai_de_sheng_li_zhe	
+		x = 1
+		y = 3
+		cost = 5
+
+		available = {
+			has_country_flag = SQI_baie_jue_qi
+		}
+		prerequisite = {
+			focus = SQI_zhao_lan_e_guo_ren
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SQI_huang_e_luo_si_ji_hua"
+			add_ideas = SQI_e_yi
+		}
+	}
+
+	focus = {
+		id = SQI_yuan_shuai_cong_bai
+		icon = GFX_goal_SQI_yuan_shuai_cong_bai
+		relative_position_id = SQI_yi_liao_zhi_wai_de_sheng_li_zhe	
+		x = 0
+		y = 4
+		cost = 5
+
+		available = {
+			has_country_flag = SQI_baie_jue_qi
+		}
+		prerequisite = {
+			focus = SQI_huang_e_luo_si_ji_hua
+		}
+		prerequisite = {
+			focus = SQI_jie_guo_ya_pian_xiao_lu
+		}
+		prerequisite = {
+			focus = SQI_qiang_sheng_de_bai_e_jun
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SQI_yuan_shuai_cong_bai"
+			army_experience = 50
+			add_country_leader_trait = NFA_cult_of_personality
+			swap_ideas = {
+				remove_idea = SQI_bai_e_jun
+				add_idea = SQI_bai_e_jun2
+			}
+		}
+	}
+
+	focus = {
+		id = SQI_fan_qing_xuan_chuan
+		icon = GFX_goal_SQI_fan_qing_xuan_chuan
+		relative_position_id = SQI_yi_liao_zhi_wai_de_sheng_li_zhe	
+		x = -2
+		y = 4
+		cost = 5
+
+		available = {
+			has_country_flag = SQI_baie_jue_qi
+		}
+		prerequisite = {
+			focus = SQI_jun_shi_xuan_chuan
+		}
+		prerequisite = {
+			focus = SQI_jie_guo_ya_pian_xiao_lu
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SQI_fan_qing_xuan_chuan"
+			add_ideas = SQI_fan_qing_xuan_chuan
+		}
+	}
+
+	focus = {
+		id = SQI_qing_e_zheng_fu
+		icon = GFX_goal_SQI_qing_e_zheng_fu
+		relative_position_id = SQI_yi_liao_zhi_wai_de_sheng_li_zhe	
+		x = 2
+		y = 4
+		cost = 5
+
+		available = {
+			has_country_flag = SQI_baie_jue_qi
+		}
+		prerequisite = {
+			focus = SQI_huang_e_luo_si_ji_hua
+		}
+		prerequisite = {
+			focus = SQI_qiang_sheng_de_bai_e_jun
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SQI_qing_e_zheng_fu"
+			swap_ideas = {
+				remove_idea = SQI_wu_guan
+				add_idea = SQI_wu_guan2
+			}
+			add_research_slot = 1
+		}
+	}
+
+	focus = {
+		id = SQI_kua_guo_huang_he
+		icon = GFX_goal_SQI_kua_guo_huang_he
+		relative_position_id = SQI_yi_liao_zhi_wai_de_sheng_li_zhe	
+		x = 0
+		y = 5
+		cost = 1
+
+		available = {
+			is_puppet = no
+			has_country_flag = SQI_baie_jue_qi
+		}
+		prerequisite = {
+			focus = SQI_fan_qing_xuan_chuan
+		}
+		prerequisite = {
+			focus = SQI_yuan_shuai_cong_bai
+		}
+		prerequisite = {
+			focus = SQI_qing_e_zheng_fu
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SQI_kua_guo_huang_he"
+			create_wargoal = {
+				target = var:608.owner
+				type = annex_everything
+			}
+		}
+	}
+
+	focus = {
+		id = SQI_chu_li_en_qing
+		icon = GFX_goal_SQI_chu_li_en_qing
+		relative_position_id = SQI_yi_liao_zhi_wai_de_sheng_li_zhe	
+		x = -1
+		y = 6
+		cost = 1
+
+		available = {
+			is_puppet = no
+			has_country_flag = SQI_baie_jue_qi
+			has_country_flag = SQI_bei_fa
+			is_neighbor_of = MON
+		}
+		prerequisite = {
+			focus = SQI_kua_guo_huang_he
+		}
+		bypass = {
+			MON = {
+				exists = no
+			}
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SQI_chu_li_en_qing"
+			if = {	
+				limit = { 
+					MON = {
+						has_country_leader = { name = "Roman von Ungern-Sternberg" ruling_only = yes }
+					}
+				}
+				MON = {
+					country_event = {
+						id = sqiwr.17
+						days = 5
+					}
+				}
+			}
+			else = {
+				create_wargoal = {
+					target = MON
+					type = annex_everything
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = SQI_chu_li_gao_er_cha_ke
+		icon = GFX_goal_SQI_chu_li_gao_er_cha_ke
+		relative_position_id = SQI_yi_liao_zhi_wai_de_sheng_li_zhe	
+		x = 1
+		y = 6
+		cost = 1
+
+		available = {
+			is_puppet = no
+			has_country_flag = SQI_baie_jue_qi
+			has_country_flag = SQI_bei_fa
+			is_neighbor_of = TRM
+		}
+		prerequisite = {
+			focus = SQI_kua_guo_huang_he
+		}
+		bypass = {
+			TRM = {
+				exists = no
+			}
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SQI_chu_li_gao_er_cha_ke"
+			if = {
+				limit = { 
+					TRM = {
+						has_country_leader = {
+							ruling_only = yes
+							name = "Aleksandr Kolchak"
+						}
+					}
+				}
+				TRM = {
+					country_event = {
+						id = sqiwr.18
+						days = 5
+					}
+				}
+			}
+			else = {
+				create_wargoal = {
+					target = TRM
+					type = annex_everything
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = SQI_hui_shi_bei_shang
+		icon = GFX_goal_PLC_russia
+		relative_position_id = SQI_yi_liao_zhi_wai_de_sheng_li_zhe	
+		x = 0
+		y = 7
+		cost = 1
+
+		available = {
+			is_puppet = no
+			has_country_flag = SQI_baie_jue_qi
+			has_country_flag = SQI_bei_fa
+		}
+		prerequisite = {
+			focus = SQI_chu_li_en_qing
+			focus = SQI_chu_li_gao_er_cha_ke
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SQI_hui_shi_bei_shang"
+			declare_war_on = {
+				target = RUS
+				type = annex_everything
+			}
+		}
+	}
+
+	focus = {
+		id = SQI_zui_hou_de_sheng_Li
+		icon = GFX_DKB_Victory
+		relative_position_id = SQI_yi_liao_zhi_wai_de_sheng_li_zhe	
+		x = 0
+		y = 8
+		cost = 1
+
+		available = {
+			owns_state = 195
+		}
+		prerequisite = {
+			focus = SQI_hui_shi_bei_shang
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SQI_zui_hou_de_sheng_Li"
+			every_state = {
+				limit = {
+					OR = {
+						is_core_of = RUS
+						is_core_of = TRM
+					}
+				}
+				add_core_of = SQI
+			}
+			if = {
+				limit = { 
+					has_country_flag = SQI_jun_zhu
+				}
+				set_cosmetic_tag = SQI_RUS
+			}
+			else = {
+				set_cosmetic_tag = SQI_RUSP
+			}
+			add_ideas = DKB_aftermath_uch_idea
+			add_ideas = DKB_aftermath_uch_economic_idea
+			country_event = {
+				id = sqiwr.29
+				days = 5
+			}
+		}
+	}
+
+	focus = {
+		id = SQI_bi_de_ge_li_da_sheng_pan
+		icon = GFX_TRM_Start_The_Trials
+		relative_position_id = SQI_yi_liao_zhi_wai_de_sheng_li_zhe	
+		x = -2
+		y = 9
+		cost = 5
+
+		available = {
+			
+		}
+		prerequisite = {
+			focus = SQI_zui_hou_de_sheng_Li
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SQI_bi_de_ge_li_da_sheng_pan"
+			country_event = {
+				id = sqiwr.12
+				days = 2
+			}
+		}
+	}
+
+	focus = {
+		id = SQI_chong_zu_guan_Liao_xi_tong
+		icon = GFX_TRM_Restructure_Bureaucracy
+		relative_position_id = SQI_yi_liao_zhi_wai_de_sheng_li_zhe	
+		x = 0
+		y = 9
+		cost = 5
+
+		available = {
+			
+		}
+		prerequisite = {
+			focus = SQI_zui_hou_de_sheng_Li
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SQI_chong_zu_guan_Liao_xi_tong"
+			swap_ideas = {
+				remove_idea = DKB_aftermath_uch_idea
+				add_idea = DKB_aftermath_uch_idea_1 
+			}
+		}
+	}
+
+	focus = {
+		id = SQI_qing_xi_jun_dui
+		icon = GFX_TRM_Restructure_Army
+		relative_position_id = SQI_yi_liao_zhi_wai_de_sheng_li_zhe	
+		x = 2
+		y = 9
+		cost = 5
+
+		available = {
+			
+		}
+		prerequisite = {
+			focus = SQI_zui_hou_de_sheng_Li
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SQI_qing_xi_jun_dui"
+			if = {
+				limit = { 
+					NOT = {
+						has_country_flag = SQI_jun_zhu
+					}
+				}
+				custom_effect_tooltip = DKB_vlasov_will_gain_republican_generals
+				hidden_effect = {
+					RUS = {
+						every_unit_leader = {
+							limit = {
+								OR = {
+									has_trait = RUS_denikin_officer
+									has_trait = RUS_markov_officer
+									has_trait = hidden_sympathies
+								}
+							}
+							set_nationality = SQI
+						}
+					}
+				}
+			}
+			else_if = {
+				limit = { 
+					has_country_flag = SQI_jun_zhu
+				}
+				custom_effect_tooltip = SQI_vlasov_will_gain_republican_generals
+				hidden_effect = {
+					RUS = {
+						every_unit_leader = {
+							limit = {
+								OR = {
+									has_trait = RUS_wrangel_officer
+									has_trait = RUS_drozdovsky_officer
+									has_trait = RUS_avalov_officer
+								}
+							}
+							set_nationality = SQI
+						}
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = SQI_jun_dui_ji_yu_yi_qie
+		icon = GFX_TRM_Stake_On_Military
+		relative_position_id = SQI_yi_liao_zhi_wai_de_sheng_li_zhe	
+		x = 1
+		y = 10
+		cost = 5
+
+		available = {
+			
+		}
+		prerequisite = {
+			focus = SQI_chong_zu_guan_Liao_xi_tong
+		}
+		prerequisite = {
+			focus = SQI_qing_xi_jun_dui
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SQI_jun_dui_ji_yu_yi_qie"
+			swap_ideas = {
+				remove_idea = DKB_aftermath_uch_idea_1
+				add_idea = DKB_aftermath_uch_idea_2
+			}
+		}
+	}
+
+	focus = {
+		id = SQI_shou_jiu_jiu_zi_can
+		icon = GFX_TRM_Siberian_Industry
+		relative_position_id = SQI_yi_liao_zhi_wai_de_sheng_li_zhe	
+		x = -1
+		y = 10
+		cost = 5
+
+		available = {
+			
+		}
+		prerequisite = {
+			focus = SQI_chong_zu_guan_Liao_xi_tong
+		}
+		prerequisite = {
+			focus = SQI_bi_de_ge_li_da_sheng_pan
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SQI_shou_jiu_jiu_zi_can"
+			swap_ideas = {
+				remove_idea = DKB_aftermath_uch_economic_idea
+				add_idea = DKB_aftermath_uch_economic_idea_1
+			}
+		}
+	}
+
+	focus = {
+		id = SQI_e_luo_si_de_xin_sheng
+		icon = GFX_focus_rus_dawn
+		relative_position_id = SQI_yi_liao_zhi_wai_de_sheng_li_zhe	
+		x = 0
+		y = 11
+		cost = 5
+
+		available = {
+			
+		}
+		prerequisite = {
+			focus = SQI_shou_jiu_jiu_zi_can
+		}
+		prerequisite = {
+			focus = SQI_jun_dui_ji_yu_yi_qie
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SQI_e_luo_si_de_xin_sheng"
+			swap_ideas = {
+				remove_idea = DKB_aftermath_uch_economic_idea_1
+				add_idea = DKB_aftermath_uch_economic_idea_2
+			}
+			swap_ideas = {
+				remove_idea = DKB_aftermath_uch_idea_2
+				add_idea = DKB_aftermath_uch_idea_3
+			}
+		}
+	}
+
+	focus = {
+		id = SQI_du_shan_qi_sheng
+		icon = GFX_RUS_Promote_Party_Unity
+		relative_position_id = SQI_yi_liao_zhi_wai_de_sheng_li_zhe	
+		x = 0
+		y = 12
+		cost = 5
+
+		available = {
+			has_country_flag = SQI_jun_zhu
+		}
+		prerequisite = {
+			focus = SQI_e_luo_si_de_xin_sheng
+		}
+		mutually_exclusive = {
+			focus = SQI_ou_ya_zhu_zhe
+			focus = SQI_li_xian_ming_zhu_dang
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SQI_du_shan_qi_sheng"
+			swap_ideas = {
+				remove_idea = DKB_aftermath_uch_idea_3
+				add_idea = DKB_aftermath_uch_idea_4
+			}
+		}
+	}
+
+	focus = {
+		id = SQI_huang_en_hao_dang
+		icon = GFX_goal_RUS_regency
+		relative_position_id = SQI_yi_liao_zhi_wai_de_sheng_li_zhe	
+		x = 0
+		y = 13
+		cost = 5
+
+		available = {
+			has_country_flag = SQI_jun_zhu
+		}
+		prerequisite = {
+			focus = SQI_du_shan_qi_sheng
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SQI_huang_en_hao_dang"
+			add_popularity = {
+				ideology = paternal_autocrat
+				popularity = 0.05
+			}
+			swap_ideas = {
+				remove_idea = DKB_aftermath_uch_economic_idea_2
+				add_idea = DKB_aftermath_uch_economic_idea_3
+			}
+			swap_ideas = {
+				remove_idea = DKB_aftermath_uch_idea_4
+				add_idea = SQI_aftermath_uch_idea_7
+			}
+			country_event = {
+				id = rusd.70
+				days = 10
+			}
+		}
+	}
+
+	focus = {
+		id = SQI_wei_rong_yu_er_zhan
+		icon = GFX_RUS_Stratocracy
+		relative_position_id = SQI_yi_liao_zhi_wai_de_sheng_li_zhe	
+		x = -1
+		y = 14
+		cost = 5
+
+		available = {
+			has_country_flag = SQI_jun_zhu
+		}
+		prerequisite = {
+			focus = SQI_huang_en_hao_dang
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SQI_wei_rong_yu_er_zhan"
+			army_experience = 100
+			add_ideas = SQI_wei_rong_yu
+		}
+	}
+
+	focus = {
+		id = SQI_an_quan_yu_zhi_xu
+		icon = GFX_RUS_Prussian_Constitutionalism
+		relative_position_id = SQI_yi_liao_zhi_wai_de_sheng_li_zhe	
+		x = -1
+		y = 15
+		cost = 5
+
+		available = {
+			has_country_flag = SQI_jun_zhu
+		}
+		prerequisite = {
+			focus = SQI_wei_rong_yu_er_zhan
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SQI_an_quan_yu_zhi_xu"
+			if = {
+				limit = { has_dlc = "La Resistance" }
+				if = {
+					limit = { has_intelligence_agency = no }
+					create_intelligence_agency = yes
+				}
+				else_if = {
+					limit = {
+						NOT = { has_done_agency_upgrade = upgrade_army_department }
+					}
+					upgrade_intelligence_agency = upgrade_army_department
+				}
+				else = {
+					add_political_power = 50
+				}
+				add_ideas = RUS_okhrannoye_otdeleniye_1_lar
+			}
+			else = {
+				add_ideas = rus_okhrana_focus
+			}
+		}
+	}
+
+	focus = {
+		id = SQI_guo_jia_dong_zheng_jiao
+		icon = GFX_focus_rus_faith_nation
+		relative_position_id = SQI_yi_liao_zhi_wai_de_sheng_li_zhe	
+		x = 1
+		y = 14
+		cost = 5
+
+		available = {
+			has_country_flag = SQI_jun_zhu
+		}
+		prerequisite = {
+			focus = SQI_huang_en_hao_dang
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SQI_guo_jia_dong_zheng_jiao"
+			swap_ideas = {
+				remove_idea = DKB_aftermath_uch_economic_idea_3
+				add_idea = SQI_aftermath_uch_economic_idea_8
+			}
+		}
+	}
+
+	focus = {
+		id = SQI_zai_ci_jia_mian
+		icon = GFX_RUS_Russian_Monarch_Symbol
+		relative_position_id = SQI_yi_liao_zhi_wai_de_sheng_li_zhe	
+		x = 1
+		y = 15
+		cost = 5
+
+		available = {
+			has_country_flag = SQI_jun_zhu
+		}
+		prerequisite = {
+			focus = SQI_guo_jia_dong_zheng_jiao
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SQI_zai_ci_jia_mian"
+			country_event = {
+				id = sqiwr.32
+				days = 2
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = SQI_di_guo_wan_sui
+		icon = GFX_focus_rus_absolute
+		relative_position_id = SQI_yi_liao_zhi_wai_de_sheng_li_zhe	
+		x = 0
+		y = 16
+		cost = 5
+
+		available = {
+			has_country_flag = SQI_jun_zhu
+		}
+		prerequisite = {
+			focus = SQI_zai_ci_jia_mian
+		}
+		prerequisite = {
+			focus = SQI_an_quan_yu_zhi_xu
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SQI_di_guo_wan_sui"
+			army_experience = 100
+			add_command_power = 50
+			add_research_slot = 1
+			swap_ideas = {
+				remove_idea = SQI_wei_rong_yu
+				add_idea = SQI_wei_rong_yu2
+			}
+		}
+	}
+
+	focus = {
+		id = SQI_ou_ya_zhu_zhe
+		icon = GFX_RUS_eurasian
+		relative_position_id = SQI_yi_liao_zhi_wai_de_sheng_li_zhe	
+		x = 2
+		y = 12
+		cost = 5
+
+		available = {
+			QIE = {
+				exists = no
+			}
+		}
+		prerequisite = {
+			focus = SQI_e_luo_si_de_xin_sheng
+		}
+		mutually_exclusive = {
+			focus = SQI_du_shan_qi_sheng
+			focus = SQI_li_xian_ming_zhu_dang
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SQI_ou_ya_zhu_zhe"
+			swap_ideas = {
+				remove_idea = DKB_aftermath_uch_idea_3
+				add_idea = DKB_aftermath_uch_idea_4
+			}
+			add_ideas = RUS_Eurasianism_Idea
+			set_cosmetic_tag = RUS_EUR
+			set_party_name = {
+				ideology = authoritarian_democrat
+				long_name =  RUS_eurasianist_party_long
+				name =  RUS_eurasianist_party
+			}
+			hidden_effect = {
+				create_corps_commander = {
+					name = "Yuri Shirinsky-Shikhmatov"
+					desc = "POLITICS_YURI_SHIKHMATOV_DESC"	
+					portrait_path = "gfx/leaders/RUS/Portrait_RUS_Yuri_Schirinsky_Schikhmatov.png"
+					traits = {
+						war_hero 
+						politically_connected
+						cavalry_officer
+						cavalry_leader
+					}
+					skill = 2
+					attack_skill = 3
+					defense_skill = 2
+					planning_skill = 3
+					logistics_skill = 1
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = SQI_zheng_tong_pai
+		icon = GFX_RUS_new_nation
+		relative_position_id = SQI_yi_liao_zhi_wai_de_sheng_li_zhe	
+		x = 2
+		y = 13
+		cost = 5
+
+		available = {
+			
+		}
+		prerequisite = {
+			focus = SQI_ou_ya_zhu_zhe
+		}
+		mutually_exclusive = {
+			focus = SQI_meng_zu_gang_ling
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SQI_zheng_tong_pai"
+			add_war_support = 0.05
+			swap_ideas = {
+				remove_idea = DKB_aftermath_uch_economic_idea_2
+				add_idea = DKB_aftermath_uch_economic_idea_3
+			}
+			create_country_leader = {
+				name = "尼古拉·特鲁别茨柯伊"
+				desc = "POLITICS_NIKOLAI_TRUBETSKOY_DESC"
+				picture = "gfx/leaders/RUS/Portrait_RUS_Nikolay_Trubetskoy.png"
+				expire = "1.1.1"
+				ideology = eurasianism_subtype
+				traits = { RUS_eurasianist_ideologue }
+			}
+			set_politics = {
+				ruling_party = authoritarian_democrat
+			}
+			add_ideas = {
+				RUS_Nikolay_S_Trubetskoy_hog_sco
+				RUS_Georgiy_V_Vernadskiy_for_sli
+				RUS_Konstantin_A_Chkheidze_eco_ade
+				RUS_Pyetr_N_Savitskiy_sec_ade
+			}
+			set_country_flag = RUS_orth_eur_cultural_revolution
+			setup_orth_eur_enlightenment = yes
+			unlock_decision_category_tooltip = RUS_orth_eur_cultural_revolution_decisions
+			hidden_effect = {
+				country_event = {
+					id = lefteurasia.3
+					days = 10
+				}
+				country_event = {
+					id = lefteurasia.4
+					days = 20
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = SQI_xin_ming_zu_ren_tong
+		icon = GFX_RUS_new_identity
+		relative_position_id = SQI_yi_liao_zhi_wai_de_sheng_li_zhe	
+		x = 3
+		y = 14
+		cost = 5
+
+		available = {
+			
+		}
+		prerequisite = {
+			focus = SQI_zheng_tong_pai
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SQI_xin_ming_zu_ren_tong"
+			unlock_decision_tooltip = RUS_increase_propoganda_eurasianist_ideology
+			custom_effect_tooltip = RUS_propaganda_eurasianist_ideology_tt
+			swap_ideas = {
+				remove_idea = DKB_aftermath_uch_idea_4
+				add_idea = SQI_aftermath_uch_idea_8
+			}
+		}
+	}
+
+	focus = {
+		id = SQI_she_hui_deng_ji_zhi_du
+		icon = GFX_RUS_social_hierarchy
+		relative_position_id = SQI_yi_liao_zhi_wai_de_sheng_li_zhe	
+		x = 3
+		y = 15
+		cost = 5
+
+		available = {
+			
+		}
+		prerequisite = {
+			focus = SQI_xin_ming_zu_ren_tong
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SQI_she_hui_deng_ji_zhi_du"
+			swap_ideas = {
+				remove_idea = DKB_aftermath_uch_economic_idea_3
+				add_idea = SQI_aftermath_uch_economic_idea_9
+			}
+		}
+	}
+
+	focus = {
+		id = SQI_song_yang_zhu_de_wei_ye
+		icon = GFX_RUS_orthodoxy_power
+		relative_position_id = SQI_yi_liao_zhi_wai_de_sheng_li_zhe	
+		x = 2
+		y = 16
+		cost = 5
+
+		available = {
+			
+		}
+		prerequisite = {
+			focus = SQI_she_hui_deng_ji_zhi_du
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SQI_song_yang_zhu_de_wei_ye"
+			swap_ideas = {
+				remove_idea = SQI_aftermath_uch_idea_8
+				add_idea = SQI_aftermath_uch_idea_9
+			}
+			add_research_slot = 1
+			country_event = {
+				id = sqiwr.34
+				days = 5
+			}
+		}
+	}
+
+	focus = {
+		id = SQI_meng_zu_gang_ling
+		icon = GFX_RUS_young_eurasians
+		relative_position_id = SQI_yi_liao_zhi_wai_de_sheng_li_zhe	
+		x = 4
+		y = 13
+		cost = 5
+
+		available = {
+			
+		}
+		prerequisite = {
+			focus = SQI_ou_ya_zhu_zhe
+		}
+		mutually_exclusive = {
+			focus = SQI_zheng_tong_pai
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SQI_meng_zu_gang_ling"
+			add_war_support = 0.05
+			swap_ideas = {
+				remove_idea = DKB_aftermath_uch_economic_idea_2
+				add_idea = DKB_aftermath_uch_economic_idea_3
+			}
+			swap_ideas = {
+				remove_idea = DKB_aftermath_uch_idea_4
+				add_idea = SQI_aftermath_uch_idea_10
+			}
+			create_country_leader = {
+				name = "尤里·希林斯基-希赫马托夫"
+				desc = "POLITICS_YURI_SHIKHMATOV_DESC"
+				picture = "gfx/leaders/RUS/Portrait_RUS_Yuri_Schirinsky_Schikhmatov.png"
+				expire = "1.1.1"
+				ideology = national_maximalism_subtype 
+				traits = { RUS_eurasianist_ideologue RUS_rittmeister }
+			}
+			set_politics = {
+				ruling_party = national_populist
+			}
+			set_party_name = {
+				ideology = national_populist
+				long_name =  RUS_EUR_national_maximalist_party_long
+				name =  RUS_EUR_national_maximalist_party
+			}
+			add_ideas = {
+				RUS_Yuri_Shirinsky_Shikhmatov_hog_tot
+				RUS_Aleksey_N_Tolstoy_for_npo  
+				RUS_Andrey_I_Zankevich_eco_npo
+				RUS_Anatoliy_MacReady_Stenroos_sec_npo 
+			}
+			hidden_effect = {
+				country_event = {
+					id = lefteurasia.4
+					days = 20
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = SQI_la_long_sa_wen_ke_fu_pai
+		icon = GFX_RUS_savinkovs_syncretism
+		relative_position_id = SQI_yi_liao_zhi_wai_de_sheng_li_zhe	
+		x = 5
+		y = 14
+		cost = 5
+
+		available = {
+			
+		}
+		prerequisite = {
+			focus = SQI_meng_zu_gang_ling
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SQI_la_long_sa_wen_ke_fu_pai"
+			add_ideas = {
+				RUS_Boris_V_Savinkov_hog_npo
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			hidden_effect = {
+				country_event = {
+					id = rusd.198
+					days = 30
+				}
+				country_event = {
+					id = rusd.199
+					days = 60
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = SQI_ou_ya_zhu_yi_jiao_yu
+		icon = GFX_RUS_new_generation2
+		relative_position_id = SQI_yi_liao_zhi_wai_de_sheng_li_zhe	
+		x = 5
+		y = 15
+		cost = 5
+
+		available = {
+			
+		}
+		prerequisite = {
+			focus = SQI_la_long_sa_wen_ke_fu_pai
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SQI_ou_ya_zhu_yi_jiao_yu"
+			add_research_slot = 1
+			swap_ideas = {
+				remove_idea = SQI_aftermath_uch_idea_10
+				add_idea = SQI_aftermath_uch_idea_11
+			}
+		}
+	}
+
+	focus = {
+		id = SQI_tuan_jie_she_hui
+		icon = GFX_RUS_oprichnina
+		relative_position_id = SQI_yi_liao_zhi_wai_de_sheng_li_zhe	
+		x = 4
+		y = 16
+		cost = 5
+
+		available = {
+			
+		}
+		prerequisite = {
+			focus = SQI_ou_ya_zhu_yi_jiao_yu
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SQI_tuan_jie_she_hui"
+			swap_ideas = {
+				remove_idea = DKB_aftermath_uch_economic_idea_3
+				add_idea = SQI_aftermath_uch_economic_idea_10
+			}
+			hidden_effect = {
+				country_event = {
+					id = lefteurasia.33
+					days = 20
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = SQI_li_xian_ming_zhu_dang
+		icon = GFX_RUS_conservative_party
+		relative_position_id = SQI_yi_liao_zhi_wai_de_sheng_li_zhe	
+		x = -2
+		y = 12
+		cost = 5
+
+		available = {
+			
+		}
+		prerequisite = {
+			focus = SQI_e_luo_si_de_xin_sheng
+		}
+		mutually_exclusive = {
+			focus = SQI_du_shan_qi_sheng
+			focus = SQI_ou_ya_zhu_zhe
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SQI_li_xian_ming_zhu_dang"
+			swap_ideas = {
+				remove_idea = DKB_aftermath_uch_idea_3
+				add_idea = DKB_aftermath_uch_idea_4
+			}
+			hidden_effect = {
+				country_event = {
+					id = rusdem.602
+					days = 20
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = SQI_gua_tou_zhu_dao
+		icon = GFX_RUS_Capitalism_Will_Prosper_In_Russia
+		relative_position_id = SQI_yi_liao_zhi_wai_de_sheng_li_zhe	
+		x = -4
+		y = 13
+		cost = 5
+
+		available = {
+			
+		}
+		prerequisite = {
+			focus = SQI_li_xian_ming_zhu_dang
+		}
+		mutually_exclusive = {
+			focus = SQI_gui_zu_she_hui
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SQI_gui_zu_she_hui"
+			add_political_power = 100
+			swap_ideas = {
+				remove_idea = DKB_aftermath_uch_economic_idea_2
+				add_idea = DKB_aftermath_uch_economic_idea_3
+			}
+			create_country_leader = {
+				name = "费利克斯·F·尤苏波夫"
+				picture = "gfx/leaders/RUS/Portrait_RUS_Felix_Yusupov.png"
+				expire = "1.1.1"
+				ideology = oligarchy_subtype
+				traits = {}
+			}
+			set_politics = {
+				ruling_party = authoritarian_democrat
+			}
+			add_ideas ={
+				RUS_Felix_F_Yusupov_hog_ade
+				RUS_Mikhail_A_Taube_for_ade 
+				RUS_Mikhail_I_Tereshchenko_eco_sli
+				RUS_Felix_F_Yusupov_sec_ade
+			} 
+			set_party_name = {
+				ideology = authoritarian_democrat
+				long_name =  RUS_authoritarian_democrat_party_long
+				name =  RUS_authoritarian_democrat_party
+			}
+		}
+	}
+
+	focus = {
+		id = SQI_bao_hu_si_you_zhi
+		icon = GFX_RUS_Support_Small_Business_vns
+		relative_position_id = SQI_yi_liao_zhi_wai_de_sheng_li_zhe	
+		x = -5
+		y = 14
+		cost = 5
+
+		available = {
+			
+		}
+		prerequisite = {
+			focus = SQI_gua_tou_zhu_dao
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SQI_bao_hu_si_you_zhi"
+			swap_ideas = {
+				remove_idea = DKB_aftermath_uch_economic_idea_3
+				add_idea = SQI_aftermath_uch_economic_idea_4
+			}
+		}
+	}
+
+	focus = {
+		id = SQI_gai_ge_sui_zhi
+		icon = GFX_RUS_Tax_Reform
+		relative_position_id = SQI_yi_liao_zhi_wai_de_sheng_li_zhe	
+		x = -5
+		y = 15
+		cost = 5
+
+		available = {
+			
+		}
+		prerequisite = {
+			focus = SQI_bao_hu_si_you_zhi
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SQI_gai_ge_sui_zhi"
+			swap_ideas = {
+				remove_idea = SQI_aftermath_uch_economic_idea_4
+				add_idea = SQI_aftermath_uch_economic_idea_5
+			}
+		}
+	}
+
+	focus = {
+		id = SQI_zhi_ci_tuo_la_si
+		icon = GFX_RUS_Strong_Executive
+		relative_position_id = SQI_yi_liao_zhi_wai_de_sheng_li_zhe	
+		x = -4
+		y = 16
+		cost = 5
+
+		available = {
+			
+		}
+		prerequisite = {
+			focus = SQI_gai_ge_sui_zhi
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SQI_zhi_ci_tuo_la_si"
+			swap_ideas = {
+				remove_idea = DKB_aftermath_uch_idea_4
+				add_idea = SQI_aftermath_uch_idea_5
+			}
+		}
+	}
+
+	focus = {
+		id = SQI_gui_zu_she_hui
+		icon = GFX_RUS_Aristocrats_Triumphant
+		relative_position_id = SQI_yi_liao_zhi_wai_de_sheng_li_zhe	
+		x = -2
+		y = 13
+		cost = 5
+
+		available = {
+			
+		}
+		prerequisite = {
+			focus = SQI_li_xian_ming_zhu_dang
+		}
+		mutually_exclusive = {
+			focus = SQI_gua_tou_zhu_dao
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SQI_gui_zu_she_hui"
+			add_stability = 0.05
+			swap_ideas = {
+				remove_idea = DKB_aftermath_uch_economic_idea_2
+				add_idea = DKB_aftermath_uch_economic_idea_3
+			}
+			swap_ideas = {
+				remove_idea = DKB_aftermath_uch_idea_4
+				add_idea = SQI_aftermath_uch_idea_6
+			}
+			create_country_leader = {
+				name = "瓦西里·V·舒尔金"
+				picture = "gfx/leaders/RUS/Portrait_RUS_Vasily_Shulgin.png"
+				expire = "1.1.1"
+				ideology = national_conservative_subtype
+				traits = {}
+			}
+			set_politics = {
+				ruling_party = social_conservative
+			}
+			add_ideas ={
+				RUS_Vasiliy_V_Shulgin_hog_sco
+				RUS_Mikhail_A_Taube_for_ade 
+				RUS_Ivan_G_Erdeli_eco_sco
+				RUS_Felix_F_Yusupov_sec_ade
+			} 
+		}
+	}
+
+	focus = {
+		id = SQI_jian_shou_chuan_tong
+		icon = GFX_RUS_Enact_Traditional_Values
+		relative_position_id = SQI_yi_liao_zhi_wai_de_sheng_li_zhe	
+		x = -3
+		y = 14
+		cost = 5
+
+		available = {
+			
+		}
+		prerequisite = {
+			focus = SQI_gui_zu_she_hui
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SQI_jian_shou_chuan_tong"
+			add_political_power = 100
+			add_ideas = SQI_dong_zhen
+		}
+	}
+
+	focus = {
+		id = SQI_bao_hu_di_zhu
+		icon = GFX_RUS_Emergence_Of_Farmers
+		relative_position_id = SQI_yi_liao_zhi_wai_de_sheng_li_zhe	
+		x = -3
+		y = 15
+		cost = 5
+
+		available = {
+			
+		}
+		prerequisite = {
+			focus = SQI_jian_shou_chuan_tong
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SQI_bao_hu_di_zhu"
+			swap_ideas = {
+				remove_idea = DKB_aftermath_uch_economic_idea_3
+				add_idea = SQI_aftermath_uch_economic_idea_6
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = SQI_mao_yi_bao_hu
+		icon = GFX_RUS_Reaffirm_Protectionism
+		relative_position_id = SQI_yi_liao_zhi_wai_de_sheng_li_zhe	
+		x = -2
+		y = 16
+		cost = 5
+
+		available = {
+			
+		}
+		prerequisite = {
+			focus = SQI_bao_hu_di_zhu
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus SQI_mao_yi_bao_hu"
+			swap_ideas = {
+				remove_idea = SQI_aftermath_uch_economic_idea_6
+				add_idea = SQI_aftermath_uch_economic_idea_7
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+					instant_build = yes
+				}
+			}
+		}
+	}
+	#征服
+		focus = {
+			id = SQI_shou_fu_shi_di
+			icon = GFX_RUS_State_Revanchism
+			relative_position_id = SQI_yi_liao_zhi_wai_de_sheng_li_zhe	
+			x = 0
+			y = 17
+			cost = 5
+
+			available = {
+				
+			}
+			prerequisite = {
+				focus = SQI_zai_ci_jia_mian
+				focus = SQI_mao_yi_bao_hu
+				focus = SQI_zhi_ci_tuo_la_si
+				focus = SQI_song_yang_zhu_de_wei_ye
+				focus = SQI_tuan_jie_she_hui
+			}
+
+			completion_reward = {
+				log = "[GetDateText]: [Root.GetName]: Focus SQI_shou_fu_shi_di"
+				custom_effect_tooltip = TRM_expansion
+				create_wargoal = {
+					target = GEO
+					type = annex_everything
+				}
+				create_wargoal = {
+					target = DKB
+					type = annex_everything
+				}
+				create_wargoal = {
+					target = KLY
+					type = annex_everything
+				}
+				create_wargoal = {
+					target = AZE
+					type = annex_everything
+				}
+				create_wargoal = {
+					target = ARM
+					type = annex_everything
+				}
+				create_wargoal = {
+					target = var:air_intel@KUB
+					type = annex_everything
+				}
+				create_wargoal = {
+					target = MTR
+					type = annex_everything
+				}
+				create_wargoal = {
+					target = ALO
+					type = annex_everything
+				}
+				create_wargoal = {
+					target = TRK
+					type = annex_everything
+				}
+				create_wargoal = {
+					target = KYR
+					type = annex_everything
+				}
+				create_wargoal = {
+					target = UZB
+					type = annex_everything
+				}
+				if = {
+					limit = {
+						TRM = {
+							exists = yes
+							NOT = {
+							is_in_faction_with = SQI
+							}
+						}
+					}
+					every_state = {
+						limit = {
+							is_core_of = TRM
+						}
+						add_core_of = SQI
+					}
+					create_wargoal = {
+						target = TRM
+						type = annex_everything
+					}
+				}
+				hidden_effect = {
+					every_state = {
+						limit = {
+							OR = {
+								is_core_of = KUB
+								is_core_of = GEO
+								is_core_of = DKB
+								is_core_of = KLY
+								is_core_of = AZE
+								is_core_of = ARM
+								is_core_of = MTR
+								is_core_of = ALO
+								is_core_of = KYR
+								is_core_of = UZB
+								is_core_of = TRK
+							}
+						}
+						add_core_of = SQI
+					}
+				}
+			}
+		}
+
+		focus = {
+			id = SQI_Join_The_Reichspakt
+			text = RUS_Join_The_Reichspakt
+			icon = GFX_goal_germany
+			relative_position_id = SQI_yi_liao_zhi_wai_de_sheng_li_zhe	
+			x =-3
+			y = 18
+			cost = 5
+			prerequisite = { focus = SQI_shou_fu_shi_di }
+
+			available = {
+				is_in_faction = no
+			}
+			mutually_exclusive = {
+				focus = SQI_own_faction
+				focus = SQI_join_ent
+			}
+
+			ai_will_do = { factor = 50 }
+			completion_reward = { GER = { add_to_faction = ROOT } }
+		}
+
+		focus = {
+			id = SQI_own_faction
+			text = RUS_Seek_Allies
+			icon = GFX_goal_RUS_eurasia
+			relative_position_id = SQI_yi_liao_zhi_wai_de_sheng_li_zhe	
+			x =-4
+			y = 19
+			cost = 5
+
+			prerequisite = { focus = SQI_shou_fu_shi_di }
+			available = { is_in_faction = no }
+			mutually_exclusive = {
+				focus = SQI_Join_The_Reichspakt
+				focus = SQI_join_ent
+			}
+
+			ai_will_do = { factor = 50 }
+			completion_reward = {
+				unlock_decision_category_tooltip = RUS_Alliance_decisions
+				if = {
+					limit = { is_faction_leader = no }
+					create_faction = "Axis of Liberated Peoples"
+				}
+			}
+		}
+
+		focus = {
+			id = SQI_join_ent
+			text = RUS_Approach_Our_Old_Allies
+			icon = GFX_goal_RUS_Entente_Girls
+			relative_position_id = SQI_yi_liao_zhi_wai_de_sheng_li_zhe	
+			x =-5
+			y = 18
+			cost = 5
+
+			prerequisite = { focus = SQI_shou_fu_shi_di }
+			available = { is_in_faction = no }
+			mutually_exclusive = {
+				focus = SQI_Join_The_Reichspakt
+				focus = SQI_Join_The_Reichspakt
+			}
+
+			ai_will_do = { factor = 50 }
+			completion_reward = { ENT = { add_to_faction = ROOT } }
+		}
+
+		focus = {
+			id = SQI_Attack_Europe
+			text = TRM_Attack_Europe
+			icon = GFX_RUS_eastern_europe
+			relative_position_id = SQI_yi_liao_zhi_wai_de_sheng_li_zhe	
+			x = 0
+			y = 18
+			cost = 5
+	
+			available = {
+				has_war = no
+				is_subject = no
+			}
+			prerequisite = {
+				focus = SQI_shou_fu_shi_di
+			}
+			ai_will_do = {
+				factor = 1
+				modifier = {
+					factor = 0
+					has_war = yes
+				}
+			}
+			completion_reward = {
+				log = "[GetDateText]: [Root.GetName]: Focus TRM_Attack_Europe"
+				add_war_support = 0.05
+				add_political_power = 25
+			}
+		}
+
+		focus = {
+			id = SQI_Invade_WHR
+			text = TRM_Invade_WHR
+			icon = GFX_focus_rus_belarus
+			relative_position_id = SQI_yi_liao_zhi_wai_de_sheng_li_zhe	
+			x = 0
+			y = 19
+			cost = 5
+	
+			available = {
+				has_war = no
+				is_subject = no
+				is_neighbor_of = WHR
+			}
+			prerequisite = {
+				focus = SQI_Attack_Europe
+			}
+			bypass = { NOT = { country_exists = WHR } }
+			ai_will_do = {
+				factor = 1
+				modifier = {
+					factor = 0
+					has_war = yes
+				}
+			}
+			completion_reward = {
+				log = "[GetDateText]: [Root.GetName]: Focus TRM_Invade_WHR"
+				create_wargoal = {
+					type = annex_everything
+					target = WHR
+				}
+				if = {
+					limit = { 
+						has_completed_focus = SQI_ou_ya_zhu_zhe
+					}
+					every_state = {
+						limit = {
+							is_core_of = WHR
+						}
+						add_core_of = SQI
+					}
+				}
+			}
+		}
+
+		focus = {
+			id = SQI_Invade_Finland
+			text = TRM_Invade_Finland
+			icon = GFX_focus_rus_finland
+			relative_position_id = SQI_yi_liao_zhi_wai_de_sheng_li_zhe	
+			x = -2
+			y = 19
+			cost = 5
+	
+			available = {
+				has_war = no
+				is_subject = no
+				is_neighbor_of = FIN 
+			}
+			prerequisite = {
+				focus = SQI_Attack_Europe
+			}
+
+			bypass = { NOT = { country_exists = FIN } }
+			ai_will_do = {
+				factor = 1
+				modifier = {
+					factor = 0
+					has_war = yes
+				}
+			}
+			completion_reward = {
+				log = "[GetDateText]: [Root.GetName]: Focus TRM_Invade_Finland"
+				create_wargoal = {
+					type = annex_everything
+					target = FIN
+				}
+				if = {
+					limit = { 
+						has_completed_focus = SQI_ou_ya_zhu_zhe
+					}
+					every_state = {
+						limit = {
+							is_core_of = FIN
+						}
+						add_core_of = SQI
+					}
+				}
+			}
+			search_filters = { FOCUS_FILTER_ANNEXATION FOCUS_FILTER_STABILITY }
+		}
+
+		focus = {
+			id = SQI_Invade_Ukraine
+			text = TRM_Invade_Ukraine
+			icon = GFX_focus_rus_ukraine
+			relative_position_id = SQI_yi_liao_zhi_wai_de_sheng_li_zhe	
+			x = 2
+			y = 19
+			cost = 5
+	
+			available = {
+				has_war = no
+				is_subject = no
+				is_neighbor_of = UKR
+			}
+			prerequisite = {
+				focus = SQI_Attack_Europe
+			}
+			ai_will_do = {
+				factor = 1
+				modifier = {
+					factor = 0
+					has_war = yes
+				}
+			}
+			bypass = { NOT = { country_exists = UKR } }
+
+			completion_reward = {
+				log = "[GetDateText]: [Root.GetName]: Focus TRM_Invade_Ukraine"
+				create_wargoal = {
+					type = annex_everything
+					target = UKR
+				}
+				if = {
+					limit = { country_exists = WSU }
+					create_wargoal = {
+						type = annex_everything
+						target = WSU
+					}
+				}
+				if = {
+					limit = { 
+						has_completed_focus = SQI_ou_ya_zhu_zhe
+					}
+					every_state = {
+						limit = {
+							OR = {
+								is_core_of = UKR
+								is_core_of = WSU
+							}
+						}
+						add_core_of = SQI
+					}
+				}
+			}
+		}
+
+		focus = {
+			id = SQI_Demand_Bessarabiav
+			text = RUS_Demand_Bessarabia_Back
+			icon = GFX_focus_rus_bessarabia
+			relative_position_id = SQI_yi_liao_zhi_wai_de_sheng_li_zhe	
+			x = 1
+			y = 20
+			cost = 5
+	
+			available = {
+				has_war = no
+				is_subject = no
+				OR = {
+					is_neighbor_of = ROM 
+					is_neighbor_of = RRM 
+				}
+			}
+			prerequisite = {
+				focus = SQI_Attack_Europe
+			}
+			ai_will_do = {
+				factor = 1
+				modifier = {
+					factor = 0
+					has_war = yes
+				}
+			}
+			bypass = {
+				NOT = {
+					OR = {
+						country_exists = ROM
+						country_exists = RRM
+					}
+				}
+			}
+
+			completion_reward = {
+				log = "[GetDateText]: [Root.GetName]: Focus TRM_Demand_Bessarabia"
+				78 = { add_claim_by = ROOT }
+				1222 = { add_claim_by = ROOT }
+				if = {
+					limit = {
+						78 = { is_owned_and_controlled_by = ROM }
+						1222 = { is_owned_and_controlled_by = ROM }
+					}
+					create_wargoal = {
+						type = annex_everything
+						target = ROM
+					}
+				}
+				else_if = {
+					limit = {
+						78 = { is_owned_and_controlled_by = UKR }
+						1222 = { is_owned_and_controlled_by = UKR }
+					}
+					create_wargoal = {
+						type = annex_everything
+						target = UKR
+					}
+				}
+				else = {
+					create_wargoal = {
+						type = annex_everything
+						target = RRM
+					}
+				}
+				if = {
+					limit = { 
+						has_completed_focus = SQI_ou_ya_zhu_zhe
+					}
+					every_state = {
+						limit = {
+							OR = {
+								is_core_of = RRM
+								is_core_of = ROM
+							}
+						}
+						add_core_of = SQI
+					}
+				}
+			}
+			search_filters = { FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_ANNEXATION FOCUS_FILTER_STABILITY }
+		}
+
+		focus = {
+			id = SQI_End_Poland
+			text = RUS_Polish_Question
+			icon = GFX_focus_rus_poland
+			relative_position_id = SQI_yi_liao_zhi_wai_de_sheng_li_zhe	
+			x = -1
+			y = 20
+			cost = 5
+	
+			available = {
+				has_war = no
+				is_subject = no
+				is_neighbor_of = POL 
+			}
+			prerequisite = {
+				focus = SQI_Attack_Europe
+			}
+
+			bypass = { NOT = { country_exists = POL } }
+			ai_will_do = {
+				factor = 1
+				modifier = {
+					factor = 0
+					has_war = yes
+				}
+			}
+			completion_reward = {
+				log = "[GetDateText]: [Root.GetName]: Focus TRM_End_Poland"
+				create_wargoal = {
+					type = annex_everything
+					target = POL
+				}
+				if = {
+					limit = { 
+						has_completed_focus = SQI_ou_ya_zhu_zhe
+					}
+					every_state = {
+						limit = {
+							is_core_of = POL
+						}
+						add_core_of = SQI
+					}
+				}
+			}
+			search_filters = { FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_ANNEXATION FOCUS_FILTER_STABILITY }
+		}
+
+		focus = {
+			id = SQI_End_Germany
+			text = TRM_End_Germany
+			icon = GFX_focus_RUS_germany
+			relative_position_id = SQI_yi_liao_zhi_wai_de_sheng_li_zhe	
+			x = 0
+			y = 21
+			cost = 5
+	
+			available = {
+				has_war = no
+				is_subject = no
+				is_neighbor_of = GER
+				NOT = { is_in_faction_with = GER }
+			}
+
+			prerequisite = {
+				focus = SQI_Attack_Europe
+				focus = SQI_End_Poland
+				focus = SQI_Demand_Bessarabiav
+			}
+
+			bypass = { NOT = { country_exists = GER } }
+			ai_will_do = {
+				factor = 1
+				modifier = {
+					factor = 0
+					has_war = yes
+				}
+			}
+			completion_reward = {
+				log = "[GetDateText]: [Root.GetName]: Focus TRM_End_Germany"
+				create_wargoal = {
+					type = annex_everything
+					target = GER
+				}
+				if = {
+					limit = { 
+						has_completed_focus = SQI_ou_ya_zhu_zhe
+					}
+					every_state = {
+						limit = {
+							is_core_of = GER
+						}
+						add_core_of = SQI
+					}
+				}
+				hidden_effect = {
+					add_stability = 0.05
+					add_war_support = 0.10
+				}
+			}
+			search_filters = { FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_ANNEXATION FOCUS_FILTER_STABILITY }
+		}
+
+		focus = {
+			id = SQI_tu_er_qi
+			icon = GFX_goal_RUS_middle_east
+			relative_position_id = SQI_yi_liao_zhi_wai_de_sheng_li_zhe	
+			x = 4
+			y = 18
+			cost = 5
+	
+			available = {
+				has_war = no
+				is_subject = no
+				is_neighbor_of = TUR 
+			}
+			prerequisite = {
+				focus = SQI_shou_fu_shi_di
+			}
+			ai_will_do = {
+				factor = 1
+				modifier = {
+					factor = 0
+					has_war = yes
+				}
+			}
+			bypass = {
+				NOT = {
+					country_exists = TUR
+				}
+			}
+	
+			completion_reward = {
+				log = "[GetDateText]: [Root.GetName]: Focus SQI_tu_er_qi"
+				every_state = {
+					limit = {
+						OR = {
+							state = 1225 #Dardanelles
+							state = 773 #Constantinople
+						}
+						is_claim_or_core_of_ROOT = no
+					}
+					add_claim_by = ROOT
+				}
+				if = {
+					limit = { 
+						country_exists = TUR 
+					}
+					create_wargoal = {
+						type = annex_everything
+						target = TUR
+					}
+				}
+				if = {
+					limit = { 
+						has_completed_focus = SQI_ou_ya_zhu_zhe
+					}
+					every_state = {
+						limit = {
+							is_core_of = TUR
+						}
+						add_core_of = SQI
+					}
+				}
+				if = {
+					limit = { 
+						country_exists = PER 
+					}
+					create_wargoal = {
+						type = annex_everything
+						target = PER
+					}
+				}
+				if = {
+					limit = { 
+						has_completed_focus = SQI_ou_ya_zhu_zhe
+					}
+					every_state = {
+						limit = {
+							is_core_of = PER
+						}
+						add_core_of = SQI
+					}
+				}
+			}
+		}
+
+		focus = {
+			id = SQI_Demand_North_Iran
+			text = RUS_Demand_North_Iran
+			icon = GFX_focus_rus_persia
+			relative_position_id = SQI_yi_liao_zhi_wai_de_sheng_li_zhe	
+			x = 4
+			y = 19
+			cost = 5
+	
+			available = {
+				has_war = no
+				is_subject = no
+				is_neighbor_of = PER
+			}
+			prerequisite = {
+				focus = SQI_tu_er_qi
+			}
+			ai_will_do = {
+				factor = 1
+				modifier = {
+					factor = 0
+					has_war = yes
+				}
+			}
+			bypass = { NOT = { country_exists = PER } }
+			completion_reward = {
+				every_state = {
+					limit = {
+						OR = {
+							state = 420
+							state = 418 
+							state = 804 
+						}
+						is_claim_or_core_of_ROOT = no
+					}
+					add_claim_by = ROOT
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = PER
+				}
+				if = {
+					limit = { 
+						has_completed_focus = SQI_ou_ya_zhu_zhe
+					}
+					every_state = {
+						limit = {
+							is_core_of = PER
+						}
+						add_core_of = SQI
+					}
+				}
+			}
+		}
+
+		focus = {
+			id = SQI_Invade_Afghanistan
+			text = RUS_Secure_Afghanistan
+			icon = GFX_focus_rus_afghanistan
+			relative_position_id = SQI_yi_liao_zhi_wai_de_sheng_li_zhe	
+			x = 4
+			y = 20
+			cost = 5
+
+			prerequisite = { focus = SQI_Demand_North_Iran }
+			available = {
+				has_war = no
+				is_subject = no
+				is_neighbor_of = AFG
+			}
+			ai_will_do = {
+				factor = 1
+				modifier = {
+					factor = 0
+					has_war = yes
+				}
+			}
+			bypass = {
+				OR = {
+					NOT = { country_exists = AFG }
+					is_in_faction_with = AFG
+				}
+			}
+			completion_reward = {
+				create_wargoal = {
+					type = annex_everything
+					target = AFG
+				}
+				if = {
+					limit = { 
+						has_completed_focus = SQI_ou_ya_zhu_zhe
+					}
+					every_state = {
+						limit = {
+							is_core_of = AFG
+						}
+						add_core_of = SQI
+					}
+				}
+			}
+		}
+
+		focus = {
+			id = SQI_India
+			text = RUS_India_Policy
+			icon = GFX_focus_rus_india
+			relative_position_id = SQI_yi_liao_zhi_wai_de_sheng_li_zhe	
+			x = 4
+			y = 21
+			cost = 5
+
+			prerequisite = { focus = SQI_Invade_Afghanistan }
+			available = {
+				has_war = no
+				is_subject = no
+				is_neighbor_of = AFG
+			}
+			ai_will_do = {
+				factor = 1
+				modifier = {
+					factor = 0
+					has_war = yes
+				}
+			}
+			bypass = { is_in_faction_with = DEH }
+			completion_reward = {
+				if = {
+					limit = { ROOT = { is_in_faction_with = CAN } }
+					custom_effect_tooltip = unlocks_decision
+					custom_effect_tooltip = RUS_Support_DEH			
+				}
+				if = {
+					limit = {
+						has_socialist_government = yes
+						BHC = { has_socialist_government = yes }
+					}
+					custom_effect_tooltip = unlocks_decision
+					custom_effect_tooltip = RUS_Support_BHC
+				}
+				else = {
+					custom_effect_tooltip = unlocks_decision
+					custom_effect_tooltip = RUS_Support_PRF_tt
+				}
+			}
+		}
+
+		focus = {
+			id = SQI_fuck_japan
+			icon = GFX_goal_generic_anti_japan
+			relative_position_id = SQI_yi_liao_zhi_wai_de_sheng_li_zhe	
+			x = -7
+			y = 18
+			cost = 5
+
+			prerequisite = {
+				focus = SQI_shou_fu_shi_di
+			}
+			ai_will_do = {
+				factor = 50
+			}
+			completion_reward = {
+				log = "[GetDateText]: [Root.GetName]: Focus SQI_fuck_japan"
+				create_wargoal = {
+					target = JAP
+					type = annex_everything
+				}
+				if = {
+					limit = { 
+						has_completed_focus = SQI_ou_ya_zhu_zhe
+					}
+					every_state = {
+						limit = {
+							is_core_of = JAP
+						}
+						add_core_of = SQI
+					}
+				}
+			}
+		}
+
+		focus = {
+			id = SQI_aslaksa
+			icon = GFX_DKB_Fort_Elisabeth
+			relative_position_id = SQI_yi_liao_zhi_wai_de_sheng_li_zhe	
+			x = -7
+			y = 19
+			cost = 5
+
+			prerequisite = {
+				focus = SQI_fuck_japan
+			}
+			ai_will_do = {
+				factor = 50
+			}
+			completion_reward = {
+				log = "[GetDateText]: [Root.GetName]: Focus SQI_aslaksa"
+				country_event = rusfor.1423
+				add_state_claim = 463
+				add_state_claim = 629
+				add_state_claim = 630
+				add_state_claim = 631
+				add_state_claim = 632
+				add_state_claim = 648
+				add_state_claim = 645
+				add_state_claim = 646
+				add_state_claim = 638
+				add_state_claim = 633
+				add_state_claim = 727
+				add_state_claim = 642
+				add_state_claim = 643
+				add_state_claim = 639
+				add_state_claim = 725
+			}
+		}
+}

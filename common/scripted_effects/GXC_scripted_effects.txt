@@ -1,0 +1,184 @@
+GXC_banlance = {#军党冲突
+	set_power_balance = {
+		id = GXC_power_balance
+		left_side = GXC_wen_winning_side
+		right_side = GXC_wu_winning_side
+		set_value = 0.20
+	}
+}
+
+GXC_produce_education = {#职业教育
+	if = {
+		limit = { 
+			has_idea = GXC_ji_shu_jiao_yu
+		}
+		swap_ideas = {
+			remove_idea = GXC_ji_shu_jiao_yu
+			add_idea = GXC_ji_shu_jiao_y2
+		}
+	}
+	else = {
+		add_ideas = GXC_ji_shu_jiao_yu
+	}
+}
+
+GXC_people_effects = {#阶级问题定值
+	add_dynamic_modifier = {
+		modifier = GXC_people_modifier
+	}
+	hidden_effect = { add_ideas = GXC_people_idea }
+
+	set_variable = { GXC_worker = -10 }
+	set_variable = { GXC_boss = 10 }
+
+	set_variable = { GXC_people_imrovement_rate = 0 }
+	set_variable = { GXC_people_deterioration_rate = 0 }
+	GXC_people_effects_modifer = yes
+}
+
+GXC_people_effects_modifer = {#通过赋值变动来给效果变化
+	set_variable = { GXC_people_var = GXC_worker }
+	set_variable = { GXC_people_2_var = GXC_boss }
+
+	set_temp_variable = { GXC_people_factor = GXC_people_var }
+	set_temp_variable = { GXC_people_2_factor = GXC_people_2_var }
+
+	divide_temp_variable = { GXC_people_factor = 200 }
+	divide_temp_variable = { GXC_people_2_factor = 200 }
+
+	
+	set_variable = { GXC.GXC_people_stability = GXC_people_factor }
+	set_variable = { GXC.GXC_people_political_power_factor = GXC_people_2_factor }
+	
+	set_variable = { GXC.GXC_people_production_support = GXC_people_factor }
+
+	multiply_temp_variable = { GXC_people_2_factor = -1 }
+	set_variable = { GXC.GXC_people_consumer_goods_factor = GXC_people_2_factor }
+
+	clear_variable = GXC_people_var
+	clear_variable = GXC_people_2_var
+
+	force_update_dynamic_modifier = yes
+}
+
+GXC_daily_update = {#每日变化
+
+	set_variable = { 
+		var = GXC_dailyupdate_var
+		value = 0
+	}
+	if = {
+		limit = {
+			check_variable = { GXC_people_deterioration_rate = 1 }
+		}
+		add_to_variable = { GXC_dailyupdate_var = -0.08 }
+		add_to_variable = { GXC.GXC_boss = GXC_dailyupdate_var }
+		subtract_from_temp_variable = { GXC.GXC_worker = GXC_dailyupdate_var }
+	}
+	else_if = {
+		limit = {
+			check_variable = { GXC_people_imrovement_rate = 1 }
+		}
+		add_to_variable = { GXC_dailyupdate_var = 0.08 }
+		add_to_variable = { GXC.GXC_worker = GXC_dailyupdate_var }
+		subtract_from_temp_variable = { GXC.GXC_boss = GXC_dailyupdate_var }
+	}
+
+	GXC_people_clamp = yes
+}
+
+GXC_people_clamp = {#确定上下限
+	clamp_variable = {
+		var = GXC_worker
+		min = -40
+		max = 40
+	}
+	clamp_variable = {
+		var = GXC_boss
+		min = -40
+		max = 40
+	}
+}
+
+#李宗仁在行动
+GXC_bop_low_increase_effect_10 = {
+	add_power_balance_value = {
+		id = GXC_power_balance
+		value = 0.10
+	}
+}
+GXC_bop_low_increase_effect_12 = {
+	add_power_balance_value = {
+		id = GXC_power_balance
+		value = 0.12
+	}
+}
+GXC_bop_low_increase_effect_13 = {
+	add_power_balance_value = {
+		id = GXC_power_balance
+		value = 0.13
+	}
+}
+GXC_bop_medium_increase_effect = {
+	add_power_balance_value = {
+		id = GXC_power_balance
+		value = 0.15
+	}
+}
+GXC_bop_large_increase_effect = {	
+	add_power_balance_value = {
+		id = GXC_power_balance
+		value = 0.20
+	}
+}
+GXC_bop_very_large_increase_effect = {
+	add_power_balance_value = {
+		id = GXC_power_balance
+		value = 0.25
+	}
+}
+
+#行政院在行动
+GXC_bop_low_decrease_effect_10 = {
+	add_power_balance_value = {
+		id = GXC_power_balance
+		value = -0.10
+	}
+}
+GXC_bop_low_decrease_effect_12 = {
+	add_power_balance_value = {
+		id = GXC_power_balance
+		value = -0.12
+	}
+}
+GXC_bop_low_decrease_effect_13 = {
+	add_power_balance_value = {
+		id = GXC_power_balance
+		value = -0.13
+	}
+}
+GXC_bop_medium_decrease_effect = {
+	add_power_balance_value = {
+		id = GXC_power_balance
+		value = -0.15
+	}
+}
+GXC_bop_large_decrease_effect = {	
+	add_power_balance_value = {
+		id = GXC_power_balance
+		value = -0.20
+	}
+}
+GXC_bop_very_large_decrease_effect = {
+	add_power_balance_value = {
+		id = GXC_power_balance
+		value = -0.25
+	}
+}
+GXC_bop_enormous_decrease_effect = {
+	add_power_balance_value = {
+		id = GXC_power_balance
+		value = -0.75
+	}
+}
+

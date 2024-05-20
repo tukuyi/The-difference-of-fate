@@ -1,0 +1,131 @@
+
+GXC_power_balance = {
+	initial_value = 0.15
+	left_side = GXC_wen_winning_side
+	right_side = GXC_wu_winning_side
+	decision_category = GXC_balance_of_power_category
+
+	###中间地带
+	range = {
+		id = GXC_senate_duma_conflict_balance_range
+		min = -0.10
+		max = 0.10
+		modifier = {
+			stability_weekly = -0.01
+			political_power_cost = 0.5
+		}
+		on_activate = {
+
+		}
+		on_deactivate = {
+			
+		}
+	}
+
+	### 右派文官
+	side = {
+		id = GXC_wen_winning_side
+		icon = GFX_bop_HNN_rkmt_side
+
+		range = {
+			id = GXC_bop_RMKT_tilt
+			min = -0.35
+			max = -0.1
+			modifier = {
+				stability_weekly = -0.01
+				political_power_cost = 0.5
+			}
+			on_activate = {
+
+			}
+			on_deactivate = {
+				
+			}
+		}
+
+		range = {
+			id = GXC_bop_RMKT_ascendant
+			min = -0.75
+			max = -0.35
+			modifier = {
+				stability_weekly = -0.01
+				political_power_cost = 0.4
+			}
+			on_activate = {
+
+			}
+			on_deactivate = {
+
+			}
+		}
+
+		range = {
+			id = GXC_bop_RMKT_dominant
+			min = -1
+			max = -0.75
+			modifier = {
+				stability_weekly = -0.01
+				political_power_cost = 0.35
+			}
+			on_activate = {
+				country_event = { id = lngRkmt.20 days = 3 } #Dominance of the Action Committee
+			}
+			on_deactivate = {
+				
+			}
+		}
+	}
+
+	### 李宗仁
+	side = {
+		id = GXC_wu_winning_side
+		icon = GFX_bop_HNN_cq_side
+
+		range = {
+			id = GXC_bop_CQ_tilt
+			min = 0.1
+			max = 0.35
+			modifier = {
+				stability_weekly = -0.01
+				political_power_cost = 0.5
+			}
+			on_activate = {
+			}
+			on_deactivate = {
+
+			}
+		}
+
+		range = {
+			id = GXC_bop_CQ_ascendant
+			min = 0.35
+			max = 0.75
+			modifier = {
+				stability_weekly = -0.01
+				political_power_cost = 0.4
+			}
+			on_activate = {
+
+			}
+			on_deactivate = {
+
+			}
+		}
+
+		range = {
+			id = GXC_bop_CQ_dominant
+			min = 0.75
+			max = 1
+			modifier = {
+				stability_weekly = -0.02
+				political_power_cost = 0.35
+			}
+			on_activate = {
+				country_event = { id = lngRkmt.21 days = 3 } #Dominance of the Reorganised Comrades
+			}
+			on_deactivate = {
+				
+			}
+		}
+	}
+}

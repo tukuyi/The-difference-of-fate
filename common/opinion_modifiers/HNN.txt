@@ -1,0 +1,15 @@
+opinion_modifiers = {
+	GXC_pan_tu = {
+		value = -100
+	}
+	SQI_bi_yi = {
+		value = -20
+	}
+	SQI_gou_yi_si = {
+		value = 20
+	}
+	SQI_ju_jue = {
+		value = -100
+	}
+}
+

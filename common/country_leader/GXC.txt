@@ -1,0 +1,36 @@
+leader_traits = {
+
+	GXC_xiao_zu_ge = {
+		random = no
+		compliance_gain = 0.05
+		experience_gain_army_factor = 0.05
+		experience_gain_navy_factor = 0.05
+	}
+	GXC_qing_nian_ling_xiu = {
+		random = no
+		stability_factor = 0.02
+		authoritarian_democrat_drift = 0.02
+		experience_gain_army_factor = 0.05
+	}
+	GXC_zhong_hua_hua_sheng_dun = {
+		random = no
+		stability_factor = 0.05
+		paternal_autocrat_drift = 0.03
+	}
+	GXC_wu_shi_de_ai_guo_zhe = {
+		random = no
+		stability_factor = 0.05
+		political_power_cost = -0.05
+		authoritarian_democrat_drift = 0.05
+	}
+	GXC_huang_di = {
+		random = no
+		political_power_cost = -0.10
+		paternal_autocrat_drift = 0.05
+	}
+	GXC_qian_ceng_de_ai_guo_zhe = {
+		random = no
+		stability_weekly = 0.010
+		authoritarian_democrat_drift = 0.05
+	}
+}

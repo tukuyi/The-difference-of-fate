@@ -1,0 +1,50 @@
+H_in_china = {
+	OR = {
+		is_core_of = HNN
+		is_core_of = YUN
+		is_core_of = SZC
+		is_core_of = CHI
+		is_core_of = SQI
+		is_core_of = QIE
+		is_core_of = LEC
+		is_core_of = FNG
+		is_core_of = TIB
+		is_core_of = SHX
+		is_core_of = XSM
+		is_core_of = MON
+		is_core_of = SIK
+		is_core_of = TAN
+		is_core_of = LEP
+		is_core_of = GXC
+	}
+}
+
+has_compele_china = {
+	if = {
+		limit = { 
+			tag = HNN
+		}
+		has_completed_focus = HNN_gong_ye_hua
+	}
+	else_if = {
+		limit = { 
+			tag = GXC
+		}
+		has_completed_focus = GXC_martial_law
+	}
+}
+
+has_compele_china2 = {
+	if = {
+		limit = { 
+			tag = HNN
+		}
+		has_completed_focus = HNN_hou_cai_kuang
+	}
+	else_if = {
+		limit = { 
+			tag = GXC
+		}
+		has_completed_focus = GXC_shi_si_xiang_jian_she
+	}
+}

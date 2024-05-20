@@ -1,0 +1,106 @@
+GXC_has_federalist_government = {
+	has_country_leader = { name = "陈炯明" ruling_only = yes }	
+}
+GXC_has_KMT_government = {
+	OR = {
+		has_country_leader = {
+			name = "陈铭枢"
+			ruling_only = yes
+		}
+		has_country_leader = {
+			name = "李宗仁"
+			ruling_only = yes
+		}
+	}
+}
+GXC_has_LKMT_government = {
+	has_country_leader = {
+		name = "陈铭枢"
+		ruling_only = yes
+	}
+}
+GXC_has_RKMT_government = {
+	OR = {
+		has_country_leader = {
+			name = "胡汉民"
+			ruling_only = yes
+		}
+		has_country_leader = {
+			name = "李宗仁"
+			ruling_only = yes
+		}
+		has_country_leader = {
+			name = "张群"
+			ruling_only = yes
+		}
+		has_country_leader = {
+			name = "孙科"
+			ruling_only = yes
+		}
+		has_country_leader = {
+			name = "居正"
+			ruling_only = yes
+		}
+		has_country_leader = {
+			name = "白崇禧"
+			ruling_only = yes
+		}
+		has_country_leader = {
+			name = "蒋经国"
+			ruling_only = yes
+		}
+		has_country_leader = {
+			name = "蒋纬国"
+			ruling_only = yes
+		}
+		has_country_leader = {
+			name = "陈果夫"
+			ruling_only = yes
+		}
+		has_country_leader = {
+			name = "陈立夫"
+			ruling_only = yes
+		}
+		has_country_leader = {
+			name = "宋子文"
+			ruling_only = yes
+		}
+	}
+}
+GXC_has_NPA_government = {
+	OR = {
+		has_country_leader = {
+			name = "陈廉伯"
+			ruling_only = yes
+		}
+		has_country_leader = {
+			name = "马济"
+			ruling_only = yes
+		}
+	}
+}
+GXC_has_guangdong_government = {
+	OR = {
+		has_country_leader = { name = "陈炯明" ruling_only = yes }
+		has_country_leader = {
+			name = "陈铭枢"
+			ruling_only = yes
+		}
+		has_country_leader = {
+			name = "陈廉伯"
+			ruling_only = yes
+		}
+	}
+}
+GXC_has_guangxi_government = {
+	OR = {
+		has_country_leader = {
+			name = "李宗仁"
+			ruling_only = yes
+		}
+		has_country_leader = {
+			name = "马济"
+			ruling_only = yes
+		}
+	}
+}

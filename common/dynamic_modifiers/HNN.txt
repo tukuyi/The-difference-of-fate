@@ -1,0 +1,20 @@
+HNN_autonomous_region = {#少数民族自治区
+	enable = {
+		owner = {is_chinese_tag = yes}
+	}
+	icon = GFX_idea_achtstern_far_left
+	local_manpower = -0.30
+	local_building_slots_factor = -0.30
+	compliance_growth = 0.25
+	compliance_gain = 0.1
+	local_factories = -0.3
+}
+
+HNN_educational_modifier = { #扫盲
+	enable = { always = yes }
+	
+	stability_factor = HNN_education_stability
+	war_support_factor = HNN_education_war_support
+	political_power_factor = HNN_education_political_power_factor
+	consumer_goods_factor = HNN_education_consumer_goods_factor
+}
