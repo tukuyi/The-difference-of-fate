@@ -1,0 +1,14 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_ideology_islamic_three_subtype"
+		texturefile = "gfx/ideologies/subideologies/islamic_three_peoples_principles_group.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_islamic_chang_subtype"
+		texturefile = "gfx/ideologies/subideologies/islamic_chang_group.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_islamic_mao_subtype"
+		texturefile = "gfx/ideologies/subideologies/islamic_mao_group.png"
+	}
+}

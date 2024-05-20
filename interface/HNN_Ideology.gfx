@@ -1,0 +1,26 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_ideology_buddhist_autocrat_subtype"
+		texturefile = "gfx/ideologies/subideologies/buddhist_autocrat_group.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_lu_xun_thought_subtype"
+		texturefile = "gfx/ideologies/subideologies/lu_xun_thought_group.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_pataut_washingtonism_china_subtype"
+		texturefile = "gfx/ideologies/subideologies/pataut_washingtonism_china_group.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_sorelian_marketism_subtype"
+		texturefile = "gfx/ideologies/subideologies/sorelian_marketism_group.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_jun_zheng_ji_quan_subtype"
+		texturefile = "gfx/ideologies/subideologies/jun_zheng_ji_quan_group.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_mao_ze_dong_thought_subtype"
+		texturefile = "gfx/ideologies/subideologies/mao_ze_dong_thought_group.png"
+	}
+}

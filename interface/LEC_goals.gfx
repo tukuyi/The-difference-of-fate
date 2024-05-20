@@ -1,0 +1,142 @@
+SpriteTypes = {	
+	spriteType = {
+		name = "GFX_goal_LEC_zhong_cheng_de_shang_hai"
+		texturefile = "gfx/interface/goals/LEC_zhong_cheng_de_shang_hai.png"
+	}
+	spriteType = {
+		name = "GFX_goal_LEC_tu_5"
+		texturefile = "gfx/interface/goals/LEC_tu_5.png"
+	}
+	spriteType = {
+		name = "GFX_goal_LEC_qing_5"
+		texturefile = "gfx/interface/goals/LEC_qing_5.png"
+	}
+	spriteType = {
+		name = "GFX_goal_LEC_qing_6"
+		texturefile = "gfx/interface/goals/LEC_qing_6.png"
+	}
+	spriteType = {
+		name = "GFX_goal_LEC_tu_6"
+		texturefile = "gfx/interface/goals/LEC_tu_6.png"
+	}
+	spriteType = {
+		name = "GFX_goal_LEC_jinrong_5"
+		texturefile = "gfx/interface/goals/LEC_jinrong_5.png"
+	}
+	spriteType = {
+		name = "GFX_goal_LEC_jinrong_6"
+		texturefile = "gfx/interface/goals/LEC_jinrong_6.png"
+	}
+	spriteType = {
+		name = "GFX_goal_LEC_lu_xun_zhu_xi"
+		texturefile = "gfx/interface/goals/LEC_lu_xun_zhu_xi.png"
+	}
+	spriteType = {
+		name = "GFX_goal_LEC_zong_gong_hui_de_sheng_li"
+		texturefile = "gfx/interface/goals/LEC_zong_gong_hui_de_sheng_li.png"
+	}
+	spriteType = {
+		name = "GFX_goal_LEC_chi_ren_de_li_shi"
+		texturefile = "gfx/interface/goals/LEC_chi_ren_de_li_shi.png"
+	}
+	spriteType = {
+		name = "GFX_goal_LEC_ren_yi_dao_d"
+		texturefile = "gfx/interface/goals/LEC_ren_yi_dao_d.png"
+	}
+	spriteType = {
+		name = "GFX_goal_LEC_wu_zhi_zhu_yi_de_you_dian"
+		texturefile = "gfx/interface/goals/LEC_wu_zhi_zhu_yi_de_you_dian.png"
+	}
+	spriteType = {
+		name = "GFX_goal_LEC_da_zong_de_bao_li"
+		texturefile = "gfx/interface/goals/LEC_da_zong_de_bao_li.png"
+	}
+	spriteType = {
+		name = "GFX_goal_LEC_si_xiang_sheng_yu_xing_dong"
+		texturefile = "gfx/interface/goals/LEC_si_xiang_sheng_yu_xing_dong.png"
+	}
+	spriteType = {
+		name = "GFX_goal_LEC_ge_ren_de_jue_xing"
+		texturefile = "gfx/interface/goals/LEC_ge_ren_de_jue_xing.png"
+	}
+	spriteType = {
+		name = "GFX_goal_LEC_wen_hua_da_ge_ming"
+		texturefile = "gfx/interface/goals/LEC_wen_hua_da_ge_ming.png"
+	}
+	spriteType = {
+		name = "GFX_goal_LEC_ren_de_zi_you"
+		texturefile = "gfx/interface/goals/LEC_ren_de_zi_you.png"
+	}
+	spriteType = {
+		name = "GFX_goal_LEC_sao_qing_gu_zhi_dui"
+		texturefile = "gfx/interface/goals/LEC_sao_qing_gu_zhi_dui.png"
+	}
+	spriteType = {
+		name = "GFX_goal_LEC_qu_ta_ma_de"
+		texturefile = "gfx/interface/goals/LEC_qu_ta_ma_de.png"
+	}
+	spriteType = {
+		name = "GFX_goal_LEC_wo_men_de_xin_ling_xiu"
+		texturefile = "gfx/interface/goals/LEC_wo_men_de_xin_ling_xiu.png"
+	}
+	spriteType = {
+		name = "GFX_goal_LEC_wei_yuan_hui"
+		texturefile = "gfx/interface/goals/LEC_wei_yuan_hui.png"
+	}
+	spriteType = {
+		name = "GFX_goal_LEC_wang_1"
+		texturefile = "gfx/interface/goals/LEC_wang_1.png"
+	}
+	spriteType = {
+		name = "GFX_goal_LEC_zi_ben_jia_de_sheng_li"
+		texturefile = "gfx/interface/goals/LEC_zi_ben_jia_de_sheng_li.png"
+	}
+	spriteType = {
+		name = "GFX_goal_LEC_gai_zu_zong_gong_hui"
+		texturefile = "gfx/interface/goals/LEC_gai_zu_zong_gong_hui.png"
+	}
+	spriteType = {
+		name = "GFX_goal_LEC_he_hei_bang_de_jiao_yi"
+		texturefile = "gfx/interface/goals/LEC_he_hei_bang_de_jiao_yi.png"
+	}
+	spriteType = {
+		name = "GFX_goal_LEC_chan_chu_di_xia_si_jie"
+		texturefile = "gfx/interface/goals/LEC_chan_chu_di_xia_si_jie.png"
+	}
+	spriteType = {
+		name = "GFX_goal_LEC_si_you_jing_cha_ju"
+		texturefile = "gfx/interface/goals/LEC_si_you_jing_cha_ju.png"
+	}
+	spriteType = {
+		name = "GFX_goal_LEC_shou_gou_guo_ming_re_bao"
+		texturefile = "gfx/interface/goals/LEC_shou_gou_guo_ming_re_bao.png"
+	}
+	spriteType = {
+		name = "GFX_goal_LEC_mai_ban_yi_shi_hui"
+		texturefile = "gfx/interface/goals/LEC_mai_ban_yi_shi_hui.png"
+	}
+	spriteType = {
+		name = "GFX_goal_LEC_zhu_de_ren_ci"
+		texturefile = "gfx/interface/goals/LEC_zhu_de_ren_ci.png"
+	}
+	spriteType = {
+		name = "GFX_goal_LEC_shang_di_de_huai_bao"
+		texturefile = "gfx/interface/goals/LEC_shang_di_de_huai_bao.png"
+	}
+	spriteType = {
+		name = "GFX_goal_LEC_pai_chu_yi_duan"
+		texturefile = "gfx/interface/goals/LEC_pai_chu_yi_duan.png"
+	}
+	spriteType = {
+		name = "GFX_goal_LEC_shang_hai_qi_shi_tuan"
+		texturefile = "gfx/interface/goals/LEC_shang_hai_qi_shi_tuan.png"
+	}
+	spriteType = {
+		name = "GFX_goal_LEC_wo_men_de_zhu_bao_shen_ren"
+		texturefile = "gfx/interface/goals/LEC_wo_men_de_zhu_bao_shen_ren.png"
+	}
+	spriteType = {
+		name = "GFX_goal_LEC_shang_hai_zhi_shen"
+		texturefile = "gfx/interface/goals/LEC_shang_hai_zhi_shen.png"
+	}
+}

@@ -1,0 +1,120 @@
+spriteTypes = {
+
+	spriteType  = {
+		name = "GFX_decision_category_chinese_mass_exodus"
+		texturefile = "gfx/interface/decisions/decisions_categories_pictures/decision_category_chinese_mass_exodus.png"
+	}
+	spriteType  = {
+		name = "GFX_report_event_HNN_shuang_xiu_fa"
+		texturefile = "gfx/event_news_pictures/HNN/HNN_shuang_xiu_fa.png"
+	}
+	spriteType  = {
+		name = "GFX_report_event_HNN_ren_ming_ying_xiong_ji_nian_bei"
+		texturefile = "gfx/event_news_pictures/HNN/HNN_ren_ming_ying_xiong_ji_nian_bei.png"
+	}
+	spriteType  = {
+		name = "GFX_report_event_HNN_PROC"
+		texturefile = "gfx/event_news_pictures/HNN/HNN_PROC.png"
+	}
+	spriteType  = {
+		name = "GFX_report_event_HNN_lin_ken"
+		texturefile = "gfx/event_news_pictures/HNN/HNN_lin_ken.png"
+	}
+	spriteType  = {
+		name = "GFX_report_event_YUN_tian_shi"
+		texturefile = "gfx/event_news_pictures/HNN/YUN_tian_shi.png"
+	}
+	spriteType  = {
+		name = "GFX_report_event_HNN_LAO_WU"
+		texturefile = "gfx/event_news_pictures/HNN/HNN_LAO_WU.png"
+	}
+	spriteType  = {
+		name = "GFX_report_event_HNN_Qi_bai_SHI"
+		texturefile = "gfx/event_news_pictures/HNN/HNN_Qi_bai_SHI.png"
+	}
+	spriteType  = {
+		name = "GFX_report_event_HNN_Yi_Guan_dao"
+		texturefile = "gfx/event_news_pictures/HNN/HNN_Yi_Guan_dao.png"
+	}
+	spriteType  = {
+		name = "GFX_report_event_HNN_gongtuan_victory"
+		texturefile = "gfx/event_news_pictures/HNN/HNN_gongtuan_victory.png"
+	}
+	spriteType  = {
+		name = "GFX_report_event_HNN_MING"
+		texturefile = "gfx/event_news_pictures/HNN/HNN_MING.png"
+	}
+	spriteType  = {
+		name = "GFX_report_event_HNN_san_ji"
+		texturefile = "gfx/event_news_pictures/HNN/HNN_san_ji.png"
+	}
+	spriteType  = {
+		name = "GFX_report_event_HNN_huo_wu"
+		texturefile = "gfx/event_news_pictures/HNN/HNN_huo_wu.png"
+	}
+	spriteType  = {
+		name = "GFX_report_event_HNN_QIAN_back"
+		texturefile = "gfx/event_news_pictures/HNN/HNN_QIAN_back.png"
+	}
+	spriteType  = {
+		name = "GFX_report_event_HNN_hu_speak"
+		texturefile = "gfx/event_news_pictures/HNN/HNN_hu_speak.png"
+	}
+	spriteType  = {
+		name = "GFX_report_event_HNN_deng_speak"
+		texturefile = "gfx/event_news_pictures/HNN/HNN_deng_speak.png"
+	}
+	spriteType  = {
+		name = "GFX_report_event_HNN_zheng_xie"
+		texturefile = "gfx/event_news_pictures/HNN/HNN_zheng_xie.png"
+	}
+	spriteType  = {
+		name = "GFX_report_event_HNN_tu_ke"
+		texturefile = "gfx/event_news_pictures/HNN/HNN_tu_ke.png"
+	}
+	spriteType  = {
+		name = "GFX_report_event_HNN_bai_hua"
+		texturefile = "gfx/event_news_pictures/HNN/HNN_bai_hua.png"
+	}
+	spriteType  = {
+		name = "GFX_report_event_HNN_peng_speak"
+		texturefile = "gfx/event_news_pictures/HNN/HNN_peng_speak.png"
+	}
+	spriteType  = {
+		name = "GFX_report_event_HNN_bian_hua"
+		texturefile = "gfx/event_news_pictures/HNN/HNN_bian_hua.png"
+	}
+	spriteType  = {
+		name = "GFX_report_event_HNN_huo_chuan"
+		texturefile = "gfx/event_news_pictures/HNN/HNN_huo_chuan.png"
+	}
+	spriteType  = {
+		name = "GFX_report_event_HNN_che_huo"
+		texturefile = "gfx/event_news_pictures/HNN/HNN_che_huo.png"
+	}
+	spriteType  = {
+		name = "GFX_report_event_HNN_zhu_de"
+		texturefile = "gfx/event_news_pictures/HNN/HNN_zhu_de.png"
+	}
+	spriteType  = {
+		name = "GFX_report_event_HNN_xi_zhong"
+		texturefile = "gfx/event_news_pictures/HNN/HNN_xi_zhong.png"
+	}
+	spriteType  = {
+		name = "GFX_report_event_HNN_kang_sheng"
+		texturefile = "gfx/event_news_pictures/HNN/HNN_kang_sheng.png"
+	}
+	spriteType  = {
+		name = "GFX_report_event_HNN_san_fan"
+		texturefile = "gfx/event_news_pictures/HNN/HNN_san_fan.png"
+	}
+	#新闻
+	spriteType  = {
+		name = "GFX_news_event_NEWS_vienna"
+		texturefile = "gfx/event_news_pictures/news/NEWS_vienna.png"
+	}
+	spriteType  = {
+		name = "GFX_news_event_NEWS_vienna_olympics"
+		texturefile = "gfx/event_news_pictures/news/NEWS_vienna_olympics.png"
+	}
+}

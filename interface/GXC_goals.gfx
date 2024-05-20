@@ -1,0 +1,338 @@
+SpriteTypes = {	
+	spriteType = {
+		name = "GFX_goal_GXC_gen_zhe_you_qi_tian"
+		texturefile = "gfx/interface/goals/GXC_gen_zhe_you_qi_tian.png"
+	}
+	spriteType = {
+		name = "GFX_goal_GXC_quan_li_jing_gui_nong_hui"
+		texturefile = "gfx/interface/goals/GXC_quan_li_jing_gui_nong_hui.png"
+	}
+	spriteType = {
+		name = "GFX_goal_GXC_zu_jian_nong_ming_wu_zhuang"
+		texturefile = "gfx/interface/goals/GXC_zu_jian_nong_ming_wu_zhuang.png"
+	}
+	spriteType = {
+		name = "GFX_goal_GXC_cheng_li_jiang_xi_suo"
+		texturefile = "gfx/interface/goals/GXC_cheng_li_jiang_xi_suo.png"
+	}
+	spriteType = {
+		name = "GFX_goal_GXC_hong_hei_se_de_zhong_hua"
+		texturefile = "gfx/interface/goals/GXC_hong_hei_se_de_zhong_hua.png"
+	}
+	spriteType = {
+		name = "GFX_goal_GXC_chang_yao_sai_zong"
+		texturefile = "gfx/interface/goals/GXC_chang_yao_sai_zong.png"
+	}
+	spriteType = {
+		name = "GFX_goal_GXC_zhen_zheng_de_gong_he_guo"
+		texturefile = "gfx/interface/goals/GXC_zhen_zheng_de_gong_he_guo.png"
+	}
+	spriteType = {
+		name = "GFX_goal_GXC_shu_li_xian_fa"
+		texturefile = "gfx/interface/goals/GXC_shu_li_xian_fa.png"
+	}
+	spriteType = {
+		name = "GFX_goal_GXC_zhi_jie_jun_dui"
+		texturefile = "gfx/interface/goals/GXC_zhi_jie_jun_dui.png"
+	}
+	spriteType = {
+		name = "GFX_goal_GXC_hu_han_ming_gui_lai"
+		texturefile = "gfx/interface/goals/GXC_hu_han_ming_gui_lai.png"
+	}
+	spriteType = {
+		name = "GFX_goal_GXC_zheng_tong_san_ming_zhu_yi"
+		texturefile = "gfx/interface/goals/GXC_zheng_tong_san_ming_zhu_yi.png"
+	}
+	spriteType = {
+		name = "GFX_goal_GXC_ming_zu_ge_ming_zhu_yi"
+		texturefile = "gfx/interface/goals/GXC_ming_zu_ge_ming_zhu_yi.png"
+	}
+	spriteType = {
+		name = "GFX_goal_GXC_wu_quan_fen_Li"
+		texturefile = "gfx/interface/goals/GXC_wu_quan_fen_Li.png"
+	}
+	spriteType = {
+		name = "GFX_goal_GXC_zhu_quan_zai_ming"
+		texturefile = "gfx/interface/goals/GXC_zhu_quan_zai_ming.png"
+	}
+	spriteType = {
+		name = "GFX_goal_GXC_di_fang_zi_zhi"
+		texturefile = "gfx/interface/goals/GXC_di_fang_zi_zhi.png"
+	}
+	spriteType = {
+		name = "GFX_goal_GXC_gao_sheng_de_dang_yuan"
+		texturefile = "gfx/interface/goals/GXC_gao_sheng_de_dang_yuan.png"
+	}
+	spriteType = {
+		name = "GFX_goal_GXC_guo_ben_wei_li_fa"
+		texturefile = "gfx/interface/goals/GXC_guo_ben_wei_li_fa.png"
+	}
+	spriteType = {
+		name = "GFX_goal_GXC_guang_rong_de_gong_he_guo"
+		texturefile = "gfx/interface/goals/GXC_guang_rong_de_gong_he_guo.png"
+	}
+	spriteType = {
+		name = "GFX_goal_GXC_jiao_hua_xue_sheng"
+		texturefile = "gfx/interface/goals/GXC_jiao_hua_xue_sheng.png"
+	}
+	spriteType = {
+		name = "GFX_goal_GXC_ai_guo_zhu_yi_xuan_chuan"
+		texturefile = "gfx/interface/goals/GXC_ai_guo_zhu_yi_xuan_chuan.png"
+	}
+	spriteType = {
+		name = "GFX_goal_GXC_dao_de_jiao_yu"
+		texturefile = "gfx/interface/goals/GXC_dao_de_jiao_yu.png"
+	}
+	spriteType = {
+		name = "GFX_goal_GXC_kong_zhi_xuan_chuan_kou"
+		texturefile = "gfx/interface/goals/GXC_kong_zhi_xuan_chuan_kou.png"
+	}
+	spriteType = {
+		name = "GFX_goal_GXC_qu_di_gong_hui"
+		texturefile = "gfx/interface/goals/GXC_qu_di_gong_hui.png"
+	}
+	spriteType = {
+		name = "GFX_goal_GXC_zai_quan_shi_san_ming"
+		texturefile = "gfx/interface/goals/GXC_zai_quan_shi_san_ming.png"
+	}
+	spriteType = {
+		name = "GFX_goal_GXC_gai_ge_jian_cha_yuan"
+		texturefile = "gfx/interface/goals/GXC_gai_ge_jian_cha_yuan.png"
+	}
+	spriteType = {
+		name = "GFX_goal_GXC_gai_ge_kao_shi_yuan"
+		texturefile = "gfx/interface/goals/GXC_gai_ge_kao_shi_yuan.png"
+	}
+	spriteType = {
+		name = "GFX_goal_GXC_di_zhi_zi_you_si_cao"
+		texturefile = "gfx/interface/goals/GXC_di_zhi_zi_you_si_cao.png"
+	}
+	spriteType = {
+		name = "GFX_goal_GXC_lao_xian_sheng"
+		texturefile = "gfx/interface/goals/GXC_lao_xian_sheng.png"
+	}
+	spriteType = {
+		name = "GFX_goal_GXC_tai_zi_dang_gui_lai"
+		texturefile = "gfx/interface/goals/GXC_tai_zi_dang_gui_lai.png"
+	}
+	spriteType = {
+		name = "GFX_goal_GXC_xi_na_wen_he_zuo_yi"
+		texturefile = "gfx/interface/goals/GXC_xi_na_wen_he_zuo_yi.png"
+	}
+	spriteType = {
+		name = "GFX_goal_GXC_dang_nei_xie_sang"
+		texturefile = "gfx/interface/goals/GXC_dang_nei_xie_sang.png"
+	}
+	spriteType = {
+		name = "GFX_goal_GXC_zai_zao_guo_dang"
+		texturefile = "gfx/interface/goals/GXC_zai_zao_guo_dang.png"
+	}
+	spriteType = {
+		name = "GFX_goal_GXC_song_kai_liao_kao"
+		texturefile = "gfx/interface/goals/GXC_song_kai_liao_kao.png"
+	}
+	spriteType = {
+		name = "GFX_goal_GXC_fa_hui_zi_you_jia_zhi"
+		texturefile = "gfx/interface/goals/GXC_fa_hui_zi_you_jia_zhi.png"
+	}
+	spriteType = {
+		name = "GFX_goal_GXC_zi_xiang_you"
+		texturefile = "gfx/interface/goals/GXC_zi_xiang_you.png"
+	}
+	spriteType = {
+		name = "GFX_goal_GXC_te_zhong_jiao_yu"
+		texturefile = "gfx/interface/goals/GXC_te_zhong_jiao_yu.png"
+	}
+	spriteType = {
+		name = "GFX_goal_GXC_feng_su_gai_liang"
+		texturefile = "gfx/interface/goals/GXC_feng_su_gai_liang.png"
+	}
+	spriteType = {
+		name = "GFX_goal_GXC_ming_tuan"
+		texturefile = "gfx/interface/goals/GXC_ming_tuan.png"
+	}
+	spriteType = {
+		name = "GFX_goal_GXC_xi_shan_pai_victory"
+		texturefile = "gfx/interface/goals/GXC_xi_shan_pai_victory.png"
+	}
+	spriteType = {
+		name = "GFX_goal_GXC_zong_si_lin_kai_xuan"
+		texturefile = "gfx/interface/goals/GXC_zong_si_lin_kai_xuan.png"
+	}
+	spriteType = {
+		name = "GFX_goal_GXC_zheng_xue_xi_gui_lai"
+		texturefile = "gfx/interface/goals/GXC_zheng_xue_xi_gui_lai.png"
+	}
+	spriteType = {
+		name = "GFX_goal_GXC_mengzi"
+		texturefile = "gfx/interface/goals/GXC_mengzi.png"
+	}
+	spriteType = {
+		name = "GFX_goal_GXC_zong_sheng_zhi"
+		texturefile = "gfx/interface/goals/GXC_zong_sheng_zhi.png"
+	}
+	spriteType = {
+		name = "GFX_goal_GXC_pi_juan_de_zong_si_ling"
+		texturefile = "gfx/interface/goals/GXC_pi_juan_de_zong_si_ling.png"
+	}
+	spriteType = {
+		name = "GFX_goal_GXC_bai_cong_xi_zheng_fu"
+		texturefile = "gfx/interface/goals/GXC_bai_cong_xi_zheng_fu.png"
+	}
+	spriteType = {
+		name = "GFX_goal_GXC_che_jing_liao_kao"
+		texturefile = "gfx/interface/goals/GXC_che_jing_liao_kao.png"
+	}
+	spriteType = {
+		name = "GFX_goal_GXC_xi_na_mu_you_hui"
+		texturefile = "gfx/interface/goals/GXC_xi_na_mu_you_hui.png"
+	}
+	spriteType = {
+		name = "GFX_goal_GXC_jie_jian_zhi_shang"
+		texturefile = "gfx/interface/goals/GXC_jie_jian_zhi_shang.png"
+	}
+	spriteType = {
+		name = "GFX_goal_GXC_zui_wu_shi_de_ai_guo_zhe"
+		texturefile = "gfx/interface/goals/GXC_zui_wu_shi_de_ai_guo_zhe.png"
+	}
+	spriteType = {
+		name = "GFX_goal_GXC_shang_wu_jiao_yu"
+		texturefile = "gfx/interface/goals/GXC_shang_wu_jiao_yu.png"
+	}
+	spriteType = {
+		name = "GFX_goal_GXC_jun_guo_ti_zhi"
+		texturefile = "gfx/interface/goals/GXC_jun_guo_ti_zhi.png"
+	}
+	spriteType = {
+		name = "GFX_goal_GXC_di_san_dao_lu"
+		texturefile = "gfx/interface/goals/GXC_di_san_dao_lu.png"
+	}
+	spriteType = {
+		name = "GFX_goal_GXC_fa_tuan_jing_ji"
+		texturefile = "gfx/interface/goals/GXC_fa_tuan_jing_ji.png"
+	}
+	spriteType = {
+		name = "GFX_goal_GXC_san_zi_zheng_ce"
+		texturefile = "gfx/interface/goals/GXC_san_zi_zheng_ce.png"
+	}
+	spriteType = {
+		name = "GFX_goal_GXC_mo_ping_jie_ji_fen_qi"
+		texturefile = "gfx/interface/goals/GXC_mo_ping_jie_ji_fen_qi.png"
+	}
+	spriteType = {
+		name = "GFX_goal_GXC_cui_chan_de_gong_he_guo"
+		texturefile = "gfx/interface/goals/GXC_cui_chan_de_gong_he_guo.png"
+	}
+	spriteType = {
+		name = "GFX_goal_GXC_jiang_jing_guo_zheng_fu"
+		texturefile = "gfx/interface/goals/GXC_jiang_jing_guo_zheng_fu.png"
+	}
+	spriteType = {
+		name = "GFX_goal_GXC_da_zong_song_bang"
+		texturefile = "gfx/interface/goals/GXC_da_zong_song_bang.png"
+	}
+	spriteType = {
+		name = "GFX_goal_GXC_chu_li_fan_dui_wen_ren"
+		texturefile = "gfx/interface/goals/GXC_chu_li_fan_dui_wen_ren.png"
+	}
+	spriteType = {
+		name = "GFX_goal_GXC_wei_hu_jun_dui_guang_xi"
+		texturefile = "gfx/interface/goals/GXC_wei_hu_jun_dui_guang_xi.png"
+	}
+	spriteType = {
+		name = "GFX_goal_GXC_gai_liang_xian_fa"
+		texturefile = "gfx/interface/goals/GXC_gai_liang_xian_fa.png"
+	}
+	spriteType = {
+		name = "GFX_goal_GXC_yong_bu_ting_xi_de_yin_shua_ji"
+		texturefile = "gfx/interface/goals/GXC_yong_bu_ting_xi_de_yin_shua_ji.png"
+	}
+	spriteType = {
+		name = "GFX_goal_GXC_zhi_zai_guan_jian"
+		texturefile = "gfx/interface/goals/GXC_zhi_zai_guan_jian.png"
+	}
+	spriteType = {
+		name = "GFX_goal_GXC_min_ying_jing_ji_de_bao_hu_shen"
+		texturefile = "gfx/interface/goals/GXC_min_ying_jing_ji_de_bao_hu_shen.png"
+	}
+	spriteType = {
+		name = "GFX_goal_GXC_shi_si_xiang_jian_she"
+		texturefile = "gfx/interface/goals/GXC_shi_si_xiang_jian_she.png"
+	}
+	spriteType = {
+		name = "GFX_goal_GXC_zui_qian_cheng_de_ai_guo_zhe"
+		texturefile = "gfx/interface/goals/GXC_zui_qian_cheng_de_ai_guo_zhe.png"
+	}
+	spriteType = {
+		name = "GFX_goal_GXC_zhan_wang_wei_lai"
+		texturefile = "gfx/interface/goals/GXC_zhan_wang_wei_lai.png"
+	}
+	spriteType = {
+		name = "GFX_goal_GXC_jie_yan_ling"
+		texturefile = "gfx/interface/goals/GXC_jie_yan_ling.png"
+	}
+	spriteType = {
+		name = "GFX_goal_GXC_xiong_de_qi_shang_zhen"
+		texturefile = "gfx/interface/goals/GXC_xiong_de_qi_shang_zhen.png"
+	}
+	spriteType = {
+		name = "GFX_goal_GXC_jian_cha_yuan_de_sheng_li"
+		texturefile = "gfx/interface/goals/GXC_jian_cha_yuan_de_sheng_li.png"
+	}
+	spriteType = {
+		name = "GFX_goal_GXC_xing_zheng_yuan_de_sheng_li"
+		texturefile = "gfx/interface/goals/GXC_xing_zheng_yuan_de_sheng_li.png"
+	}
+	spriteType = {
+		name = "GFX_goal_GXC_zu_jian_zhong_tong"
+		texturefile = "gfx/interface/goals/GXC_zu_jian_zhong_tong.png"
+	}
+	spriteType = {
+		name = "GFX_goal_GXC_chong_shu_dang_nei"
+		texturefile = "gfx/interface/goals/GXC_chong_shu_dang_nei.png"
+	}
+	spriteType = {
+		name = "GFX_goal_GXC_gai_ge_wen_guan_zhi_du"
+		texturefile = "gfx/interface/goals/GXC_gai_ge_wen_guan_zhi_du.png"
+	}
+	spriteType = {
+		name = "GFX_goal_GXC_gao_xiao_de_san_min_zhu_yi"
+		texturefile = "gfx/interface/goals/GXC_gao_xiao_de_san_min_zhu_yi.png"
+	}
+	spriteType = {
+		name = "GFX_goal_GXC_guo_jia_an_quan_di_yi_wei"
+		texturefile = "gfx/interface/goals/GXC_guo_jia_an_quan_di_yi_wei.png"
+	}
+	spriteType = {
+		name = "GFX_goal_GXC_zhuang_jia_ji_shi_wei_lai"
+		texturefile = "gfx/interface/goals/GXC_zhuang_jia_ji_shi_wei_lai.png"
+	}
+	spriteType = {
+		name = "GFX_goal_GXC_bu_ju_xin_xing_chan_ye"
+		texturefile = "gfx/interface/goals/GXC_bu_ju_xin_xing_chan_ye.png"
+	}
+	spriteType = {
+		name = "GFX_goal_GXC_wu_shi_de_san_min_zhu_yi"
+		texturefile = "gfx/interface/goals/GXC_wu_shi_de_san_min_zhu_yi.png"
+	}
+	spriteType = {
+		name = "GFX_goal_GXC_bao_hu_qi_ye_jia"
+		texturefile = "gfx/interface/goals/GXC_bao_hu_qi_ye_jia.png"
+	}
+	spriteType = {
+		name = "GFX_goal_GXC_gai_ge_bi_zhi"
+		texturefile = "gfx/interface/goals/GXC_gai_ge_bi_zhi.png"
+	}
+	spriteType = {
+		name = "GFX_goal_GXC_she_li_zui_gao_jing_ji"
+		texturefile = "gfx/interface/goals/GXC_she_li_zui_gao_jing_ji.png"
+	}
+	spriteType = {
+		name = "GFX_goal_GXC_shou_gou_zhong_guo_yin_hang"
+		texturefile = "gfx/interface/goals/GXC_shou_gou_zhong_guo_yin_hang.png"
+	}
+	spriteType = {
+		name = "GFX_goal_GXC_shi_gan_de_san_ming_zhu_yi"
+		texturefile = "gfx/interface/goals/GXC_shi_gan_de_san_ming_zhu_yi.png"
+	}
+}

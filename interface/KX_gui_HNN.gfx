@@ -1,0 +1,20 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_HNN_LIN"
+		texturefile = "gfx/interface/gui/HNN_LIN.png"
+	}
+	spriteType = {
+		name = "GFX_HNN_YE"
+		texturefile = "gfx/interface/gui/HNN_YE.png"
+	}
+	spriteType = {
+		name = "GFX_HNN_HE"
+		texturefile = "gfx/interface/gui/HNN_HE.png"
+	}
+	# spriteType = {
+	# 	name = "GFX_HNN_UVO_bg"
+	# 	texturefile = ""
+	# 	legacy_lazy_load = no
+	# }
+}
+

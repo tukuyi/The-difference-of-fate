@@ -1,0 +1,10 @@
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_bop_HNN_cq_side"
+		texturefile = "gfx/interface/bop/bop_HNN_cq_side.png"
+	}
+	spriteType = {
+		name = "GFX_bop_HNN_rkmt_side"
+		texturefile = "gfx/interface/bop/bop_HNN_rkmt_side.png"
+	}
+}
